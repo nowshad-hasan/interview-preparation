@@ -20,14 +20,66 @@
 * What is the `Structure of an Android Application`?</br>
   Reference - [Developer Android](https://developer.android.com/studio/projects)
 * What is `Context`? How is it used? </br>
-  Reference - [MindOrks](https://blog.mindorks.com/understanding-context-in-android-application-330913e32514), [Gaurav in FreeCodeCamp](https://www.freecodecamp.org/news/mastering-android-context-7055c8478a22/).
+  Reference - [MindOrks](https://blog.mindorks.com/understanding-context-in-android-application-330913e32514), [Gaurav in FreeCodeCamp](https://www.freecodecamp.org/news/mastering-android-context-7055c8478a22/)
+
+  * A Context is a handle to the system; it provides services like resolving resources, obtaining access to databases and preferences, and so on. An Android app has activities. Context is like a handle to the environment your application is currently running in.</br>
+<b>Application Context:</b> This context is tied to the lifecycle of an application. The application context can be used where you need a context whose lifecycle is separate from the current context or when you are passing a context beyond the scope of an activity.</br>
+<b>Activity Context:</b> This context is available in an activity. This context is tied to the lifecycle of an activity. The activity context should be used when you are passing the context in the scope of an activity or you need the context whose lifecycle is attached to the current context.</br>
+
+* <b>Describe content providers</b></br>
+  * A ContentProvider provides data from one application to another, when requested. It manages access to a structured set of data.  It provides mechanisms for defining data security. ContentProvider is the standard interface that connects data in one process with code running in another process.</br>  
+  * When you want to access data in a <b>ContentProvider</b>, you must instead use the ContentResolver object in your application’s Context to communicate with the provider as a client. The provider object receives data requests from clients, performs the requested action, and returns the results.</br>
+
+
+* <b>Access data using Content Provider:</b></br>
+  * Start by making sure your Android application has the necessary read access permissions. Then, get access to the ContentResolver object by calling getContentResolver() on the Context object, and retrieving the data by constructing a query using ContentResolver.query().</br>
+  * The ContentResolver.query() method returns a Cursor, so you can retrieve data from each column using Cursor methods.</br>
+
+* <b>What is ABI Management?</b></br>
+  * Different Android handsets use different CPUs, which in turn support different instruction sets. Each combination of CPU and instruction sets has its own Application Binary Interface, or ABI. The ABI defines, with great precision, how an  application's machine code is supposed to interact with the system at runtime. You must specify an ABI for each CPU  architecture you want your app to work with. You can checkout the full specifcations [here](https://developer.android.com/ndk/guides/abis)</br>
+
+
+* <b>Why bytecode cannot be run in Android?</b></br>
+  * Android uses DVM (Dalvik Virtual Machine ) rather using JVM(Java Virtual Machine) which requires a special bytecode. We need to convert Java class files into Dalvik Executable files using an Android tool called "dx". In normal circumstances, developers will not be using this tool directly and build tools will care for the generation of DVM compatible files.</br>
+
+
+* <b>What is a BuildType in Gradle? And what can you use it for?</b></br>
+  * Build types define properties that Gradle uses when building and packaging your Android app.
+  * A build type defines how a module is built, for example whether ProGuard is run.
+  * A product flavor defines what is built, such as which resources are included in the build.
+  * Gradle creates a build variant for every possible combination of your project’s product flavors and build types.</br>
+
+* <b>Explain the build process in Android:</b></br>
+  * First step involves compiling the resources folder (/res) using the aapt (android asset packaging tool) tool. These are compiled to a single class file called R.java. This is a class that just contains constants.
+  * Second step involves the java source code being compiled to .class files by javac, and then the class files are converted to Dalvik bytecode by the "dx" tool, which is included in the sdk 'tools'. The output is classes.dex.
+  * The final step involves the android apkbuilder which takes all the input and builds the apk (android packaging key) file.</br>
+
+* <b>What is the Android Application Architecture?</b></br>
+
+     Android application architecture has the following components:</br>
+    * Activities - Provides the window in which the app draws its UI</br>
+    * Services − It will perform background functionalities</br>
+    * Intent − It will perform the inter connection between activities and the data passing mechanism</br>
+    * Resource Externalization − strings and graphics</br>
+    * Notification − light,sound,icon,notification,dialog box,and toast</br>
+    * Content Providers − It will share the data between applications</br>
+
+
 * What is `AndroidManifest`? </br>
-  Reference - [Developer Android](https://developer.android.com/guide/topics/manifest/manifest-intro)
+  Reference - [Developer Android](https://developer.android.com/guide/topics/manifest/manifest-intro)</br>
+
+  Manifest: Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. The manifest presents essential information about the application to the Android system, information the system must have before it can run any of the application's code. It contains information of your package, including components of the application such as activities, services, broadcast receivers, content providers etc.
+
+* What is R.java in android?</br>
+
+ It is an auto-generated file by aapt (Android Asset Packaging Tool) that contains resource IDs for all the resources of res/ directory.
 * Describe `Activity Lifecycle`</br>
   Reference - [Developer Android](https://developer.android.com/guide/components/activities/activity-lifecycle)</br>
   Video - [Coding in Flow](https://www.youtube.com/watch?v=UJN3AL4tiqw), [Udacity](https://www.youtube.com/watch?v=85MppyLJHz0)
 
 * What is `Application` class? [Codepath](https://github.com/codepath/android_guides/wiki/Understanding-the-Android-Application-Class), [Medium](https://medium.com/@balakrishnanpt/android-application-class-a8a1d64c82d1), [Developer Android](https://developer.android.com/reference/android/app/Application)
+
+  * The Application class in Android is the base class within an Android app that contains all other components such as activities and services. The Application class, or any subclass of the Application class, is instantiated before any other class when the process for your application/package is created.</br>
 
 ### Activity
 
@@ -36,6 +88,55 @@
 * Explain `Activity` and `Fragment` lifecycle. (Complete diagram [GitHub](https://github.com/xxv/android-lifecycle), simplified diagram for [Activity](https://developer.android.com/guide/components/activities/activity-lifecycle.html#alc), [Fragment](https://developer.android.com/guide/components/fragments.html#Lifecycle)), [Activity lifecycle](https://blog.mindorks.com/android-activity-lifecycle) and [Fragments lifecycle](https://blog.mindorks.com/android-fragments-and-its-lifecycle)
 
 * What are "launch modes"? [MindOrks](https://blog.mindorks.com/android-activity-launchmode-explained-cbc6cf996802)
+* <b>What’s the difference between onCreate() and onStart()?</b></br>
+  * The onCreate() method is called once during the Activity lifecycle, either when the application starts, or when the Activity has been destroyed and then recreated, for example during a configuration change.</br>
+  * The onStart() method is called whenever the Activity becomes visible to the user, typically after onCreate() or onRestart().</br>
+
+
+
+* <b>Scenario in which only onDestroy is called for an activity without onPause() and onStop()?</b></br>
+  * If finish() is called in the OnCreate method of an activity, the system will invoke onDestroy() method directly.</br>
+
+
+
+* <b>Why would you do the setContentView() in onCreate() of Activity class?</b></br>
+  * As onCreate() of an Activity is called only once, this is the point where most initialization should go. It is inefficient to set the content in onResume() or onStart() (which are called multiple times) as the setContentView() is a heavy operation.</br>
+
+
+* <b>onSavedInstanceState() and onRestoreInstanceState() in activity?</b></br>
+  * ```OnRestoreInstanceState()``` - When activity is recreated after it was previously destroyed, we can recover the saved state from the Bundle that the system passes to the activity. Both the ```onCreate()``` and ```onRestoreInstanceState()``` callback methods receive the same Bundle that contains the instance state information. But because the ```onCreate()``` method is called whether the system is creating a new instance of your activity or recreating a previous one, you must check whether the state Bundle is null before you attempt to read it. If it is null, then the system is creating a new instance of the activity, instead of restoring a previous one that was destroyed.
+  * ```onSaveInstanceState()``` -  is a method used to store data before pausing the activity.</br>
+
+
+* <b>Launch modes in Android?</b></br>
+  * <b>Standard</b>: It creates a new instance of an activity in the task from which it was started. Multiple instances of the activity can be created and multiple instances can be added to the same or different tasks.
+    * Example: Suppose there is an activity stack of A -> B -> C. Now if we launch B again with the launch mode as “standard”, the new stack will be A -> B -> C -> B.
+  * <b>SingleTop</b>: It is the same as the standard, except if there is a previous instance of the activity that exists in the top of the stack, then it will not create a new instance but rather send the intent to the existing instance of the activity.
+    * Example: Suppose there is an activity stack of A -> B. Now if we launch C with the launch mode as “singleTop”, the new stack will be A -> B -> C as usual.
+    * Now if there is an activity stack of A -> B -> C. If we launch C again with the launch mode as “singleTop”, the new stack will still be A -> B -> C.
+  * <b>SingleTask</b>: A new task will always be created and a new instance will be pushed to the task as the root one. So if the activity is already in the task, the intent will be redirected to onNewIntent() else a new instance will be created. At a time only one instance of activity will exist.
+    * Example: Suppose there is an activity stack of A -> B -> C -> D. Now if we launch D with the launch mode as “singleTask”, the new stack will be A -> B -> C -> D as usual.
+    * Now if there is an activity stack of A -> B -> C -> D.  If we launch activity B again with the launch mode as “singleTask”, the new activity stack will be A -> B. Activities C and D will be destroyed.
+  * <b>SingleInstance</b>: Same as single task but the system does not launch any activities in the same task as this activity. If new activities are launched, they are done so in a separate task.
+    * Eg: Suppose there is an activity stack of A -> B -> C -> D. If we launch activity B again with the launch mode as “singleTask”, the new activity stack will be:
+    * Task1 — A -> B -> C  and Task2 — D</br>
+
+* How to clear stack of activities in android? [Stackoverflow](https://stackoverflow.com/questions/19858108/remove-top-activity-from-stack-android), [Developer android](https://developer.android.com/guide/components/activities/tasks-and-back-stack)
+ * The first approach is to use a FLAG_ACTIVITY_CLEAR_TOP flag. The second way is by using FLAG_ACTIVITY_CLEAR_TASK and FLAG_ACTIVITY_NEW_TASK in conjunction.</br>
+
+* <b>What’s the difference between FLAG_ACTIVITY_CLEAR_TASK and FLAG_ACTIVITY_CLEAR_TOP?</b></br>
+  * <b>FLAG_ACTIVITY_CLEAR_TASK</b> is used to clear all the activities from the task including any existing instances of the class invoked. The Activity launched by intent becomes the new root of the otherwise empty task list. This flag has to be used in conjunction with FLAG_ ACTIVITY_NEW_TASK.</br>
+  * <b>FLAG_ACTIVITY_CLEAR_TOP</b> on the other hand, if set and if an old instance of this Activity exists in the task list then barring that all the other activities are removed and that old activity becomes the root of the task list. Else if there’s no instance of that activity then a new instance of it is made the root of the task list. Using FLAG_ACTIVITY_NEW_TASK in conjunction is a good practice, though not necessary.</br>  
+
+
+* <b>How does the activity respond when the user rotates the screen?</b></br>
+   * When the screen is rotated, the current instance of activity is destroyed a new instance of the Activity is created in the new orientation. The onRestart() method is invoked first when a screen is rotated. The other lifecycle methods get invoked in the similar flow as they were when the activity was first created.</br>
+
+* <b>How to prevent the data from reloading and resetting when the screen is rotated?</b></br>
+  * The most common approach these days would be to use a combination of ViewModels and onSaveInstanceState(). So how we do we that?
+  * Basics of [ViewModel](https://developer.android.com/reference/android/arch/lifecycle/ViewModel): A ViewModel is LifeCycle-Aware. In other words, a ViewModel will not be destroyed if its owner is destroyed for a configuration change (e.g. rotation). The new instance of the owner will just re-connected to the existing ViewModel. So if you rotate an Activity three times, you have just created three different Activity instances, but you only have one ViewModel.
+  * So the common practice is to store data in the ViewModel class (since it persists data during configuration changes) and use OnSaveInstanceState to store small amounts of UI data.
+  * For instance, let’s say we have a search screen and the user has entered a query in the Edittext. This results in a list of items being displayed in the RecyclerView. Now if the screen is rotated, the ideal way to prevent resetting of data would be to store the list of search items in the ViewModel and the query text user has entered in the OnSaveInstanceState method of the activity.</br>   
 
 ### Fragments
 
@@ -150,7 +251,7 @@
 
 * What is the relationship between the life cycle of an `AsyncTask` and an `Activity`? What problems can this result in? How can these problems be avoided?
 
-* Explain `Looper`, `Handler` and `HandlerThread`. [MindOrks](https://blog.mindorks.com/android-core-looper-handler-and-handlerthread-bd54d69fe91a) and [MindOrks Video](https://www.youtube.com/watch?v=rfLMwbOKLRk&list=PL6nth5sRD25hVezlyqlBO9dafKMc5fAU2), [Dev.to](https://dev.to/anuj/understanding-handler-looper-and-handler-thread-3anf), [Medium](https://medium.com/quark-works/how-to-use-thread-looper-and-handler-in-android-c0532f15b03e)
+* Explain `Looper`, `Handler` and `HandlerThread`. [MindOrks](https://blog.mindorks.com/android-core-looper-handler-and-handlerthread-bd54d69fe91a) and [MindOrks Video](https://www.youtube.com/watch?v=rfLMwbOKLRk&list=PL6nth5sRD25hVezlyqlBO9dafKMc5fAU2), [Dev.to](https://dev.to/anuj/understanding-handler-looper-and-handler-thread-3anf), [Medium](https://medium.com/quark-works/how-to-use-thread-looper-and-handler-in-android-c0532f15b03e), [Medium by Gaurav](https://medium.com/mindorks/mastering-android-handler-4f710296bdc6)
 
 ### Working With Multimedia Content
 

@@ -479,6 +479,10 @@
   * When you have two threads that are reading and writing to the same 'resource', say a variable named 'test', you need to ensure that these threads access the variable in an atomic way. Without the synchronized keyword, your thread 1 may not see the change thread 2 made to test.
   * <b>synchronized</b> blocks the next thread's call to method as long as the previous thread's execution is not finished. Threads can access this method one at a time.</br>
 
+* What is AtomicBoolean in java? [GeeksforGeeks](https://www.geeksforgeeks.org/atomicboolean-compareandset-method-in-java-with-examples/), [Jenkov](http://tutorials.jenkov.com/java-util-concurrent/atomicboolean.html)
+
+* What is ConcurrentLinkedQueue? [GeeksforGeeks](https://www.geeksforgeeks.org/concurrentlinkedqueue-in-java-with-examples/), [Stackoverflow](https://stackoverflow.com/questions/616484/how-to-use-concurrentlinkedqueue), [Javatpoint](https://www.javatpoint.com/java-concurrentlinkedqueue)
+
 
 * **What is a `ThreadPoolExecutor`?** [MindOrks](https://blog.mindorks.com/threadpoolexecutor-in-android-8e9d22330ee3), [Baeldung](https://www.baeldung.com/thread-pool-java-and-guava), [Journaldev](https://www.journaldev.com/1069/threadpoolexecutor-java-thread-pool-example-executorservice), [GeeksforGeeks](https://www.geeksforgeeks.org/thread-pools-java/)
 
@@ -850,6 +854,9 @@ Read more: [Baeldung](https://www.baeldung.com/java-static), [JavaTPoint](https:
    * A blocking queue is a queue that blocks when you try to dequeue from it and the queue is empty, or if you try to enqueue items to it and the queue is already full. A thread trying to dequeue from an empty queue is blocked until some other thread inserts an item into the queue. A thread trying to enqueue an item in a full queue is blocked until some other thread makes space in the queue.
    * [Example on implementing a blocking queue](/src/queue/BlockingQueue.java)</br>
 
+* Java is unsound. Please explain. [Dev.to](https://dev.to/rosstate/java-is-unsound-the-industry-perspective)
+
+* What is type erasure in Java? [Baeldung](https://www.baeldung.com/java-type-erasure), [GeeksforGeeks](https://www.geeksforgeeks.org/type-erasure-java/)
 
 * <b>Difference between stacks & queues?</b></br>
    * <a href="https://github.com/anitaa1990/Android-Cheat-sheet/blob/master/media/3.png" target="_blank"><img src="https://github.com/anitaa1990/Android-Cheat-sheet/blob/master/media/3.png"></a></br>   
