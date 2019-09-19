@@ -1,18 +1,17 @@
 ## Contents
 
 * [Basic Things](#basic-things)
-* [Advanced Android](#advanced-android)
 * [Activity](#activity)
 * [Fragments](#fragments)
 * [Views and ViewGroups](#views-and-viewgroups)
-* [Displaying Lists of Content](#displaying-lists-of-content)
+* [List](#list)
 * [Background Processing](#background-processing)
 * [Architecture Components](#architechture-components)
+* [Advanced Android](#advanced-android)
 * [Read more](#read-more)
 
 ### Basic things
-#### Base
-* Tell us `Android Application Components`.
+* <b>Tell us about `Android Application Components.`</b>
     1. Activities
     2. Services
     3. Broadcast Receiver
@@ -20,14 +19,16 @@
 
   Reference - [Developer Android](https://developer.android.com/guide/components/fundamentals.html#Components)
 
-* What is the `Structure of an Android Application`?</br>
+* <b>What is the `Structure of an Android Application`?</b></br>
   Reference - [Developer Android](https://developer.android.com/studio/projects)
 * What is `Context`? How is it used? </br>
+
+   A Context is a handle to the system; it provides services like resolving resources, obtaining access to databases and preferences, and so on. An Android app has activities. Context is like a handle to the environment your application is currently running in.</br>
+  * <b>Application Context:</b> This context is tied to the lifecycle of an application. The application context can be used where you need a context whose lifecycle is separate from the current context or when you are passing a context beyond the scope of an activity.</br>
+  * <b>Activity Context:</b> This context is available in an activity. This context is tied to the lifecycle of an activity. The activity context should be used when you are passing the context in the scope of an activity or you need the context whose lifecycle is attached to the current context.</br>
+
   Reference - [MindOrks](https://blog.mindorks.com/understanding-context-in-android-application-330913e32514), [Gaurav in FreeCodeCamp](https://www.freecodecamp.org/news/mastering-android-context-7055c8478a22/)
 
-  * A Context is a handle to the system; it provides services like resolving resources, obtaining access to databases and preferences, and so on. An Android app has activities. Context is like a handle to the environment your application is currently running in.</br>
-<b>Application Context:</b> This context is tied to the lifecycle of an application. The application context can be used where you need a context whose lifecycle is separate from the current context or when you are passing a context beyond the scope of an activity.</br>
-<b>Activity Context:</b> This context is available in an activity. This context is tied to the lifecycle of an activity. The activity context should be used when you are passing the context in the scope of an activity or you need the context whose lifecycle is attached to the current context.</br>
 
 * <b>Describe content providers</b></br>
   * A ContentProvider provides data from one application to another, when requested. It manages access to a structured set of data.  It provides mechanisms for defining data security. ContentProvider is the standard interface that connects data in one process with code running in another process.</br>  
@@ -52,14 +53,17 @@
   * A product flavor defines what is built, such as which resources are included in the build.
   * Gradle creates a build variant for every possible combination of your project’s product flavors and build types.</br>
 
+
 * <b>Explain the build process in Android:</b></br>
+
   * First step involves compiling the resources folder (/res) using the aapt (android asset packaging tool) tool. These are compiled to a single class file called R.java. This is a class that just contains constants.
   * Second step involves the java source code being compiled to .class files by javac, and then the class files are converted to Dalvik bytecode by the "dx" tool, which is included in the sdk 'tools'. The output is classes.dex.
   * The final step involves the android apkbuilder which takes all the input and builds the apk (android packaging key) file.</br>
 
-* <b>What is the Android Application Architecture?</b></br>
 
+* <b>What is the Android Application Architecture?</b></br>
      Android application architecture has the following components:</br>
+
     * Activities - Provides the window in which the app draws its UI</br>
     * Services − It will perform background functionalities</br>
     * Intent − It will perform the inter connection between activities and the data passing mechanism</br>
@@ -68,19 +72,20 @@
     * Content Providers − It will share the data between applications</br>
 
 
-* What is `AndroidManifest`? </br>
+* <b>What is `AndroidManifest`?</b> </br>
+
+  Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. The manifest presents essential information about the application to the Android system, information the system must have before it can run any of the application's code. It contains information of your package, including components of the application such as activities, services, broadcast receivers, content providers etc.</br>
   Reference - [Developer Android](https://developer.android.com/guide/topics/manifest/manifest-intro)</br>
 
-  Manifest: Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. The manifest presents essential information about the application to the Android system, information the system must have before it can run any of the application's code. It contains information of your package, including components of the application such as activities, services, broadcast receivers, content providers etc.
+* <b>What is R.java in android?</b></br>
 
-* What is R.java in android?</br>
+  It is an auto-generated file by AAPT (Android Asset Packaging Tool) that contains resource IDs for all the resources of res/ directory.
 
- It is an auto-generated file by aapt (Android Asset Packaging Tool) that contains resource IDs for all the resources of res/ directory.
-* Describe `Activity Lifecycle`</br>
+* <b>Describe `Activity Lifecycle.`</b></br>
   Reference - [Developer Android](https://developer.android.com/guide/components/activities/activity-lifecycle)</br>
   Video - [Coding in Flow](https://www.youtube.com/watch?v=UJN3AL4tiqw), [Udacity](https://www.youtube.com/watch?v=85MppyLJHz0)
   <br/>
-      ![Activity Lifecycle Image](/image assets/activity_lifecycle.png)
+      ![Activity Lifecycle Image](/image%20assets/activity_lifecycle.png)
 * What is `Application` class? [Codepath](https://github.com/codepath/android_guides/wiki/Understanding-the-Android-Application-Class), [Medium](https://medium.com/@balakrishnanpt/android-application-class-a8a1d64c82d1), [Developer Android](https://developer.android.com/reference/android/app/Application)
 
   * The Application class in Android is the base class within an Android app that contains all other components such as activities and services. The Application class, or any subclass of the Application class, is instantiated before any other class when the process for your application/package is created.</br>

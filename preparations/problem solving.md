@@ -13,10 +13,9 @@
   - [Aticleworld](https://aticleworld.com/string-interview-questions-in-c/) - around 20 problems
   - [w3resource](https://www.w3resource.com/c-programming-exercises/string/index.php) - 30 problems
 
-## Array 
+## Array
 
 ### Collections
 
-* 52 Programming Problems by Subeen
-
- - Solve all the easiest problems from this [site](http://cpbook.subeen.com/p/blog-page_11.html).
+* 52 Programming Problems by Subeen.
+ Solve the easiest problems [here](http://cpbook.subeen.com/p/blog-page_11.html).

@@ -1,11 +1,13 @@
 ## Contents
 
-* [Basic Query](#basic-query)
+* [Basic Questions](#basic-questions)
 * [Question Collection](#question-collection)
+
+### Basic Questions
 
 ### Question collection
 
-#### MYSQL
+##### MYSQL
 
 * [10 MySQL Database Interview Questions for Beginners and Intermediates](http://www.tecmint.com/10-mysql-database-interview-questions-for-beginners-and-intermediates/)
 * [100 MySQL interview questions](http://www.careerride.com/MySQL-Interview-Questions.aspx)
@@ -14,11 +16,11 @@
 * [40 Basic MySQL Interview Questions with Answers](http://www.testingbrain.com/interview/mysql-interview-questions.html)
 * [Top 50 MySQL Interview Questions & Answers from Career Guru](http://career.guru99.com/top-50-mysql-interview-questions-answers/)
 
-### Oracle
+##### Oracle
 
 * [General Oracle Interview Questions & Answers](http://www.coolinterview.com/type.asp?iType=57)
 
-### SQL
+##### SQL
 
 * [10 Frequently asked SQL Query Interview Questions](http://java67.blogspot.com.by/2013/04/10-frequently-asked-sql-query-interview-questions-answers-database.html)
 * [45 Essential SQL Interview Questions from Toptal](http://www.toptal.com/sql/interview-questions)
@@ -34,6 +36,6 @@
 * [50 SQL Query Questions and Answers for Practice](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
 * [SQL Queries for Interview](https://artoftesting.com/interviewSection/sql-queries-for-interview.html)
 
-### SQL Lite
+##### SQL Lite
 
 * [Top 20 SQL LITE  Interview Questions from Career Guru](http://career.guru99.com/top-20-sql-lite-interview-questions/)

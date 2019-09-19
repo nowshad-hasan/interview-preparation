@@ -10,7 +10,7 @@ A repository for taking interview preparations.
 * [Database](/preparations/database.md)
 * [Others](/others/android.md)
 
-### Contributor Projects
+### Contributing Projects
 
 * [Mindorks - Android Interview Questions](https://github.com/MindorksOpenSource/android-interview-questions)
 * [Anitaa1990 - Android Cheat sheet](https://github.com/anitaa1990/Android-Cheat-sheet)
