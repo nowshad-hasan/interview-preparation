@@ -3,12 +3,12 @@ A repository for taking interview preparations.
 
 ### Topics
 
-* [Problem Solving]()
-* [Data Structure and Algorithm]()
-* [Java]()
+* [Problem Solving](/preparations/problem solving.md)
+* [Data Structure and Algorithm](/preparations/data structure and algorithm.md)
+* [Java](/preparations/java.md)
 * [Android](/preparations/android.md)
-* [Database]()
-* [Others]()
+* [Database](/preparations/database.md)
+* [Others](/others/android.md)
 
 ### Contributor Projects
 
