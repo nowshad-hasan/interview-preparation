@@ -1,9 +1,11 @@
-# interview-preperation
-A repository for all kinds of interview questions.
+# Interview Preparation
+A repository for taking interview preparations.
 
-To clear head for basic programming, we can solve the easiest problems here [52 Programming Problems](http://cpbook.subeen.com/p/blog-page_11.html) by Subeen.
+### Contributor Projects
 
-* [Read more](#read-more)
+* [Mindorks - Android Interview Questions](https://github.com/MindorksOpenSource/android-interview-questions)
+* [Anitaa1990 - Android Cheat sheet](https://github.com/anitaa1990/Android-Cheat-sheet)
+* [MaximAbramchuck - Awesome Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
 
 ### Read more
 * [Jwasham - Coding Interview University](https://github.com/jwasham/coding-interview-university)
