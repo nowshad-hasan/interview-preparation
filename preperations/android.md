@@ -7,7 +7,8 @@
 * [Views and ViewGroups](#views-and-viewgroups)
 * [Displaying Lists of Content](#displaying-lists-of-content)
 * [Background Processing](#background-processing)
-* [Architecture Components]
+* [Architecture Components](#architechture-components)
+* [Read more](#read-more)
 
 ### Basic things
 #### Base
@@ -78,7 +79,8 @@
 * Describe `Activity Lifecycle`</br>
   Reference - [Developer Android](https://developer.android.com/guide/components/activities/activity-lifecycle)</br>
   Video - [Coding in Flow](https://www.youtube.com/watch?v=UJN3AL4tiqw), [Udacity](https://www.youtube.com/watch?v=85MppyLJHz0)
-
+  <br/>
+      ![Activity Lifecycle Image](/image assets/activity_lifecycle.png)
 * What is `Application` class? [Codepath](https://github.com/codepath/android_guides/wiki/Understanding-the-Android-Application-Class), [Medium](https://medium.com/@balakrishnanpt/android-application-class-a8a1d64c82d1), [Developer Android](https://developer.android.com/reference/android/app/Application)
 
   * The Application class in Android is the base class within an Android app that contains all other components such as activities and services. The Application class, or any subclass of the Application class, is instantiated before any other class when the process for your application/package is created.</br>
@@ -163,6 +165,10 @@
     * ```onDestroyView()``` : Fragment view will destroy after call this method
     * ```onDestroy()``` :called to do final clean up of the fragment’s state but Not guaranteed to be called by the Android platform.</br>  
 
+    <br/>
+    ![Fragment Lifecycle Image](/image assets/fragment_lifecycle.png)
+
+
 * What is the difference between a `Fragment` and an `Activity`? Explain the relationship between the two.
   * An Activity is an application component that provides a screen, with which users can interact in order to do something whereas a Fragment represents a behavior or a portion of user interface in an Activity (with its own lifecycle and input events, and which can be added or removed at will).</br>
 
@@ -186,6 +192,13 @@
 * <b>You’re replacing one Fragment with another — how do you ensure that the user can return to the previous Fragment, by pressing the Back button?</b></br>
   * We need to save each Fragment transaction to the backstack, by calling ```addToBackStack()``` before you ```commit()``` that transaction</br>
 
+
+* What is the difference between `commit()` and `commitAllowingStateLoss()` in FragmentTransaction ?
+
+ * [Medium 1](https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1)
+ * [Medium 2](https://medium.com/inloopx/demystifying-androids-commitallowingstateloss-cb9011a544cc)
+ * [Blog 1](https://www.androiddesignpatterns.com/2013/08/fragment-transaction-commit-state-loss.html)
+ * [Blog 2](https://www.programering.com/a/MDO2cjNwATk.html)
 
 * How would you communicate between two Fragments? [Android Official](https://developer.android.com/training/basics/fragments/communicating.html)
 
@@ -352,6 +365,12 @@
 * What are the different types of Broadcasts? [Blog](https://www.edureka.co/blog/android-tutorials-broadcast-receivers/)
 
 ### Services
+
+* Explain Service Lifecycle
+
+ <br/>
+    ![Fragment Lifecycle Image](/image assets/service_lifecycle.png)
+
 
 * What is `Serivce`? [Developer Android](https://developer.android.com/guide/components/services), [Javatpoint](https://www.javatpoint.com/android-service-tutorial), [Tutorialspoint](https://www.tutorialspoint.com/android/android_services.htm), [Vogella](https://www.vogella.com/tutorials/AndroidServices/article.html), [Proandroiddev](https://proandroiddev.com/deep-dive-into-android-services-4830b8c9a09), [Tutlane](https://www.tutlane.com/tutorial/android/android-services-with-examples), [MindOrks](https://medium.com/mindorks/mastering-android-service-of-2018-a4a1df5ed5a6), [Blog 1](https://androidclarified.com/android-service-lifecycle-and-working/), [Blog 2](https://www.survivingwithandroid.com/android-service-tutorial-2/)
 
@@ -725,6 +744,18 @@
     * Bound Service: A service is bound when an application component binds to it by calling bindService(). A bound service offers a client-server interface that allows components to interact with the service, send requests, receive results. A bound service runs only as long as another application component is bound to it.</br>
 
 
+*    What is the difference between START_NOT_STICKY, START_STICKY AND START_REDELIVER_INTENT?<br/>
+
+        * **START_NOT_STICKY:**<br/>
+        If the system kills the service after onStartCommand() returns, do not recreate the service unless there are pending intents to deliver. This is the safest option to avoid running your service when not necessary and when your application can simply restart any unfinished jobs.<br/>
+
+        * **START_STICKY:**<br/>
+        If the system kills the service after onStartCommand() returns, recreate the service and call onStartCommand(), but do not redeliver the last intent. Instead, the system calls onStartCommand() with a null intent unless there are pending intents to start the service. In that case, those intents are delivered. This is suitable for media players (or similar services) that are not executing commands but are running indefinitely and waiting for a job.<br/>
+
+        * **START_REDELIVER_INTENT:**<br/>
+        If the system kills the service after onStartCommand() returns, recreate the service and call onStartCommand() with the last intent that was delivered to the service. Any pending intents are delivered in turn. This is *suitable for services that are actively performing a job that should be immediately resumed, such as downloading a file.*
+
+
  * <b>Difference between Service & Intent Service</b></br>
       * <b>Service</b> is the base class for Android services that can be extended to create any service. A class that directly extends Service runs on the main thread so it will block the UI (if there is one) and should therefore either be used only for short tasks or should make use of other threads for longer tasks.</br>  
       * <b>IntentService</b> is a subclass of Service that handles asynchronous requests (expressed as “Intents”) on demand. Clients send requests through startService(Intent) calls. The service is started as needed, handles each Intent in turn using a worker thread, and stops itself when it runs out of work.</br>
@@ -818,3 +849,14 @@
 * [Collection of Android and Java related questions and topics, including general developer questions, Java core, Data structures, Build Tools, Programming Paradigms, Core Android, Databases and etc](https://github.com/derekargueta/Android-Interview-Questions)
 * [Collection of Android and Java questions divided by experience](https://medium.com/@neteinstein/not-another-android-interviews-article-the-questions-3dedafa30bec)
 * [Android Interview Questions & How to Interview Candidates](https://pangara.com/blog/android-interview-questions)
+
+### Read more
+* [Derekargueta - Android-Interview-Questions](https://github.com/derekargueta/Android-Interview-Questions)
+
+* [Vamsitallapudi - Android-Interview-Questions-And-Answers](https://github.com/vamsitallapudi/Android-Interview-Questions-And-Answers)
+
+* [Siddhpatil - Android-Interview-Questions](https://github.com/siddhpatil6/Kotlin/wiki/Android-Interview-Questions)
+
+* [Moosphan - Android-Daily-Interview](https://github.com/Moosphan/Android-Daily-Interview)
+
+* [Farhad - Android-Interview](https://github.com/farhad/android-interview)

@@ -7,6 +7,7 @@
  - [Objects and Primitives](#objects-and-primitives)
  - [Java Memory Model and Garbage Collector](#java-memory-model-and-garbage-collector)
  - [Others](#others)
+ - [Read more](#read-more)
 
  ### Basic Problems
 
@@ -468,6 +469,8 @@
       * When stack memory is full, Java runtime throws java.lang.StackOverFlowError whereas if heap memory is full, it throws java.lang.OutOfMemoryError: Java Heap Space error.
       * Stack memory size is very less when compared to Heap memory. Because of simplicity in memory allocation (LIFO), stack memory is very fast when compared to heap memory.</br>   
 
+
+* **Explain Java stack vs heap memory.** [Journaldev](https://www.journaldev.com/4098/java-heap-space-vs-stack-memory)
 
 * **What is memory leak and how does Java handle it?**
 [Baeldung](https://www.baeldung.com/java-memory-leaks), [Stackify](https://stackify.com/memory-leaks-java/), [DZOne](https://dzone.com/articles/what-memory-leak-java), [GeeksforGeeks](https://www.geeksforgeeks.org/memory-leaks-java/), [Plumbr](https://plumbr.io/blog/memory-leaks/what-is-a-memory-leak)
@@ -940,3 +943,12 @@ parameter to create the generic class of specific type. The T type indicates tha
 * [Top 25 Most Frequently Asked Interview Core Java Interview Questions And Answers](http://javahungry.blogspot.com/2013/06/top-25-most-frequently-asked-core-java.html)
 * [Top 40 Core Java Interview Questions Answers from Telephonic Round](http://java67.blogspot.sg/2015/03/top-40-core-java-interview-questions-answers-telephonic-round.html)
 * [Interview Cake Java Interview Questions](https://www.interviewcake.com/java-interview-questions)
+* [Journaldev Core Java Interview Questions and Answers](https://www.journaldev.com/2366/core-java-interview-questions-and-answers)
+* [Journaldev Java Exception Interview Questions and Answers](https://www.journaldev.com/2167/java-exception-interview-questions-and-answers)
+
+
+### Read More
+
+* [Snowdream - 115-Java-Interview-Questions](http://snowdream.github.io/115-Java-Interview-Questions-and-Answers/115-Java-Interview-Questions-and-Answers/en/index.html)
+
+* [In28Minutes - Java Interview Questions And Answers](https://github.com/in28minutes/JavaInterviewQuestionsAndAnswers)
