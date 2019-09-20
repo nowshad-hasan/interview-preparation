@@ -260,7 +260,7 @@
 
 * <b>What is a SurfaceView?</b> [Google Developer Training](https://google-developer-training.github.io/android-developer-advanced-course-practicals/unit-5-advanced-graphics-and-views/lesson-11-canvas/11-2-p-create-a-surfaceview/11-2-p-create-a-surfaceview.html), [Medium](https://medium.com/@elye.project/surface-view-vs-view-the-differences-b8ad7808dc3c), [Developer android](https://developer.android.com/reference/android/view/SurfaceView)
 
-* <b>Relative Layout vs Linear Layout.<b> [MindOrks](https://blog.mindorks.com/android-layout-relative-linear-frame)
+* <b>Relative Layout vs Linear Layout.</b> [MindOrks](https://blog.mindorks.com/android-layout-relative-linear-frame)
 
 * <b>Do you know what is the view tree? How can you optimize its depth?</b> [Developer android](https://developer.android.com/studio/profile/hierarchy-viewer)
 
