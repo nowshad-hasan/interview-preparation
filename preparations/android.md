@@ -213,14 +213,14 @@
 
 * <b>What is the difference between `commit()` and `commitAllowingStateLoss()` in FragmentTransaction?</b>
 
- * [Medium 1](https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1)
- * [Medium 2](https://medium.com/inloopx/demystifying-androids-commitallowingstateloss-cb9011a544cc)
- * [Blog 1](https://www.androiddesignpatterns.com/2013/08/fragment-transaction-commit-state-loss.html)
- * [Blog 2](https://www.programering.com/a/MDO2cjNwATk.html)
+  * [Medium 1](https://medium.com/@bherbst/the-many-flavors-of-commit-186608a015b1)
+  * [Medium 2](https://medium.com/inloopx/demystifying-androids-commitallowingstateloss-cb9011a544cc)
+  * [Blog 1](https://www.androiddesignpatterns.com/2013/08/fragment-transaction-commit-state-loss.html)
+  * [Blog 2](https://www.programering.com/a/MDO2cjNwATk.html)
 
 * <b>How would you communicate between two Fragments?</b> [Android Official](https://developer.android.com/training/basics/fragments/communicating.html)
 
-* <b>What is retained `Fragment`?<b> [AndroidDesignPatterns](https://www.androiddesignpatterns.com/2013/04/retaining-objects-across-config-changes.html)
+* <b>What is retained `Fragment`?</b> [AndroidDesignPatterns](https://www.androiddesignpatterns.com/2013/04/retaining-objects-across-config-changes.html)
 
    By default, Fragments are destroyed and recreated along with their parent Activity’s when a configuration change occurs. Calling ```setRetainInstance(true)``` allows us to bypass this destroy-and-recreate cycle, signaling the system to retain the current instance of the fragment when the activity is recreated.</br>
 
