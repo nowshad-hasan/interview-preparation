@@ -9,6 +9,9 @@
 
 ##### MySQL
 
+* <b>What is Database?</b></br>
+A database is an organized collection of data, stored and retrieved digitally from a remote or local computer system. Databases can be vast and complex, and such databases are developed using fixed design and modeling approaches.
+
 * <b>Define SQL</b></br>
  SQL stands for Structured Query Language. SQL is a programming Language designed specially for managing data in Relational Database Management System (RDBMS).
 
@@ -17,6 +20,11 @@
 MySQL is an open-source relational database management system (RDBMS). The name is derived from a combination of “My” which stands for the name of the daughter of the co-founder Michael Widenius, and “SQL” which is stands for Structured Query Language.
 
 MySQL is owned by Oracle, though initially owned and sponsored by a single for-profit firm, the Swedish company MYSQLAB. The MYSQL development project makes its source code accessible under the GNU General Public License terms, including a range of propriety agreements. You can get various paid editions with additional functionality for propriety use.
+
+* <b>What is RDBMS? How is it different from DBMS?</b></br>
+RDBMS stands for Relational Database Management System. The key difference here, compared to DBMS, is that RDBMS stores data in the form of a collection of tables and relations can be defined between the common fields of these tables. Most modern database management systems like MySQL, Microsoft SQL Server, Oracle, IBM DB2 and Amazon Redshift are based on RDBMS.
+
+
 
 * <b>What is MySQL?</b></br>
 
@@ -96,6 +104,21 @@ The MySQL database server is very fast, reliable and easy to use. You can easily
 
 * <b>What is the difference between Primary Key and Unique Key?</b></br>
  Both Primary and Unique Key is implemented for Uniqueness of the column. Primary Key creates a clustered index of column where as an Unique creates unclustered index of column. Moreover, Primary Key doesn’t allow NULL value, however Unique Key does allows one NULL value.
+
+* <b>What are different types of keys in SQL?</b></br>
+Keys are a vital feature in RDMS, they are essentially fields that link one table to another and promote fast data retrieval and logging through managing column indexes.
+
+Different types of keys are:
+
+Primary Key – a unique key that identifies records in database tables. By unique it means that it must not be Null and must be unique in the table.
+
+Candidate Key – a unique field which identifies for column or group of columns independently, without any required reference to other fields.
+
+Alternate Key – can be substituted in use for Primary Keys but are considered as a secondary. The difference is that Alternate Keys can have a Null value, provided that the columns have data within them. A type of Candidate Key which is also required to be unique.
+
+Unique Key – Keys that offer restriction to prevent duplicate data within rows except for null entries.
+
+The other keys available are Foreign Keys, Super Keys, and Composite Keys.
 
 * <b> How to store picture file in the database. What Object type is used?</b></br>
  Storing Pictures in a database is a bad idea. To store picture in a database Object Type ‘Blob’ is recommended.
@@ -655,19 +678,850 @@ mysql mysql.out
 
 ##### SQL
 
+* <b>SQL Query to find second highest salary of Employee.</b></br>
+There are many ways to find second highest salary of Employee in SQL, you can either use SQL Join or Subquery to solve this problem. Here is SQL query using Subquery:
+`select MAX(Salary) from Employee WHERE Salary NOT IN (select MAX(Salary) from Employee ); `
+Read more: [Java Revisited](https://javarevisited.blogspot.com/2012/12/how-to-find-second-highest-or-maximum-salary-sql.html)
+
+* <b>SQL Query to find Max Salary from each department.</b></br>
+You can find the maximum salary for each department by grouping all records by DeptId and then using MAX() function to calculate maximum salary in each group or each department.
+`SELECT DeptID, MAX(Salary) FROM Employee  GROUP BY DeptID. `
+These questions become more interesting if Interviewer will ask you to print department name instead of department id, in that case, you need to join Employee table with Department using foreign key DeptID, make sure you do LEFT or RIGHT OUTER JOIN to include departments without any employee as well.  Here is the query.
+`SELECT DeptName, MAX(Salary) FROM Employee e RIGHT JOIN Department d ON e.DeptId = d.DeptID GROUP BY DeptName;`
+In this query, we have used RIGHT OUTER JOIN because we need the name of the department from Department table which is on the right side of JOIN clause, even if there is no reference of dept_id on Employee table.
+
+* <b>Write SQL Query to display the current date.</b></br>
+SQL has built-in function called GetDate() which returns the current timestamp. This will work in Microsoft SQL Server, other vendors like Oracle and MySQL also has equivalent functions.
+`SELECT GetDate(); `
+
+* <b>Write an SQL Query to check whether date passed to Query is the date of given format or not.</b></br>
+SQL has IsDate() function which is used to check passed value is a date or not of specified format, it returns 1(true) or 0(false) accordingly. Remember ISDATE() is an MSSQL function and it may not work on Oracle, MySQL or any other database but there would be something similar.
+`SELECT  ISDATE('1/08/13') AS "MM/DD/YY";`
+It will return 0 because passed date is not in correct format.
+
+* <b>Write an SQL Query to print the name of the distinct employee whose DOB is between 01/01/1960 to 31/12/1975.</b></br>
+This SQL query is tricky, but you can use BETWEEN clause to get all records whose date fall between two dates.
+`SELECT DISTINCT EmpName FROM Employees WHERE DOB  BETWEEN ‘01/01/1960’ AND ‘31/12/1975’;`
+
+* <b>Write an SQL Query find number of employees according to gender  whose DOB is between 01/01/1960 to 31/12/1975.</b></br>
+`SELECT COUNT(\*), sex from Employees  WHERE  DOB BETWEEN '01/01/1960' AND '31/12/1975'  GROUP BY sex;`
+
+* <b>Write an SQL Query to find an employee whose Salary is equal or greater than 10000.</b></br>
+`SELECT EmpName FROM  Employees WHERE  Salary>=10000;`
+
+* <b>Write an SQL Query to find name of employee whose name Start with ‘M’</b></br>
+`SELECT * FROM Employees WHERE EmpName like 'M%';`
+
+* <b>find all Employee records containing the word "Joe", regardless of whether it was stored as JOE, Joe, or joe.</b></br>
+`SELECT * from Employees  WHERE  UPPER(EmpName) like '%JOE%';`
+
+* <b>Write an SQL Query to find  the year from date.</b></br>
+Here is how you can find Year from a Date in SQL Server 2008 .
+`SELECT YEAR(GETDATE()) as "Year";`
+
+* <b> Write SQL Query to find duplicate rows in a database? and then write SQL query to delete them?</b></br>
+You can use the following query to select distinct records:
+`SELECT * FROM emp a WHERE rowid = (SELECT MAX(rowid) FROM EMP b WHERE a.empno=b.empno)`
+
+* <b>Write SQL Query to find duplicate rows in a database? and then write SQL query to delete them?</b></br>
+You can use the following query to select distinct records:
+`SELECT * FROM emp a WHERE rowid = (SELECT MAX(rowid) FROM EMP b WHERE a.empno=b.empno)`
+
+To delete:
+`DELETE FROM emp a WHERE rowid != (SELECT MAX(rowid) FROM emp b WHERE a.empno=b.empno);`
+
+* <b>There is a table which contains two column Student and Marks, you need to find all the students, whose marks are greater than average marks i.e. list of above average students.</b></br>
+This query can be written using subquery as shown below:
+`SELECT student, marks from table where marks > SELECT AVG(marks) from table) `
+![SQL Schema](/image%20assets/database_preparation_2.png)
+
+* <b>How do you find all employees which are also manager?</b></br>
+Note: You have given a standard employee table with an additional column mgr_id, which contains employee id of the manager.
+![Employee Manager](/image%20assets/database_preparation_1.png)
+Answer: You need to know about self-join to solve this problem. In Self Join, you can join two instances of the same table to find out additional details as shown below
+`SELECT e.name, m.name FROM Employee e, Employee m WHERE e.mgr_id = m.emp_id; `
+
+this will show employee name and manager name in two column e.g.
+
+name  manager_name
+John   David
+
+One follow-up is to modify this query to include employees which don't have a manager. To solve that, instead of using the inner join, just use left outer join, this will also include employees without managers.
+
+* <b>You have a composite index of three columns, and you only provide the value of two columns in WHERE clause of a select query? Will Index be used for this operation?</b>For example if Index is on EmpId, EmpFirstName, and EmpSecondName and you write query like</br>
+
+`SELECT * FROM Employee WHERE EmpId=2 and EmpFirstName='Radhe'`
+
+If the given two columns are secondary index column then the index will not invoke, but if the given 2 columns contain the primary index(first column while creating index) then the index will invoke. In this case, Index will be used because EmpId and EmpFirstName are primary columns.
+
+* <b>What does `UNION` do? What is the difference between `UNION` and `UNION ALL`?</b></br>
+
+UNION merges the contents of two structurally-compatible tables into a single combined table. The difference between UNION and UNION ALL is that UNION will omit duplicate records whereas UNION ALL will include duplicate records.
+
+It is important to note that the performance of UNION ALL will typically be better than UNION, since UNION requires the server to do the additional work of removing any duplicates. So, in cases where is is certain that there will not be any duplicates, or where having duplicates is not a problem, use of UNION ALL would be recommended for performance reasons.
+
+* <b>List and explain the different types of JOIN clauses supported in ANSI-standard SQL.</b></br>
+
+ANSI-standard SQL specifies five types of JOIN clauses as follows:
+
+ * INNER JOIN (a.k.a. “simple join”): Returns all rows for which there is at least one match in BOTH tables. This is the default type of join if no specific JOIN type is specified.
+
+ * LEFT JOIN (or LEFT OUTER JOIN): Returns all rows from the left table, and the matched rows from the right table; i.e., the results will contain all records from the left table, even if the JOIN condition doesn’t find any matching records in the right table. This means that if the ON clause doesn’t match any records in the right table, the JOIN will still return a row in the result for that record in the left table, but with NULL in each column from the right table.
+
+ * RIGHT JOIN (or RIGHT OUTER JOIN): Returns all rows from the right table, and the matched rows from the left table. This is the exact opposite of a LEFT JOIN; i.e., the results will contain all records from the right table, even if the JOIN condition doesn’t find any matching records in the left table. This means that if the ON clause doesn’t match any records in the left table, the JOIN will still return a row in the result for that record in the right table, but with NULL in each column from the left table.
+
+ * FULL JOIN (or FULL OUTER JOIN): Returns all rows for which there is a match in EITHER of the tables. Conceptually, a FULL JOIN combines the effect of applying both a LEFT JOIN and a RIGHT JOIN; i.e., its result set is equivalent to performing a UNION of the results of left and right outer queries.
+
+ * CROSS JOIN: Returns all records where each row from the first table is combined with each row from the second table (i.e., returns the Cartesian product of the sets of rows from the joined tables). Note that a CROSS JOIN can either be specified using the CROSS JOIN syntax (“explicit join notation”) or (b) listing the tables in the FROM clause separated by commas without using a WHERE clause to supply join criteria (“implicit join notation”).
+
+ * Self Join This is a particular case when one table joins to itself, with one or two aliases to avoid confusion. A self join can be of any type, as long as the joined tables are the same. A self join is rather unique in that it involves a relationship with only one table. The common example is when company has a hierarchal reporting structure whereby one member of staff reports to another. Self Join can be Outer Join or Inner Join.
+
+* <b>Write a SQL query using UNION ALL (not UNION) that uses the WHERE clause to eliminate duplicates. Why might you want to do this?</b></br>
+
+You can avoid duplicates using UNION ALL and still run much faster than UNION DISTINCT (which is actually same as UNION) by running a query like this:
+
+`SELECT * FROM mytable WHERE a=X UNION ALL SELECT * FROM mytable WHERE b=Y AND a!=X`
+The key is the AND a!=X part. This gives you the benefits of the UNION (a.k.a., UNION DISTINCT) command, while avoiding much of its performance hit.
+
+* <b>What is an execution plan? When would you use it? How would you view the execution plan?</b></br>
+
+An execution plan is basically a road map that graphically or textually shows the data retrieval methods chosen by the SQL server’s query optimizer for a stored procedure or ad hoc query. Execution plans are very useful for helping a developer understand and analyze the performance characteristics of a query or stored procedure, since the plan is used to execute the query or stored procedure.
+
+In many SQL systems, a textual execution plan can be obtained using a keyword such as EXPLAIN, and visual representations can often be obtained as well. In Microsoft SQL Server, the Query Analyzer has an option called “Show Execution Plan” (located on the Query drop down menu). If this option is turned on, it will display query execution plans in a separate window when a query is run.
+
+* <b>List and explain each of the ACID properties that collectively guarantee that database transactions are processed reliably.</b></br>
+
+ACID (Atomicity, Consistency, Isolation, Durability) is a set of properties that guarantee that database transactions are processed reliably. They are defined as follows:
+
+ * Atomicity. Atomicity requires that each transaction be “all or nothing”: if one part of the transaction fails, the entire transaction fails, and the database state is left unchanged. An atomic system must guarantee atomicity in each and every situation, including power failures, errors, and crashes.
+ * Consistency. The consistency property ensures that any transaction will bring the database from one valid state to another. Any data written to the database must be valid according to all defined rules, including constraints, cascades, triggers, and any combination thereof.
+ * Isolation. The isolation property ensures that the concurrent execution of transactions results in a system state that would be obtained if transactions were executed serially, i.e., one after the other. Providing isolation is the main goal of concurrency control. Depending on concurrency control method (i.e. if it uses strict - as opposed to relaxed - serializability), the effects of an incomplete transaction might not even be visible to another transaction.
+ * Durability. Durability means that once a transaction has been committed, it will remain so, even in the event of power loss, crashes, or errors. In a relational database, for instance, once a group of SQL statements execute, the results need to be stored permanently (even if the database crashes immediately thereafter). To defend against power loss, transactions (or their effects) must be recorded in a non-volatile memory.
+
+* <b>How can you select all the even number records from a table? All the odd number records?</b></br>
+
+To select all the even number records from a table:
+
+`Select * from table where id % 2 = 0`
+To select all the odd number records from a table:
+
+`Select * from table where id % 2 != 0`
+
+* <b>What are the NVL and the NVL2 functions in SQL? How do they differ?</b></br>
+Both the NVL(exp1, exp2) and NVL2(exp1, exp2, exp3) functions check the value exp1 to see if it is null.
+
+With the NVL(exp1, exp2) function, if exp1 is not null, then the value of exp1 is returned; otherwise, the value of exp2 is returned, but case to the same data type as that of exp1.
+
+With the NVL2(exp1, exp2, exp3) function, if exp1 is not null, then exp2 is returned; otherwise, the value of exp3 is returned.
+
+* <b>What is the purpose of the NVL function?</b></br>
+The NVL function converts a NULL value to an actual value.
+
+* <b>What is the difference between the RANK() and DENSE_RANK() functions? Provide an example.</b></br>
+The only difference between the RANK() and DENSE_RANK() functions is in cases where there is a “tie”; i.e., in cases where multiple values in a set have the same ranking. In such cases, RANK() will assign non-consecutive “ranks” to the values in the set (resulting in gaps between the integer ranking values when there is a tie), whereas DENSE_RANK() will assign consecutive ranks to the values in the set (so there will be no gaps between the integer ranking values in the case of a tie).
+
+For example, consider the set {25, 25, 50, 75, 75, 100}. For such a set, RANK() will return {1, 1, 3, 4, 4, 6} (note that the values 2 and 5 are skipped), whereas DENSE_RANK() will return {1,1,2,3,3,4}.
+
+* <b>What is the difference between the WHERE and HAVING clauses?</b></br>
+When GROUP BY is not used, the WHERE and HAVING clauses are essentially equivalent.
+
+However, when GROUP BYis used:
+
+ * The WHERE clause is used to filter records from a result. The filtering occurs before any groupings are made.
+ * The HAVING clause is used to filter values from a group (i.e., to check conditions after aggregation into groups has been performed).
+
+* <b>What is the difference between char and varchar2?</b></br>
+When stored in a database, varchar2 uses only the allocated space. E.g. if you have a varchar2(1999) and put 50 bytes in the table, it will use 52 bytes.
+
+But when stored in a database, char always uses the maximum length and is blank-padded. E.g. if you have char(1999) and put 50 bytes in the table, it will consume 2000 bytes.
+
+* <b>Can we insert a row for identity column implicitly?</b></br>
+Yes, like so:
+ ```SQL
+SET IDENTITY_INSERT TABLE1 ON
+
+INSERT INTO TABLE1 (ID,NAME)
+SELECT ID,NAME FROM TEMPTB1
+
+SET IDENTITY_INSERT OFF
+```
+
+* <b>How do you get the last id without the max function?</b></br>
+In MySQL:
+
+`select id from table order by id desc limit 1`
+In SQL Server:
+
+`select top 1 id from table order by id desc`
+
+* <b>What is the difference between IN and EXISTS?</b></br>
+
+IN:
+
+ * Works on List result set
+ * Doesn’t work on subqueries resulting in Virtual tables with multiple columns
+ * Compares every value in the result list
+ * Performance is comparatively SLOW for larger resultset of subquery
+
+EXISTS:
+
+ * Works on Virtual tables
+ * Is used with co-related queries
+ * Exits comparison when match is found
+ * Performance is comparatively FAST for larger resultset of subquery
+
+* <b>How can you use a CTE to return the fifth highest (or Nth highest) salary from a table?</b></br>
+```SQL
+Declare @N int
+set @N = 5;
+WITH CTE AS
+(
+    SELECT Name, Salary, EmpID, RN = ROW_NUMBER()
+	OVER (ORDER BY Salary DESC)
+    FROM Employee
+)
+SELECT Name, Salary, EmpID
+FROM CTE
+WHERE RN = @N
+```
+
+* <b>How do you get the Nth-highest salary from the Employee table without a subquery or CTE?</b></br>
+
+`SELECT salary from Employee order by salary DESC LIMIT 2,1`
+This will give the third-highest salary from the Employee table. Accordingly we can find out Nth salary using LIMIT (N-1),1.
+
+But MS SQL Server doesn’t support that syntax, so in that case:
+```SQL
+SELECT salary from Employee order by salary DESC
+OFFSET 2 ROWS
+FETCH NEXT 1 ROW ONLY
+OFFSET’s parameter corresponds to the (N-1) above.
+```
+
+* <b>How do you copy data from one table to another table?</b></br>
+```SQL
+INSERT INTO table2 (column1, column2, column3, ...)
+SELECT column1, column2, column3, ...
+FROM table1
+WHERE condition;
+```
+
+* <b>How to find a duplicate record?
+
+1. Duplicate records with one field
+
+2. Duplicate records with more than one field</b></br>
+
+1. Duplicate records with one field
+
+```SQL
+ SELECT name, COUNT(email)
+ FROM users
+ GROUP BY email
+ HAVING COUNT(email) > 1
+ ```
+2. Duplicate records with more than one field
+```SQL
+ SELECT name, email, COUNT(*)
+ FROM users
+ GROUP BY name, email
+ HAVING COUNT(*) > 1
+```
+
+* <b>Which TCP/IP port does SQL Server run on? How can it be changed?</b></br>
+SQL Server runs on port 1433. It can be changed from the Network Utility TCP/IP properties.
+
+* <b>What are the different index configurations a table can have?</b></br>
+A table can have one of the following index configurations:
+ * No indexes
+ * A clustered index
+ * A clustered index and many nonclustered indexes
+ * A nonclustered index
+ * Many nonclustered indexes
+
+* <b>What are different types of Collation Sensitivity?</b></br>
+ * Case sensitivity - A and a, B and b, etc.
+ * Accent sensitivity
+ * Kana Sensitivity - When Japanese kana characters Hiragana and Katakana are treated differently, it is called Kana sensitive.
+ * Width sensitivity - A single-byte character (half-width) and the same character represented as a double-byte character (full-width) are treated differently than it is width sensitive.
+
+* <b>What is OLTP (Online Transaction Processing)? </b></br>
+In OLTP - online transaction processing systems relational database design use the discipline of data modeling and generally follow the Codd rules of data normalization in order to ensure absolute data integrity. Using these rules complex information is broken down into its most simple structures (a table) where all of the individual atomic level elements relate to each other and satisfy the normalization rules.
+
+* <b>What is Data Integrity?</b></br>
+Data Integrity is the assurance of accuracy and consistency of data over its entire life-cycle, and is a critical aspect to the design, implementation and usage of any system which stores, processes, or retrieves data. It also defines integrity constraints to enforce business rules on the data when it is entered into an application or a database.
+
+* <b>What is difference between DELETE and TRUNCATE commands?</b></br>
+Delete command removes the rows from a table based on the condition that we provide with a WHERE clause. Truncate will actually remove all the rows from a table and there will be no data in the table after we run the truncate command.
+ **TRUNCATE:**
+ * TRUNCATE is faster and uses fewer system and transaction log resources than DELETE.
+ * TRUNCATE removes the data by deallocating the data pages used to store the table's data, and only the page deallocations are recorded in the transaction log.
+ * TRUNCATE removes all rows from a table, but the table structure, its columns, constraints, indexes and so on, remains. The counter used by an identity for new rows is reset to the seed for the column.
+ * You cannot use TRUNCATE TABLE on a table referenced by a FOREIGN KEY constraint. Because TRUNCATE TABLE is not logged, it cannot activate a trigger.
+ * TRUNCATE cannot be rolled back.
+ * TRUNCATE is DDL Command.
+ * TRUNCATE Resets identity of the table
+ **DELETE:**
+ * DELETE removes rows one at a time and records an entry in the transaction log for each deleted row.
+ * If you want to retain the identity counter, use DELETE instead. If you want to remove table definition and its data, use the DROP TABLE statement.
+ * DELETE Can be used with or without a WHERE clause
+ * DELETE Activates Triggers.
+ * DELETE can be rolled back.
+ * DELETE is DML Command.
+ * DELETE does not reset identity of the table.
+
+Note: DELETE and TRUNCATE both can be rolled back when surrounded by TRANSACTION if the current session is not closed. If TRUNCATE is written in Query Editor surrounded by TRANSACTION and if session is closed, it can not be rolled back but DELETE can be rolled back.
+
+* <b>When is the use of UPDATE_STATISTICS command?</b></br>
+This command is basically used when a large processing of data has occurred. If a large amount of deletions any modification or Bulk Copy into the tables has occurred, it has to update the indexes to take these changes into account. UPDATE_STATISTICS updates the indexes on these tables accordingly.
+
+* <b>What are the properties and different Types of Sub-Queries?</b></br>
+**Properties of Sub-Query**
+ * A sub-query must be enclosed in the parenthesis.
+ * A sub-query must be put in the right hand of the comparison operator, and
+ * A sub-query cannot contain an ORDER-BY clause.
+ * A query can contain more than one sub-query.
+**Types of Sub-Query**
+ * Single-row sub-query, where the sub-query returns only one row.
+ * Multiple-row sub-query, where the sub-query returns multiple rows,. and
+ * Multiple column sub-query, where the sub-query returns multiple columns
+
+* <b>What is SQL Profiler?</b></br>
+SQL Profiler is a graphical tool that allows system administrators to monitor events in an instance of Microsoft SQL Server. You can capture and save data about each event to a file or SQL Server table to analyze later. For example, you can monitor a production environment to see which stored procedures are hampering performances by executing too slowly.
+
+Use SQL Profiler to monitor only the events in which you are interested. If traces are becoming too large, you can filter them based on the information you want, so that only a subset of the event data is collected. Monitoring too many events adds overhead to the server and the monitoring process and can cause the trace file or trace table to grow very large, especially when the monitoring process takes place over a long period of time.
+
+* <b>What are the authentication modes in SQL Server? How can it be changed?</b></br>
+Windows mode and Mixed Mode - SQL and Windows. To change authentication mode in SQL Server click Start, Programs, Microsoft SQL Server and click SQL Enterprise Manager to run SQL Enterprise Manager from the Microsoft SQL Server program group. Select the server then from the Tools menu select SQL Server Configuration Properties, and choose the Security page.
+
+* <b>Which command using Query Analyzer will give you the version of SQL server and operating system?</b></br>
+`SELECT SERVERPROPERTY ('productversion'), SERVERPROPERTY ('productlevel'), SERVERPROPERTY ('edition').`
+
+* <b>What is SQL Server Agent?</b></br>
+SQL Server agent plays an important role in the day-to-day tasks of a database administrator (DBA). It is often overlooked as one of the main tools for SQL Server management. Its purpose is to ease the implementation of tasks for the DBA, with its full- function scheduling engine, which allows you to schedule your own jobs and scripts.
+
+* <b>Can a stored procedure call itself or recursive stored procedure? How much level SP nesting is possible?</b></br>
+Yes. Because Transact-SQL supports recursion, you can write stored procedures that call themselves. Recursion can be defined as a method of problem solving wherein the solution is arrived at by repetitively applying it to subsets of the problem. A common application of recursive logic is to perform numeric computations that lend themselves to repetitive evaluation by the same processing steps. Stored procedures are nested when one stored procedure calls another or executes managed code by referencing a CLR routine, type, or aggregate. You can nest stored procedures and managed code references up to 32 levels.
+
+* <b>What is Log Shipping?</b></br>
+Log shipping is the process of automating the backup of database and transaction log files on a production SQL server, and then restoring them onto a standby server. Enterprise Editions only supports log shipping. In log shipping the transactional log file from one server is automatically updated into the backup database on the other server. If one server fails, the other server will have the same db and can be used this as the Disaster Recovery plan. The key feature of log shipping is that it will automatically backup transaction logs throughout the day and automatically restore them on the standby server at defined interval.
+
+* <b>Name 3 ways to get an accurate count of the number of records in a table?</b></br>
+```SQL
+SELECT * FROM table1
+SELECT COUNT(*) FROM table1
+SELECT rows FROM sysindexes WHERE id = OBJECT_ID(table1) AND indid < 2
+```
+
+* <b>What does it mean to have QUOTED_IDENTIFIER ON? What are the implications of having it OFF?</b></br>
+When SET QUOTED_IDENTIFIER is ON, identifiers can be delimited by double quotation marks, and literals must be delimited by single quotation marks. When SET QUOTED_IDENTIFIER is OFF, identifiers cannot be quoted and must follow all Transact-SQL rules for identifiers.
+
+* <b>What is the difference between a Local and a Global temporary table?</b></br>
+ * A local temporary table exists only for the duration of a connection or, if defined inside a compound statement, for the duration of the compound statement.
+ * A global temporary table remains in the database permanently, but the rows exist only within a given connection. When connection is closed, the data in the global temporary table disappears. However, the table definition remains with the database for access when database is opened next time.
+
+* <b>What is the STUFF function and how does it differ from the REPLACE function?</b></br>
+STUFF function is used to overwrite existing characters. Using this syntax, STUFF (string_expression, start, length, replacement_characters), string_expression is the string that will have characters substituted, start is the starting position, length is the number of characters in the string that are substituted, and replacement_characters are the new characters interjected into the string. REPLACE function to replace existing characters of all occurrences. Using the syntax REPLACE (string_expression, search_string, replacement_string), where every incidence of search_string found in the string_expression will be replaced with replacement_string.
+
+* <b>What is PRIMARY KEY?</b></br>
+A PRIMARY KEY constraint is a unique identifier for a row within a database table. Every table should have a primary key constraint to uniquely identify each row and only one primary key constraint can be created for each table. The primary key constraints are used to enforce entity integrity.
+
+* <b>What is UNIQUE KEY constraint?</b></br>
+A UNIQUE constraint enforces the uniqueness of the values in a set of columns, so no duplicate values are entered. The unique key constraints are used to enforce entity integrity as the primary key constraints.
+
+* <b>What is FOREIGN KEY?</b></br>
+A FOREIGN KEY constraint prevents any actions that would destroy links between tables with the corresponding data values. A foreign key in one table points to a primary key in another table. Foreign keys prevent actions that would leave rows with foreign key values when there are no primary keys with that value. The foreign key constraints are used to enforce referential integrity.
+
+* <b>What is CHECK Constraint?</b></br>
+A CHECK constraint is used to limit the values that can be placed in a column. The check constraints are used to enforce domain integrity.
+
+* <b>What is NOT NULL Constraint?</b></br>
+A NOT NULL constraint enforces that the column will not accept null values. The not null constraints are used to enforce domain integrity, as the check constraints.
+
+* <b>How to get @@ERROR and @@ROWCOUNT at the same time?</b></br>
+If @@Rowcount is checked after Error checking statement then it will have 0 as the value of @@Recordcount as it would have been reset. And if @@Recordcount is checked before the error-checking statement then @@Error would get reset. To get @@error and @@rowcount at the same time do both in same statement and store them in local variable.
+
+`SELECT @RC = @@ROWCOUNT, @ER = @@ERROR`
+
+* <b>What is a Scheduled Jobs or What is a Scheduled Tasks?</b></br>
+Scheduled tasks let user automate processes that run on regular or predictable cycles. User can schedule administrative tasks, such as cube processing, to run during times of slow business activity. User can also determine the order in which tasks run by creating job steps within a SQL Server Agent job. E.g. back up database, Update Stats of Tables. Job steps give user control over flow of execution. If one job fails, user can configure SQL Server Agent to continue to run the remaining tasks or to stop execution.
+
+* <b>What are the advantages of using Stored Procedures?</b></br>
+ * Stored procedure can reduced network traffic and latency, boosting application performance.
+ * Stored procedure execution plans can be reused, staying cached in SQL Server's memory, reducing server overhead.
+ * Stored procedures help promote code reuse.
+ * Stored procedures can encapsulate logic. You can change stored procedure code without affecting clients.
+ * Stored procedures provide better security to your data.
+
+* <b>What is Hibernate and its relation to SQL?</b></br>
+Hibernate is Object Relational Mapping tool in Java. Hibernate let's us write object-oriented code and internally converts them to native SQL queries to execute against a relational database.
+
+Hibernate uses its own language like SQL which is called Hibernate Query Language(HQL). The difference is that HQL boasts on being able to query Hibernate’s entity objects.
+
+It also has an object-oriented query language in Hibernate which is called Criteria Query. It proves very beneficial and helpful to developers who primarily use objects in their front-end applications and Criteria Query can cater to those objects in even add SQL-like features such as security and restriction-access.
+
+* <b>How can we solve SQL Error: ORA-00904: invalid identifier?</b></br>
+This error usually appears due to syntax errors on calling a column name in Oracle database, notice the ORA identifier in the error code. Make sure you typed in the correct column name. Also, take special note on the aliases as they are the one being referenced in the error as the invalid identifier.
+
+* <b>What is a table called, if it has neither Cluster nor Non-cluster Index? What is it used for?</b></br>
+Unindexed table or Heap. Microsoft Press Books and Book on Line (BOL) refers it as Heap. A heap is a table that does not have a clustered index and, therefore, the pages are not linked by pointers. The IAM pages are the only structures that link the pages in a table together. Unindexed tables are good for fast storing of data. Many times it is better to drop all indexes from table and then do bulk of inserts and to restore those indexes after that.
+
+* <b>Can SQL Servers linked to other servers like Oracle?</b></br>
+SQL Server can be linked to any server provided it has OLE-DB provider from Microsoft to allow a link. E.g. Oracle has an OLE-DB provider for oracle that Microsoft provides to add it as linked server to SQL Server group.
+
+* <b>What is BCP? When does it used?</b></br>
+BulkCopy is a tool used to copy huge amount of data from tables and views. BCP does not copy the structures same as source to destination. BULK INSERT command helps to import a data file into a database table or view in a user-specified format.
+
+* <b>How to implement one-to-one, one-to-many and many-to-many relationships while designing tables?</b></br>
+One-to-One relationship can be implemented as a single table and rarely as two tables with primary and foreign key relationships. One-to-Many relationships are implemented by splitting the data into two tables with primary key and foreign key relationships. Many-to-Many relationships are implemented using a junction table with the keys from both the tables forming the composite primary key of the junction table.
+
+* <b>What is an execution plan? When would you use it? How would you view the execution plan?</b></br>
+An execution plan is basically a road map that graphically or textually shows the data retrieval methods chosen by the SQL Server query optimizer for a stored procedure or ad- hoc query and is a very useful tool for a developer to understand the performance characteristics of a query or stored procedure since the plan is the one that SQL Server will place in its cache and use to execute the stored procedure or query. From within Query Analyzer is an option called "Show Execution Plan" (located on the Query drop-down menu). If this option is turned on it will display query execution plan in separate window when query is ran again.
+
+* <b>What is RDBMS?</b></br>
+Relational Data Base Management Systems (RDBMS) are database management systems that maintain data records and indices in tables. Relationships may be created and maintained across and among the data and tables. In a relational database, relationships between data items are expressed by means of tables. Interdependencies among these tables are expressed by data values rather than by pointers. This allows a high degree of data independence. An RDBMS has the capability to recombine the data items from different files, providing powerful tools for data usage.
+
+* <b>What are the properties of the Relational tables?</b></br>
+Relational tables have six properties:
+ * Values are atomic.
+ * Column values are of the same kind.
+ * Each row is unique.
+ * The sequence of columns is insignificant.
+ * The sequence of rows is insignificant.
+ * Each column must have a unique name.
+
+* <b>What is Normalization?</b></br>
+Database normalization is a data design and organization process applied to data structures based on rules that help building relational databases. In relational database design, the process of organizing data to minimize redundancy is called normalization. Normalization usually involves dividing a database into two or more tables and defining relationships between the tables. The objective is to isolate data so that additions, deletions, and modifications of a field can be made in just one table and then propagated through the rest of the database via the defined relationships.
+
+* <b>What are different normalization forms?</b></br>
+ * 1NF: Eliminate Repeating Groups Make a separate table for each set of related attributes, and give each table a primary key. Each field contains at most one value from its attribute domain.
+ * 2NF: Eliminate Redundant Data If an attribute depends on only part of a multi-valued key, remove it to a separate table.
+ * 3NF: Eliminate Columns Not Dependent On Key If attributes do not contribute to a description of the key, remove them to a separate table. All attributes must be directly dependent on the primary key.
+ * BCNF: Boyce-Codd Normal Form If there are non-trivial dependencies between candidate key attributes, separate them out into distinct tables.
+ * 4NF: Isolate Independent Multiple Relationships No table may contain two or more 1:n or n:m relationships that are not directly related.
+ * 5NF: Isolate Semantically Related Multiple Relationships There may be practical constrains on information that justify separating logically related many-to-many relationships.
+ * ONF: Optimal Normal Form A model limited to only simple (elemental) facts, as expressed in Object Role Model notation.
+ * DKNF: Domain-Key Normal Form A model free from all modification anomalies is said to be in DKNF.
+Remember, these normalization guidelines are cumulative. For a database to be in 3NF, it must first fulfill all the criteria of a 2NF and 1NF database.
+
+* <b>What is Stored Procedure?</b></br>
+A stored procedure is a named group of SQL statements that have been previously created and stored in the server database. Stored procedures accept input parameters so that a single procedure can be used over the network by several clients using different input data. And when the procedure is modified, all clients automatically get the new version. Stored procedures reduce network traffic and improve performance. Stored procedures can be used to help ensure the integrity of the database.
+
+e.g. sp_helpdb, sp_renamedb, sp_depends etc.
+
+* <b>What is Nested Trigger?</b></br>
+A trigger can also contain INSERT, UPDATE and DELETE logic within itself, so when the trigger is fired because of data modification it can also cause another data modification, thereby firing another trigger. A trigger that contains data modification logic within itself is called a nested trigger.
+
+* <b>What is View?</b></br>
+A simple view can be thought of as a subset of a table. It can be used for retrieving data, as well as updating or deleting rows. Rows updated or deleted in the view are updated or deleted in the table the view was created with. It should also be noted that as data in the original table changes, so does data in the view, as views are the way to look at part of the original table. The results of using a view are not permanently stored in the database. The data accessed through a view is actually constructed using standard T-SQL select command and can come from one to many different base tables or even other views.
+
+* <b>What is Index?</b></br>
+An index is a physical structure containing pointers to the data. Indices are created in an existing table to locate rows more quickly and efficiently. It is possible to create an index on one or more columns of a table, and each index is given a name. The users cannot see the indexes; they are just used to speed up queries. Effective indexes are one of the best ways to improve performance in a database application. A table scan happens when there is no index available to help a query. In a table scan SQL Server examines every row in the table to satisfy the query results. Table scans are sometimes unavoidable, but on large tables, scans have a terrific impact on performance.
+
+* <b>What is a Linked Server?</b></br>
+Linked Servers is a concept in SQL Server by which we can add other SQL Server to a Group and query both the SQL Server dbs using T-SQL Statements. With a linked server, you can create very clean, easy to follow, SQL statements that allow remote data to be retrieved, joined and combined with local data. Stored Procedure sp_addlinkedserver, sp_addlinkedsrvlogin will be used add new Linked Server.
+
+* <b>What is Cursor?</b></br>
+Cursor is a database object used by applications to manipulate data in a set on a row-by- row basis, instead of the typical SQL commands that operate on all the rows in the set at one time.
+
+In order to work with a cursor we need to perform some steps in the following order:
+
+ * Declare cursor - DECLARE a cursor after any variable declaration. The cursor declaration must always be associated with a SELECT Statement.
+ * Open cursor - Open cursor to initialize the result set. The OPEN statement must be called before fetching rows from the result set.
+ * Fetch row from the cursor - FETCH statement to retrieve and move to the next row in the result set.
+ * Process fetched row
+ * Close cursor - Call the CLOSE statement to deactivate the cursor.
+ * Deallocate cursor - Finally use the DEALLOCATE statement to delete the cursor definition and release the associated resources.
+
+* <b>What is Collation?</b></br>
+Collation refers to a set of rules that determine how data is sorted and compared. Character data is sorted using rules that define the correct character sequence, with options for specifying case sensitivity, accent marks, kana character types and character width.
+
+* <b>What is Difference between Function and Stored Procedure?</b></br>
+UDF can be used in the SQL statements anywhere in the WHERE/HAVING/SELECT section where as Stored procedures cannot be. UDFs that return tables can be treated as another rowset. This can be used in JOINs with other tables. Inline UDF's can be thought of as views that take parameters and can be used in JOINs and other Rowset operations.
+
+* <b>What is sub-query? Explain properties of sub-query?</b></br>
+Sub-queries are often referred to as sub-selects, as they allow a SELECT statement to be executed arbitrarily within the body of another SQL statement. A sub-query is executed by enclosing it in a set of parentheses. Sub-queries are generally used to return a single row as an atomic value, though they may be used to compare values against multiple rows with the IN keyword.
+
+A subquery is a SELECT statement that is nested within another T-SQL statement. A subquery SELECT statement if executed independently of the T-SQL statement, in which it is nested, will return a resultset. Meaning a subquery SELECT statement can standalone and is not depended on the statement in which it is nested. A subquery SELECT statement can return any number of values, and can be found in, the column list of a SELECT statement, a FROM, GROUP BY, HAVING, and/or ORDER BY clauses of a T-SQL statement. A Subquery can also be used as a parameter to a function call. Basically a subquery can be used anywhere an expression can be used.
+
+* <b>What is User Defined Functions? What kind of User-Defined Functions can be created?</b></br>
+
+User-Defined Functions allow defining its own T-SQL functions that can accept 0 or more parameters and return a single scalar data value or a table data type.
+Different Kinds of User-Defined Functions created are:
+ * Scalar User-Defined Function: A Scalar user-defined function returns one of the scalar data types. Text, ntext, image and timestamp data types are not supported. These are the type of user-defined functions that most developers are used to in other programming languages. You pass in 0 to many parameters and you get a return value.
+ * Inline Table-Value User-Defined Function: An Inline Table-Value user-defined function returns a table data type and is an exceptional alternative to a view as the user-defined function can pass parameters into a T-SQL select command and in essence provide us with a parameterized, non-updateable view of the underlying tables.
+ * Multi-statement Table-Value User-Defined Function: A Multi-Statement Table-Value user-defined function returns a table and is also an exceptional alternative to a view as the function can support multiple T-SQL statements to build the final result where the view is limited to a single SELECT statement. Also, the ability to pass parameters into a TSQL select command or a group of them gives us the capability to in essence create a parameterized, non-updateable view of the data in the underlying tables. Within the create function command you must define the table structure that is being returned. After creating this type of user-defined function, It can be used in the FROM clause of a T-SQL command unlike the behavior found when using a stored procedure which can also return record sets.
+
+* <b>What is Identity? </b></br>
+Identity (or AutoNumber) is a column that automatically generates numeric values. A start and increment value can be set, but most DBA leave these at 1. A GUID column also generates numbers; the value of this cannot be controlled. Identity/GUID columns do not need to be indexed.
+
+* <b>What is Data Warehousing?</b></br>
+ * Subject-oriented, meaning that the data in the database is organized so that all the data elements relating to the same real-world event or object are linked together;
+ * Time-variant, meaning that the changes to the data in the database are tracked and recorded so that reports can be produced showing changes over time;
+ * Non-volatile, meaning that data in the database is never over-written or deleted, once committed, the data is static, read-only, but retained for future reporting.
+ * Integrated, meaning that the database contains data from most or all of an organization's operational applications, and that this data is made consistent.
+
+* <b>What is the difference between SQL and MySQL or SQL Server?</b></br>
+SQL or Structured Query Language is a language; language that communicates with a relational database thus providing ways of manipulating and creating databases. MySQL and Microsoft’s SQL Server both are relational database management systems that use SQL as their standard relational database language.
+
+* <b>What is the difference between SQL and PL/SQL?</b></br>
+SQL or Structured Query Language is a language which is used to communicate with a relational database. It provides a way to manipulate and create databases. On the other hand, PL/SQL is a dialect of SQL that adds procedural features of programming languages in SQL. It was developed by Oracle Corporation in the early 90's to enhance the capabilities of SQL.
+Read more: [GeeksforGeeks](https://www.geeksforgeeks.org/sql-interview-questions/)
+
+* <b>What are various DDL commands in SQL? Give brief description of their purposes.</b></br>
+
+Following are various DDL or Data Definition Language commands in SQL −
+
+ * CREATE − it creates a new table, a view of a table, or other object in database.
+ * ALTER − it modifies an existing database object, such as a table.
+ * DROP − it deletes an entire table, a view of a table or other object in the database.
+
+* <b>What are various DML commands in SQL? Give brief description of their purposes.</b></br>
+Following are various DML or Data Manipulation Language commands in SQL −
+
+ * SELECT − it retrieves certain records from one or more tables.
+ * INSERT − it creates a record.
+ * UPDATE − it modifies records.
+ * DELETE − it deletes records.
+
+* <b>What are various DCL commands in SQL? Give brief description of their purposes.</b></br>
+Following are various DCL or Data Control Language commands in SQL −
+
+ * GRANT − it gives a privilege to user.
+
+ * REVOKE − it takes back privileges granted from user.
+
+* <b>Can you sort a column using a column alias?</b></br>
+ Yes. A column alias could be used in the ORDER BY clause.
+
+* <b>What is Transaction Control Language (TCL)?</b></br>
+TCL is a category of SQL commands which primarily deals with the database transaction and save points. These keywords implement the SQL functions and logic defined by the developer into the database structure and behavior. Examples of these TCL commands are:
+
+ * COMMIT – used to commit a transaction
+
+ * ROLLBACK – in any advent of errors, transaction rollback is invoked by this keyword.
+
+ * SAVEPOINT – keyword representing the reverting point of rollback
+
+ * SET TRANSACTION – sets the specifics of the transaction
+
+* <b>Is a NULL value same as zero or a blank space? If not then what is the difference?</b></br>
+ A NULL value is not same as zero or a blank space. A NULL value is a value which is ‘unavailable, unassigned, unknown or not applicable’. Whereas, zero is a number and blank space is a character.
+
+* <b>If a table contains duplicate rows, does a query result display the duplicate values by default? How can you eliminate duplicate rows from a query result?</b></br>
+ A query result displays all rows including the duplicate rows. To eliminate duplicate rows in the result, the DISTINCT keyword is used in the SELECT clause.
+
+* <b>How do you search for a value in a database table when you don’t have the exact value to search for?</b></br>
+ In such cases, the LIKE condition operator is used to select rows that match a character pattern. This is also called ‘wildcard’ search.
+
+* <b>What is the default ordering of data using the ORDER BY clause? How could it be changed?</b></br>
+ The default sorting order is ascending. It can be changed using the DESC keyword, after the column name in the ORDER BY clause.
+
+* <b>What are the specific uses of SQL functions?</b></br>
+
+SQL functions have the following uses −
+
+ * Performing calculations on data
+
+ * Modifying individual data items
+
+ * Manipulating the output
+
+ * Formatting dates and numbers
+
+ * Converting data types
+
+* <b>What are the case manipulation functions of SQL?</b></br>
+
+There are three types of case manipulation functions available in SQL. They are,
+ * LOWER: The purpose of this function is to return the string in lowercase. It takes a string as argument and returns the string by converting it into lower case.
+Syntax:
+`LOWER('string')`
+* UPPER:The purpose of this function is to return the string in uppercase. It takes a string as argument and returns the string by converting it into uppercase.
+Syntax:
+`UPPER('string')`
+ * INITCAP:The purpose of this function is to return the string with first letter in uppercase and rest of the letters in lowercase.
+Syntax:
+`INITCAP('string')`
+
+* <b>What is the use of the NULLIF function?</b></br>
+ The NULLIF function compares two expressions. If they are equal, the function returns null. If they are not equal, the first expression is returned.
+
+* <b>Discuss the syntax and use of the COALESCE function?</b></br>
+The COALESCE function has the expression COALESCE(exp1, exp2, …. expn)
+
+It returns the first non-null expression given in the parameter list.
+
+* <b>Which expressions or functions allow you to implement conditional processing in a SQL statement?</b></br>
+There are two ways to implement conditional processing or IF-THEN-ELSE logic in a SQL statement.
+
+ * Using CASE expression
+
+ * Using the DECODE function
+
+* <b>You want to display a result query from joining two tables with 20 and 10 rows respectively. Erroneously you forget to write the WHERE clause. What would be the result?</b></br>
+
+The result would be the Cartesian product of two tables with 20 x 10 = 200 rows.
+
+* <b>What is the difference between cross joins and natural joins?</b></br>
+ The cross join produces the cross product or Cartesian product of two tables. The natural join is based on all the columns having same name and data types in both the tables.
+
+* <b>What is the purpose of the group functions in SQL? Give some examples of group functions.</b></br>
+
+Group functions in SQL work on sets of rows and returns one result per group. Examples of group functions are AVG, COUNT, MAX, MIN, STDDEV, SUM, VARIANCE.
+
+* <b>What’s wrong in the following query?
+```SQL
+   SELECT subject_code, AVG (marks)
+   FROM students
+   WHERE AVG(marks) > 75
+   GROUP BY subject_code;
+   ```
+   </b></br>
+   The WHERE clause cannot be used to restrict groups. The HAVING clause should be used.
+  ```SQL
+     SELECT subject_code, AVG (marks)
+     FROM students
+     HAVING AVG(marks) > 75
+     GROUP BY subject_code;
+     ```
+* <b>Say True or False. Give explanation if False.
+Group functions cannot be nested.</b></br>
+False. Group functions can be nested to a depth of two.
+
+* <b>How do you insert null values in a column while inserting data?</b></br>
+
+Null values can be inserted into a table by one of the following ways −
+
+ * Implicitly by omitting the column from the column list.
+ * Explicitly by specifying the NULL keyword in the VALUES clause.
+
+* <b>What happens if you omit the WHERE clause in the UPDATE statement?</b></br>
+All the rows in the table are modified.
+
+* <b>Can you modify the rows in a table based on values from another table? Explain.</b></br>
+Yes. Use of subqueries in UPDATE statements allow you to update rows in a table based on values from another table.
+
+* <b>What happens if you omit the WHERE clause in a delete statement?</b></br>
+All the rows in the table are deleted.
+
+* <b>Can you remove rows from a table based on values from another table? Explain.</b></br>
+Yes, subqueries can be used to remove rows from a table based on values from another table.
+
+* <b>What is the purpose of the MERGE statement in SQL?</b></br>
+The MERGE statement allows conditional update or insertion of data into a database table. It performs an UPDATE if the rows exists, or an INSERT if the row does not exist.
+
+* <b>Which SQL statement is used to add, modify or drop columns in a database table?</b></br>
+The ALTER TABLE statement.
+
+* <b>What are Constraints in SQL?</b></br>
+
+Constraints are used to specify the rules concerning data in the table. It can be applied for single or multiple fields in an SQL table during creation of table or after creationg using the ALTER TABLE command. The constraints are:
+
+ * NOT NULL - Restricts NULL value from being inserted into a column.
+ * CHECK - Verifies that all values in a field satisfy a condition.
+ * DEFAULT - Automatically assigns a default value if no value has been specified for the field.
+ * UNIQUE - Ensures unique values to be inserted into the field.
+ * INDEX - Indexes a field providing faster retrieval of records.
+ * PRIMARY KEY - Uniquely identifies each record in a table.
+ * FOREIGN KEY - Ensures referential integrity for a record in another table.
+
+* <b>What are UNION, MINUS and INTERSECT command</b></br>
+The UNION operator combines and returns the result-set retrieved by two or more SELECT statements.
+The MINUS operator in SQL is used to remove duplicates from the result-set obtained by the second SELECT query from the result-set obtained by the first SELECT query and then return the filtered results from the first.
+The INTERSECT clause in SQL combines the result-set fetched by the two SELECT statements where records from one match the other and then returns this intersection of result-sets.
+
+Certain conditions need to be met before executing either of the above statements in SQL -
+
+ * Each SELECT statement within the clause must have the same number of columns
+ * The columns must also have similar data types
+ * The columns in each SELECT statement should necessarily have the same order
+
+* <b>What are Entities and Relationships?</b></br>
+Entity: An entity can be a real-world object, either tangible or intangible, that can be easily identifiable. For example, in a college database, students, professors, workers, departments, and projects can be referred to as entities. Each entity has some associated properties that provide it an identity.
+
+Relationships: Relations or links between entities that have something to do with each other. For example - The employees table in a company's database can be associated with the salary table in the same database.
+
+* <b>List the different types of relationships in SQL.</b></br>
+ * One-to-One - This can be defined as the relationship between two tables where each record in one table is associated with the maximum of one record in the other table.
+ * One-to-Many & Many-to-One - This is the most commonly used relationship where a record in a table is associated with multiple records in the other table.
+ * Many-to-Many - This is used in cases when multiple instances on both sides are needed for defining a relationship.
+ * Self Referencing Relationships - This is used when a table needs to define a relationship with itself.
+
+* <b>What is an Alias in SQL?</b></br>
+An alias is a feature of SQL that is supported by most, if not all, RDBMSs. It is a temporary name assigned to the table or table column for the purpose of a particular SQL query. In addition, aliasing can be employed as an obfuscation technique to secure the real names of database fields. A table alias is also called a correlation name .
+
+An alias is represented explicitly by the AS keyword but in some cases the same can be performed without it as well. Nevertheless, using the AS keyword is always a good practice.
+
+* <b>What are Aggregate and Scalar functions?</b></br>
+An aggregate function performs operations on a collection of values to return a single scalar value. Aggregate functions are often used with the GROUP BY and HAVING clauses of the SELECT statement. Following are the widely used SQL aggregate functions:
+
+ * AVG() - Calculates the mean of a collection of values.
+ * COUNT() - Counts the total number of records in a specific table or view.
+ * MIN() - Calculates the minimum of a collection of values.
+ * MAX() - Calculates the maximum of a collection of values.
+ * SUM() - Calculates the sum of a collection of values.
+ * FIRST() - Fetches the first element in a collection of values.
+ * LAST() - Fetches the last element in a collection of values.
+Note: All aggregate functions described above ignore NULL values except for the COUNT function.
+
+A scalar function returns a single value based on the input value. Following are the widely used SQL scalar functions:
+
+ * LEN() - Calculates the total length of the given field (column).
+ * UCASE() - Converts a collection of string values to uppercase characters.
+ * LCASE() - Converts a collection of string values to lowercase characters.
+ * MID() - Extracts substrings from a collection of string values in a table.
+ * CONCAT() - Concatenates two or more strings.
+ * RAND() - Generates a random collection of numbers of given length.
+ * ROUND() - Calculates the round off integer value for a numeric field (or decimal point values).
+ * NOW() - Returns the current data & time.
+ * FORMAT() - Sets the format to display a collection of values.
+
+* <b>What is a Stored Procedure?</b></br>
+A stored procedure is a subroutine available to applications that access a relational database management system (RDBMS). Such procedures are stored in the database data dictionary. The sole disadvantage of stored procedure is that it can be executed nowhere except in the database and occupies more memory in the database server. It also provides a sense of security and functionality as users who can't access the data directly can be granted access via stored procedures.
+
+* <b>What is a Recursive Stored Procedure?</b></br>
+A stored procedure which calls itself until a boundary condition is reached, is called a recursive stored procedure. This recursive function helps the programmers to deploy the same set of code several times as and when required. Some SQL programming languages limit the recursion depth to prevent an infinite loop of procedure calls from causing a stack overflow, which slows down the system and may lead to system crashes.
+
+* <b>How to create empty tables with the same structure as another table?</b></br>
+
+Creating empty tables with the same structure can be done smartly by fetching the records of one table into a new table using the INTO operator while fixing a WHERE clause to be false for all records. Hence, SQL prepares the new table with a duplicate structure to accept the fetched records but since no records get fetched due to the WHERE clause in action, nothing is inserted into the new table.
+```SQL
+SELECT * INTO Students_copy
+FROM Students WHERE 1 = 2;
+```
+* <b>How can we link a SQL database to an existing Android App?</b></br>
+It will require a JDBC (Java Database Connectivity) driver to link these two. Also, you must add the corresponding dependencies to your build.gradle file along with the permissions and grants.
+
+* <b>What are transaction and its controls?</b></br>
+A transaction can be defined as the sequence task that is performed on databases in a logical manner to gain certain results. Operations performed like Creating, updating, deleting records in the database comes from transactions.
+
+In simple word, we can say that a transaction means a group of SQL queries executed on database records.
+
+There are 4 transaction controls such as
+
+ * COMMIT: It is used to save all changes made through the transaction
+ * ROLLBACK: It is used to roll back the transaction such as all changes made by the transaction are reverted back and database remains as before
+ * SET TRANSACTION: Set the name of transaction
+ * SAVEPOINT: It is used to set the point from where the transaction is to be rolled back
+
+* <b>Explain the working of SQL Privileges?</b></br>
+SQL GRANT and REVOKE commands are used to implement privileges in SQL multiple user environments.  The administrator of the database can grant or revoke privileges to or from users of database object like SELECT, INSERT, UPDATE, DELETE, ALL etc.
+
+ * GRANT Command: This command is used provide database access to user apart from an administrator.
+```SQL
+ GRANT privilege_name
+ON object_name
+TO {user_name|PUBLIC|role_name}
+[WITH GRANT OPTION];
+```
+In above syntax WITH GRANT OPTIONS indicates that the user can grant the access to another user too.
+
+ * REVOKE Command: This command is used provide database deny or remove access to database objects.
+```SQL
+ REVOKE privilege_name
+ON object_name
+FROM {user_name|PUBLIC|role_name};
+```
+
+* <b>How many types of Privileges are available in SQL?</b></br>
+There are two types of privileges used in SQL, such as
+
+ * System Privilege: System privileges deal with an object of a particular type and specifies the right to perform one or more actions on it which include Admin allows a user to perform administrative tasks, ALTER ANY INDEX, ALTER ANY CACHE GROUP CREATE/ALTER/DELETE TABLE, CREATE/ALTER/DELETE VIEW etc.
+ * Object Privilege: This allows to perform actions on an object or object of another user(s) viz. table, view, indexes etc. Some of the object privileges are EXECUTE, INSERT, UPDATE, DELETE, SELECT, FLUSH, LOAD, INDEX, REFERENCES etc.
+
+* <b>What is SQL Injection?</b></br>
+SQL Injection is a type of database attack technique where malicious SQL statements are inserted into an entry field of database such that once it is executed the database is opened for an attacker. This technique is usually used for attacking Data-Driven Applications to have an access to sensitive data and perform administrative tasks on databases.
+
+For Example: `SELECT column_name(s) FROM table_name WHERE condition;`
+
+* <b>What is SQL Sandbox in SQL Server?</b></br>
+SQL Sandbox is the safe place in SQL Server Environment where untrusted scripts are executed. There are 3 types of SQL sandbox, such as
+
+ * Safe Access Sandbox: Here a user can perform SQL operations such as creating stored procedures, triggers etc. but cannot have access to the memory and cannot create files.
+ * External Access Sandbox: User can have access to files without having a right to manipulate the memory allocation.
+ * Unsafe Access Sandbox: This contains untrusted codes where a user can have access to memory.
+
+* <b>What is the Cartesian product of table?</b></br>
+The output of Cross Join is called as a Cartesian product. It returns rows combining each row from the first table with each row of the second table. For Example, if we join two tables having 15 and 20 columns the Cartesian product of two tables will be 15×20=300 Rows.
+
+* <b>What is the difference between Nested Subquery and Correlated Subquery?</b></br>
+Subquery within another subquery is called as Nested Subquery.  If the output of a subquery is depending on column values of the parent query table then the query is called Correlated Subquery.
+
+`SELECT adminid(SELEC Firstname+' ‘+Lastname  FROM Employee WHERE
+empid=emp. adminid)AS EmpAdminId FROM Employee`
+
+This query gets details of an employee from the Employee table.
+
+* <b> What do we need to check in Database Testing?</b></br>
+Generally, in Database Testing following thing is need to be tested
+
+ * Database Connectivity
+ * Constraint Check
+ * Required Application Field and its size
+ * Data Retrieval and Processing With DML operations
+ * Stored Procedures
+ * Functional flow
+
+* <b>What is Database White Box Testing?</b></br>
+Database White Box Testing involves
+
+ * Database Consistency and ACID properties
+ * Database triggers and logical views
+ * Decision Coverage, Condition Coverage, and Statement Coverage
+ * Database Tables, Data Model, and Database Schema
+ * Referential integrity rules
+
+* <b>What is Database Black Box Testing?</b></br>
+
+Database Black Box Testing involves
+
+ * Data Mapping
+ * Data stored and retrieved
+ * Use of Black Box techniques such as Equivalence Partitioning and Boundary Value Analysis (BVA)
+
+* <b>What is identity in SQL?</b></br>
+An identity column in the SQL automatically generates numeric values. We can define a start and increment value of the identity column.
+
+* <b>What do you mean by ROWID?</b></br>
+It’s an 18 character long pseudo column attached with each row of a table.
+
+* <b>What is Case Function?</b></br>
+Case facilitates if-then-else type of logic in SQL. It evaluates a list of conditions and returns one of the multiple possible result expressions.
+
+* <b>Define a temp table.</b></br>
+A temp table is a temporary storage structure to store the data temporarily.
+
+* <b>Explain the difference between Rename and Alias?</b></br>
+Rename is a permanent name given to a table or column whereas Alias is a temporary name given to a table or column.
+
+* <b> What are the advantages of Views?</b></br>
+Advantages of Views:
+
+ * Views restrict access to the data because the view can display selective columns from the table.
+ * Views can be used to make simple queries to retrieve the results of complicated queries. For example, views can be used to query information from multiple tables without the user knowing.
+
+* <b>Can a View based on another View?</b></br>
+Yes, A View is based on another View.
+
+* <b>What is the difference between Local and Global temporary table?</b></br>
+If defined in inside a compound statement a local temporary table exists only for the duration of that statement but a global temporary table exists permanently in the DB but its rows disappear when the connection is closed.
+
+* <b>What is CTE?</b></br>
+A CTE or common table expression is an expression which contains temporary result set which is defined in a SQL statement.
+* <b></b></br>
 * [10 Frequently asked SQL Query Interview Questions](http://java67.blogspot.com.by/2013/04/10-frequently-asked-sql-query-interview-questions-answers-database.html)
-* [45 Essential SQL Interview Questions from Toptal](http://www.toptal.com/sql/interview-questions)
+* [45 Essential SQL Interview Questions from Toptal](http://www.toptal.com/sql/interview-questions) (Must Read)
 * [Common Interview Questions and Answers](http://www.indiabix.com/technical/sql-server-common-questions/)
 * [General Interview Questions and Answers](http://www.indiabix.com/technical/sql-server-general-questions/)
-* [Schema, Questions & Solutions for SQL Exercising](https://github.com/XD-DENG/SQL-exercise)
-* [SQL Interview Questions that have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of SQL](http://www.tutorialspoint.com/sql/sql_interview_questions.htm)
-* [SQL Interview Questions CHEAT SHEET](https://www.interviewbit.com/sql-interview-questions/)
+* [Schema, Questions & Solutions for SQL Exercising](https://github.com/XD-DENG/SQL-exercise) (Must Read)
+* [SQL Interview Questions that have been designed specially to get you acquainted with the nature of questions you may encounter during your interview for the subject of SQL](http://www.tutorialspoint.com/sql/sql_interview_questions.htm) (Must Read for TRUE-FALSE Questions)
+* [SQL Interview Questions CHEAT SHEET](https://www.interviewbit.com/sql-interview-questions/) (Must Read)
 * [SQL Journaldev Questions](https://www.journaldev.com/17773/sql-interview-questions-answers)
 * [SQL 50 Popular SQL Interview Questions for Testers](https://www.softwaretestinghelp.com/50-popular-sql-interview-questions-for-testers/)
-* [10 Frequently Asked SQL Query Interview Questions Answers](https://www.java67.com/2013/04/10-frequently-asked-sql-query-interview-questions-answers-database.html)
 * [GeeksforGeeks SQL Interview Questions](https://www.geeksforgeeks.org/sql-interview-questions/)
-* [50 SQL Query Questions and Answers for Practice](https://www.techbeamers.com/sql-query-questions-answers-for-practice/)
-* [SQL Queries for Interview](https://artoftesting.com/interviewSection/sql-queries-for-interview.html)
+* [50 SQL Query Questions and Answers for Practice](https://www.techbeamers.com/sql-query-questions-answers-for-practice/) (Must Read)
+* [SQL Queries for Interview](https://artoftesting.com/interviewSection/sql-queries-for-interview.html) (Must Read)
 
 ##### SQL Lite
 
