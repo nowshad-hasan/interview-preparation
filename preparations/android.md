@@ -406,7 +406,7 @@
 ### Background Processing
 * <b>Explain Service Lifecycle</b> </br>
 
-    ![Service Lifecycle Image](/image%20assets/service_lifecycle.png)
+     ![Service Lifecycle Image](/image%20assets/service_lifecycle.png)
 
 * <b>What is a `JobScheduler`?</b> [Vogella](http://www.vogella.com/tutorials/AndroidTaskScheduling/article.html), [Developer android](https://developer.android.com/reference/android/app/job/JobScheduler), [Medium](https://medium.com/google-developers/scheduling-jobs-like-a-pro-with-jobscheduler-286ef8510129)
 
