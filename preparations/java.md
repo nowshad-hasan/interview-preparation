@@ -34,21 +34,19 @@
   Read more: [Stackoverflow](https://stackoverflow.com/questions/146576/why-is-the-java-main-method-static), [GeeksforGeeks](https://www.geeksforgeeks.org/understanding-static-in-public-static-void-main-in-java/)
 
 
-
-
 * **Java Platforms**
 
- There are four platforms of the Java programming language:
+  There are four platforms of the Java programming language:
 
- - Java Platform, Standard Edition (Java SE)
+  * Java Platform, Standard Edition (Java SE)
 
- - Java Platform, Enterprise Edition (Java EE)
+  * Java Platform, Enterprise Edition (Java EE)
 
- - Java Platform, Micro Edition (Java ME)
+  * Java Platform, Micro Edition (Java ME)
 
- - JavaFX </br>
+  * JavaFX </br>
 
- Read more: [Oracle](https://docs.oracle.com/javaee/6/firstcup/doc/gkhoy.html), [Stackoverflow](https://stackoverflow.com/questions/2857376/difference-between-java-se-ee-me), [Packtpub](https://subscription.packtpub.com/book/application_development/9781787127944/1/ch01lvl1sec12/java-editions)
+  Read more: [Oracle](https://docs.oracle.com/javaee/6/firstcup/doc/gkhoy.html), [Stackoverflow](https://stackoverflow.com/questions/2857376/difference-between-java-se-ee-me), [Packtpub](https://subscription.packtpub.com/book/application_development/9781787127944/1/ch01lvl1sec12/java-editions)
 
 ### JVM
 
@@ -129,24 +127,26 @@
        * Overloaded methods CAN declare new or broader checked exceptions
        * A method can be overloaded in the same class or in a subclass </br>
 
-      Read more: [Beginnersbook](https://beginnersbook.com/2013/05/method-overloading/), [JavatPoint](https://www.javatpoint.com/method-overloading-in-java), [GeeksforGeeks](https://www.geeksforgeeks.org/overloading-in-java/)
+    Read more: [Beginnersbook](https://beginnersbook.com/2013/05/method-overloading/), [JavatPoint](https://www.javatpoint.com/method-overloading-in-java), [GeeksforGeeks](https://www.geeksforgeeks.org/overloading-in-java/)
 
 * <b>What is Method overriding?</b></br>
      * Method overriding occurs when sub class declares a method that has the same type arguments as a method declared by one of its superclass
      * You can’t override a method marked public and make it protected
      * You cannot override a method marked final
      * You cannot override a method marked static
-     * Note: Static methods cannot be overridden. Overloaded methods can still be overridden. </br></br>
-     Read more: [GeeksforGeeks](https://www.geeksforgeeks.org/overriding-in-java/), [JavatPoint](https://www.javatpoint.com/method-overriding-in-java), [Beginnersbook](https://beginnersbook.com/2014/01/method-overriding-in-java-with-example/)</br></br>
+     * Note: Static methods cannot be overridden. Overloaded methods can still be overridden. </br>
+   
+   Read more: [GeeksforGeeks](https://www.geeksforgeeks.org/overriding-in-java/), [JavatPoint](https://www.javatpoint.com/method-overriding-in-java), [Beginnersbook](https://beginnersbook.com/2014/01/method-overriding-in-java-with-example/)</br></br>
 
 * <b>Why would you not call abstract method in constructor?</b></br>
      The problem is that the class is not yet fully initialized, and when the method is called in a subclass, it may cause trouble.</br>
 
 * <b>Constructors vs Methods? [GeeksforGeeks](https://www.geeksforgeeks.org/difference-between-the-constructors-and-methods/) </b></br>
-     * <b>Constructors</b> must have the name as the class name and does not have a return type. It can be used to instantiate any objects in the class whereas methods have no such rule and is another member of the class. Constructors cannot be inherited but a derived class can call the super constructor of parent class.
+   <b>Constructors:</b> Constructors must have the name as the class name and does not have a return type. It can be used to instantiate any objects in the class whereas methods have no such rule and is another member of the class. Constructors cannot be inherited but a derived class can call the super constructor of parent class.
      * ```this()```: Constructors use this to refer to another constructor in the same class with a different parameter list.
      * ```super()```: Constructors use super to invoke the superclass's constructor.
-     * <b>Methods</b>: Instance methods on the other hand require an instance of the class to exist before they can be called, so an instance of a class needs to be created by using the new keyword. Class methods are methods which are declared as static. The method can be called without creating an instance of the class</br>
+     
+   <b>Methods:</b> Instance methods on the other hand require an instance of the class to exist before they can be called, so an instance of a class needs to be created by using the new keyword. Class methods are methods which are declared as static. The method can be called without creating an instance of the class</br>
 
 * <b>Difference between Encapsulation & Abstraction?</b> [Guru99](https://www.guru99.com/difference-between-abstraction-and-encapsulation.html), [Javarevisited](https://javarevisited.blogspot.com/2017/04/difference-between-abstraction-and-encapsulation-in-java-oop.html)</br>
      * <b>Abstraction</b> focuses on the outside view of an object (i.e. the interface)
@@ -306,7 +306,8 @@
  * StringJoiner -  [GeeksforGeeks](https://www.geeksforgeeks.org/use-stringjoiner-stringbuilder/), [Baeldung](https://www.baeldung.com/java-string-joiner)
  * String concatenation techniques- [Baeldung](https://www.baeldung.com/java-strings-concatenation)
  * **How is `String` class implemented? Why was it made immutable?**
-  - There is no primitive variant of `String` class in Java language - all strings are just wrappers around underlying array of characters, which is declared `final`. This means that, once a `String` object is instantiated, it cannot be changed through normal tools of the language (Reflection still can mess things up horribly, because in Java no object is truly immutable). This is why `String` variables in classes are the first candidates to be used, when you want to override `hashCode()` and `equals()` of your class - you can be sure, that all their required contracts will be satisfied.
+ 
+   There is no primitive variant of `String` class in Java language - all strings are just wrappers around underlying array of characters, which is declared `final`. This means that, once a `String` object is instantiated, it cannot be changed through normal tools of the language (Reflection still can mess things up horribly, because in Java no object is truly immutable). This is why `String` variables in classes are the first candidates to be used, when you want to override `hashCode()` and `equals()` of your class - you can be sure, that all their required contracts will be satisfied.
     > Note: The String class is immutable, so that once it is created a String object cannot be changed. The String class  has a number of methods, some of which will be discussed below, that appear to modify strings. Since strings are  immutable, what these methods really do is create and return a new string that contains the result of the operation. ([Official Java Documentation](https://docs.oracle.com/javase/tutorial/java/data/strings.html))
 
     This class is also unique in a sense, that, when you create an instance like this:
@@ -321,7 +322,8 @@
   - `String` was made immutable to prevent malicious manipulation of data, when, for example, user login or other sensitive data is being send to a server.
 
 * **What does it means to say that a `String` is immutable?**
-    - It means that once created, `String` object's `char[]` (its' containing value) is declared `final` and, therefore, it can not be changed during runtime.
+
+    It means that once created, `String` object's `char[]` (its' containing value) is declared `final` and, therefore, it can not be changed during runtime.
 
 
 * **What is `String.intern()`? When and why should it be used?** [Stackoverflow](https://stackoverflow.com/questions/10578984/what-is-java-string-interning), [GeeksforGeeks](https://www.geeksforgeeks.org/interning-of-string/)
@@ -345,10 +347,12 @@
 
 
 * **What is the difference between an Integer and int?**
-  - `int` is a primitive data type (with `boolean`, `byte`, `char`, `short`, `long`, `float` and `double`), while `Integer` (with `Boolean`, `Byte`, `Character`, `Short`,`Long`, `Float` and `Double`) is a [wrapper](https://docs.oracle.com/javase/tutorial/java/data/numberclasses.html) class that encapsulates primitive data type, while providing useful methods to perform different tasks with it. Read more from [GeeksforGeeks](https://www.geeksforgeeks.org/difference-between-an-integer-and-int-in-java/). </br></br>
+
+  `int` is a primitive data type (with `boolean`, `byte`, `char`, `short`, `long`, `float` and `double`), while `Integer` (with `Boolean`, `Byte`, `Character`, `Short`,`Long`, `Float` and `Double`) is a [wrapper](https://docs.oracle.com/javase/tutorial/java/data/numberclasses.html) class that encapsulates primitive data type, while providing useful methods to perform different tasks with it. Read more from [GeeksforGeeks](https://www.geeksforgeeks.org/difference-between-an-integer-and-int-in-java/). </br></br>
 
 * **What is Autoboxing and Unboxing?**
-  - Autoboxing and Unboxing is the process of automatic wrapping (putting in a box) and unwrapping (getting the value out) of primitive data types, that have "wrapper" classes. So `int` and `Integer` can (almost always) be used interchangeably in Java language, meaning a method `void giveMeInt(int i) { ... }` can take `int` as well as `Integer` as a parameter. </br>
+
+  Autoboxing and Unboxing is the process of automatic wrapping (putting in a box) and unwrapping (getting the value out) of primitive data types, that have "wrapper" classes. So `int` and `Integer` can (almost always) be used interchangeably in Java language, meaning a method `void giveMeInt(int i) { ... }` can take `int` as well as `Integer` as a parameter. </br>
 
   Read more: [Oracle](https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html), [GeeksforGeeks](https://www.geeksforgeeks.org/autoboxing-unboxing-java/)
 
@@ -364,7 +368,8 @@
 
 
 * **Do objects get passed by reference or value in Java? Elaborate on that.**
-    - In Java all primitives and objects are passed by value, meaning that their copy will be manipulated in the receiving method. But there is a caveat - when you pass an object reference into a method, a *copy of this reference* is made, so it still points to the same object. This means, that any changes that you make to the insides of this object are retained, when the method exits.
+
+    In Java all primitives and objects are passed by value, meaning that their copy will be manipulated in the receiving method. But there is a caveat - when you pass an object reference into a method, a *copy of this reference* is made, so it still points to the same object. This means, that any changes that you make to the insides of this object are retained, when the method exits.
         ```java
         public class Pointer {
 
@@ -443,9 +448,9 @@
 * **What the difference between local, instance and class variables?**
   - Local variables exist only in methods that created them, they are stored separately in their respected Thread Stack (for more information, see question about Java Memory Model) and cannot have their reference passed outside of the method scope. That also means that they cannot be assigned any access modifier or made `static` - because they only exist during enclosing method's execution and those modifiers just do not make sense, since no other outside method can get them anyway.
   - Instance variables are the ones, that are declared in classes and their value can be different from one instance of the class to another, but they always require that class' instance to exist.
-  - Class variables are those, that are marked with `static` keyword in their class' body. They can only have one value across all instances of that class (changing it in one place will change it in their class and, therefore, in all instances) and can even be retrieved without that class' instance (if their access modifier allows it).</br></br>
+  - Class variables are those, that are marked with `static` keyword in their class' body. They can only have one value across all instances of that class (changing it in one place will change it in their class and, therefore, in all instances) and can even be retrieved without that class' instance (if their access modifier allows it).</br>
 
- Read more: [Tutorialspoint](https://www.tutorialspoint.com/java/java_variable_types.htm), [GeeksforGeeks](https://www.geeksforgeeks.org/variables-in-java/), [Guru99](https://www.guru99.com/java-variables.html)
+  Read more: [Tutorialspoint](https://www.tutorialspoint.com/java/java_variable_types.htm), [GeeksforGeeks](https://www.geeksforgeeks.org/variables-in-java/), [Guru99](https://www.guru99.com/java-variables.html)
 
 ### Java Memory Model and Garbage Collector
 
@@ -461,7 +466,7 @@
 
 * **What is Java Memory Model? What contracts does it guarantee? How are its' Heap and Stack organized?** [Jenkov](http://tutorials.jenkov.com/java-concurrency/java-memory-model.html), [Journaldev](https://www.journaldev.com/2856/java-jvm-memory-model-memory-management-in-java), [Medium](https://medium.com/platform-engineer/understanding-java-memory-model-1d0863f6d973), [Baeldung](https://www.baeldung.com/java-stack-heap), [Betsol](https://betsol.com/2017/06/java-memory-management-for-java-virtual-machine-jvm/), [GeeksforGeeks](https://www.geeksforgeeks.org/java-memory-management/)
 
- * Stack is used for static memory allocation and Heap for dynamic memory allocation, both stored in the computer's RAM .
+  * Stack is used for static memory allocation and Heap for dynamic memory allocation, both stored in the computer's RAM .
   * Variables allocated on the stack are stored directly to the memory and access to this memory is very fast, and it's allocation is dealt with when the program is compiled. When a function or a method calls another function which in turns calls another function etc., the execution of all those functions remains suspended until the very last function returns its value. The stack is always reserved in a LIFO order, the most recently reserved block is always the next block to be freed. This makes it really simple to keep track of the stack, freeing a block from the stack is nothing more than adjusting one pointer.
   * Variables allocated on the heap have their memory allocated at run time and accessing this memory is a bit slower, but the heap size is only limited by the size of virtual memory . Element of the heap have no dependencies with each other and can always be accessed randomly at any time. You can allocate a block at any time and free it at any time. This makes it much more complex to keep track of which parts of the heap are allocated or free at any given time.
   * You can use the stack if you know exactly how much data you need to allocate before compile time and it is not too big. You can use heap if you don't know exactly how much data you will need at runtime or if you need to allocate a lot of data.
@@ -561,9 +566,10 @@
             }
         ```
 </br>
-
-        Read more: [GeeksforGeeks](https://www.geeksforgeeks.org/serialization-in-java/), [Baeldung](https://www.baeldung.com/java-serialization), [JavaTPoint](https://www.javatpoint.com/serialization-in-java), [DZone](https://dzone.com/articles/serialization-amp-de-serialization-in-java)
-    - Parcelable requires a bit more work:
+   Read more: [GeeksforGeeks](https://www.geeksforgeeks.org/serialization-in-java/), [Baeldung](https://www.baeldung.com/java-serialization), [JavaTPoint](https://www.javatpoint.com/serialization-in-java), [DZone](https://dzone.com/articles/serialization-amp-de-serialization-in-java)
+    
+   * Parcelable requires a bit more work:
+    
         ```java
             public class User implements Parcelable {
 
@@ -647,22 +653,22 @@
 
 * **What are anonymous classes?** [OracleDoc](https://docs.oracle.com/javase/tutorial/java/javaOO/anonymousclasses.html), [Baeldung](https://www.baeldung.com/java-anonymous-classes), [GeeksforGeeks](https://www.geeksforgeeks.org/anonymous-inner-class-java/)
 
- * An anonymous class is just what its name implies -- it has no name. It combines the class declaration and the creation of an instance of the class in one step. Since anonymous classes have no name, objects can not be instantiated from outside the class in which the anonymous class is defined. In fact, an anonymous object can only be instantiated from within the same scope in which it is defined. </br>
+  * An anonymous class is just what its name implies -- it has no name. It combines the class declaration and the creation of an instance of the class in one step. Since anonymous classes have no name, objects can not be instantiated from outside the class in which the anonymous class is defined. In fact, an anonymous object can only be instantiated from within the same scope in which it is defined. </br>
 
- * Rules:
-   * An anonymous class must always extend a super class or implement an interface but it cannot have an explicit extends or implements clause.
-   * An anonymous class must implement all the abstract methods in the super class or the interface.
-   * An anonymous class always uses the default constructor from the super class to create an instance.
-   * Example:
+  * Rules:
+    * An anonymous class must always extend a super class or implement an interface but it cannot have an explicit extends or implements clause.
+    * An anonymous class must implement all the abstract methods in the super class or the interface.
+    * An anonymous class always uses the default constructor from the super class to create an instance.
+    * Example:
 
-   ```java
-   MyButton.setOnClickListener(new Button.OnClickListener {
+    ```java
+    MyButton.setOnClickListener(new Button.OnClickListener {
           @override
              public void onClick(View view){
                  //some code
              }
       });
-  ```    
+    ```    
 </br>
 
 * **What is the difference between using `==` and `.equals` on an object?**  [GeeksForGeeks](http://www.geeksforgeeks.org/difference-equals-method-java/), [Stackoverflow](https://stackoverflow.com/questions/7520432/what-is-the-difference-between-and-equals-in-java)
