@@ -171,7 +171,7 @@
 
 * <b>What is `Fragment`?</b> [MindOrks](https://blog.mindorks.com/android-fragments-and-its-lifecycle)
 
- Fragment is a UI entity attached to Activity. Fragments can be reused by attaching in different activities. Activity can have multiple fragments attached to it. Fragment must be attached to an activity and its lifecycle will depend on its host activity.</br>
+  Fragment is a UI entity attached to Activity. Fragments can be reused by attaching in different activities. Activity can have multiple fragments attached to it. Fragment must be attached to an activity and its lifecycle will depend on its host activity.</br>
 
 
 * <b>Describe fragment lifecycle</b></br>
