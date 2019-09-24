@@ -406,7 +406,7 @@
 ### Background Processing
 * <b>Explain Service Lifecycle</b>
 
- <br/>
+ </br>
     ![Service Lifecycle Image](/image%20assets/service_lifecycle.png)
 
 * <b>What is a `JobScheduler`?</b> [Vogella](http://www.vogella.com/tutorials/AndroidTaskScheduling/article.html), [Developer android](https://developer.android.com/reference/android/app/job/JobScheduler), [Medium](https://medium.com/google-developers/scheduling-jobs-like-a-pro-with-jobscheduler-286ef8510129)
@@ -458,13 +458,14 @@
 
   * <b>What is a Job Scheduling?</b></br>
 
-   * Job Scheduling api, as the name suggests, allows to schedule jobs while letting the system optimize based on memory, power, and connectivity conditions.
-   * The JobScheduler supports batch scheduling of jobs. The Android system can combine jobs so that battery consumption is reduced. JobManager makes handling uploads easier as it handles automatically the unreliability of the network. It also survives application restarts.
-   * Scenarios:
-     * Tasks that should be done once the device is connect to a power supply
-     * Tasks that require network access or a Wi-Fi connection.
-     * Task that are not critical or user facing
-     * Tasks that should be running on a regular basis as batch where the timing is not critical
+    * Job Scheduling api, as the name suggests, allows to schedule jobs while letting the system optimize based on memory, power, and connectivity conditions.
+    * The JobScheduler supports batch scheduling of jobs. The Android system can combine jobs so that battery consumption is reduced. JobManager makes handling uploads easier as it handles automatically the unreliability of the network. It also survives application restarts.
+    * Scenarios:
+      * Tasks that should be done once the device is connect to a power supply
+      * Tasks that require network access or a Wi-Fi connection.
+      * Task that are not critical or user facing
+      * Tasks that should be running on a regular basis as batch where the timing is not critical
+
     * [Reference](http://www.vogella.com/tutorials/AndroidTaskScheduling/article.html#schedulingtasks) </br>
 
 
@@ -546,11 +547,11 @@
   We can also register a Handler and pass data using Handlers. I have detailed a sample implementation on this. You can check it out [here](https://medium.com/@anitaa_1990/how-to-update-an-activity-from-background-service-or-a-broadcastreceiver-6dabdb5cef74)</br>
 
 
-  * <b>Read more about background processing:</b>
-   * [Raywenderlich](https://www.raywenderlich.com/5306-android-background-processing)
-   * [AndroidPub](https://android.jlelse.eu/8-ways-to-do-asynchronous-processing-in-android-and-counting-f634dc6fae4e)
-   * [JournalDev](https://www.journaldev.com/9708/android-asynctask-example-tutorial)
-   * [Vogella](https://www.vogella.com/tutorials/AndroidBackgroundProcessing/article.html)
+  * <b>Read more about background processing:</b></br>
+    * [Raywenderlich](https://www.raywenderlich.com/5306-android-background-processing)
+    * [AndroidPub](https://android.jlelse.eu/8-ways-to-do-asynchronous-processing-in-android-and-counting-f634dc6fae4e)
+    * [JournalDev](https://www.journaldev.com/9708/android-asynctask-example-tutorial)
+    * [Vogella](https://www.vogella.com/tutorials/AndroidBackgroundProcessing/article.html)
 
 ### Optimization
 
@@ -591,11 +592,13 @@
 
 * <b>Explain Android notification system.</b> [Developer android](https://developer.android.com/guide/topics/ui/notifiers/notifications), [Material design](https://material.io/design/platform-guidance/android-notifications.html)
 
-* <b>What is the difference between Serializable and Parcelable? Which is the best approach in Android?</b>
- * Serializable is a standard Java interface. Parcelable is an Android specific interface where you implement the serialization yourself. It was created to be far more efficient than Serializable (The problem with this approach is that reflection is used and it is a slow process. This mechanism also tends to create a lot of temporary objects and cause quite a bit of garbage collection.).
- * Serialization Serialization is the process of converting an object into a stream of bytes in order to store an object into memory, so that it can be recreated at a later time, while still keeping the object's original state and data.
+* <b>What is the difference between Serializable and Parcelable? Which is the best approach in Android?</b></br>
+
+  * Serializable is a standard Java interface. Parcelable is an Android specific interface where you implement the serialization yourself. It was created to be far more efficient than Serializable (The problem with this approach is that reflection is used and it is a slow process. This mechanism also tends to create a lot of temporary objects and cause quite a bit of garbage collection).
+  * Serialization Serialization is the process of converting an object into a stream of bytes in order to store an object into memory, so that it can be recreated at a later time, while still keeping the object's original state and data.
+
  * <b>How to disallow serialization?</b> We can declare the variable as transient.</br>
- * Have you developed widgets? Describe. [MindOrks](https://blog.mindorks.com/android-widgets-ad3d166458d3)
+ * <b>Have you developed widgets?</b> Describe. [MindOrks](https://blog.mindorks.com/android-widgets-ad3d166458d3)
 
 
 * <b>What is AAPT?</b> [Developer android](https://developer.android.com/studio/command-line/aapt2), [Stackoverflow](https://stackoverflow.com/questions/28234671/what-is-aapt-android-asset-packaging-tool-and-how-does-it-work/49259810)
@@ -661,9 +664,9 @@
    </br>
 
 
-  * <b>What’s the difference between commit() and apply() in SharedPreferences?</b></br>
-    * ```commit()``` writes the data synchronously and returns a boolean value of success or failure depending on the result immediately.
-    * ```apply()``` is asynchronous and it won’t return any boolean response. Also if there is an apply() outstanding and we perform another commit(). The commit() will be blocked until the apply() is not completed.</br>
+* <b>What’s the difference between commit() and apply() in SharedPreferences?</b></br>
+  * ```commit()``` writes the data synchronously and returns a boolean value of success or failure depending on the result immediately.
+  * ```apply()``` is asynchronous and it won’t return any boolean response. Also if there is an apply() outstanding and we perform another commit(). The commit() will be blocked until the apply() is not completed.</br>
 
 * <b>What is Android Jetpack?</b> [MindOrks](https://blog.mindorks.com/what-is-android-jetpack-and-why-should-we-use-it)
 
@@ -699,12 +702,12 @@
 * <b>Implement Search Using RxJava Operators.</b> [MindOrks](https://blog.mindorks.com/implement-search-using-rxjava-operators-c8882b64fe1d)
 
 * <b>APK Size Reduction.</b>
- * Enable proguard in your project by adding following lines to your release build type.
- * Enable shrinkResources.
- * Strip down all the unused locale resources by adding required resources name in “resConfigs”.
- * Convert all the images to the webp or vector drawables.
+  * Enable proguard in your project by adding following lines to your release build type.
+  * Enable shrinkResources.
+  * Strip down all the unused locale resources by adding required resources name in “resConfigs”.
+  * Convert all the images to the webp or vector drawables.
 
- Read more: [Medium](https://medium.com/exploring-code/how-you-can-decrease-application-size-by-60-in-only-5-minutes-47eff3e7874e), [MindOrks](https://blog.mindorks.com/how-to-reduce-apk-size-in-android-2f3713d2d662)
+  Read more: [Medium](https://medium.com/exploring-code/how-you-can-decrease-application-size-by-60-in-only-5-minutes-47eff3e7874e), [MindOrks](https://blog.mindorks.com/how-to-reduce-apk-size-in-android-2f3713d2d662)
 </br>  
 
 * <b>How to reduce build time of an Android app?</b></br>
