@@ -135,7 +135,7 @@
      * You cannot override a method marked final
      * You cannot override a method marked static
      * Note: Static methods cannot be overridden. Overloaded methods can still be overridden. </br>
-   
+
    Read more: [GeeksforGeeks](https://www.geeksforgeeks.org/overriding-in-java/), [JavatPoint](https://www.javatpoint.com/method-overriding-in-java), [Beginnersbook](https://beginnersbook.com/2014/01/method-overriding-in-java-with-example/)</br></br>
 
 * <b>Why would you not call abstract method in constructor?</b></br>
@@ -145,7 +145,7 @@
    <b>Constructors:</b> Constructors must have the name as the class name and does not have a return type. It can be used to instantiate any objects in the class whereas methods have no such rule and is another member of the class. Constructors cannot be inherited but a derived class can call the super constructor of parent class.
      * ```this()```: Constructors use this to refer to another constructor in the same class with a different parameter list.
      * ```super()```: Constructors use super to invoke the superclass's constructor.
-     
+
    <b>Methods:</b> Instance methods on the other hand require an instance of the class to exist before they can be called, so an instance of a class needs to be created by using the new keyword. Class methods are methods which are declared as static. The method can be called without creating an instance of the class</br>
 
 * <b>Difference between Encapsulation & Abstraction?</b> [Guru99](https://www.guru99.com/difference-between-abstraction-and-encapsulation.html), [Javarevisited](https://javarevisited.blogspot.com/2017/04/difference-between-abstraction-and-encapsulation-in-java-oop.html)</br>
@@ -306,7 +306,7 @@
  * StringJoiner -  [GeeksforGeeks](https://www.geeksforgeeks.org/use-stringjoiner-stringbuilder/), [Baeldung](https://www.baeldung.com/java-string-joiner)
  * String concatenation techniques- [Baeldung](https://www.baeldung.com/java-strings-concatenation)
  * **How is `String` class implemented? Why was it made immutable?**
- 
+
    There is no primitive variant of `String` class in Java language - all strings are just wrappers around underlying array of characters, which is declared `final`. This means that, once a `String` object is instantiated, it cannot be changed through normal tools of the language (Reflection still can mess things up horribly, because in Java no object is truly immutable). This is why `String` variables in classes are the first candidates to be used, when you want to override `hashCode()` and `equals()` of your class - you can be sure, that all their required contracts will be satisfied.
     > Note: The String class is immutable, so that once it is created a String object cannot be changed. The String class  has a number of methods, some of which will be discussed below, that appear to modify strings. Since strings are  immutable, what these methods really do is create and return a new string that contains the result of the operation. ([Official Java Documentation](https://docs.oracle.com/javase/tutorial/java/data/strings.html))
 
@@ -566,10 +566,11 @@
             }
         ```
 </br>
+
    Read more: [GeeksforGeeks](https://www.geeksforgeeks.org/serialization-in-java/), [Baeldung](https://www.baeldung.com/java-serialization), [JavaTPoint](https://www.javatpoint.com/serialization-in-java), [DZone](https://dzone.com/articles/serialization-amp-de-serialization-in-java)
-    
+
    * Parcelable requires a bit more work:
-    
+
         ```java
             public class User implements Parcelable {
 
