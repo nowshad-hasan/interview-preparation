@@ -404,9 +404,8 @@
 * <b>What are different ways to store data in your Android app?</b> [Developer Android](https://developer.android.com/guide/topics/data/data-storage)
 
 ### Background Processing
-* <b>Explain Service Lifecycle</b>
+* <b>Explain Service Lifecycle</b> </br>
 
- </br>
     ![Service Lifecycle Image](/image%20assets/service_lifecycle.png)
 
 * <b>What is a `JobScheduler`?</b> [Vogella](http://www.vogella.com/tutorials/AndroidTaskScheduling/article.html), [Developer android](https://developer.android.com/reference/android/app/job/JobScheduler), [Medium](https://medium.com/google-developers/scheduling-jobs-like-a-pro-with-jobscheduler-286ef8510129)
