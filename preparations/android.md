@@ -226,13 +226,14 @@
   * [Blog 1](https://www.androiddesignpatterns.com/2013/08/fragment-transaction-commit-state-loss.html)
   * [Blog 2](https://www.programering.com/a/MDO2cjNwATk.html)
 
-* <b>How would you communicate between two Fragments?</b> [Android Official](https://developer.android.com/training/basics/fragments/communicating.html)
+* <b>How would you communicate between two Fragments?</b> [Developer Android](https://developer.android.com/training/basics/fragments/communicating.html)
 
 * <b>What is retained `Fragment`?</b> [AndroidDesignPatterns](https://www.androiddesignpatterns.com/2013/04/retaining-objects-across-config-changes.html)
 
    By default, Fragments are destroyed and recreated along with their parent Activity’s when a configuration change occurs. Calling ```setRetainInstance(true)``` allows us to bypass this destroy-and-recreate cycle, signaling the system to retain the current instance of the fragment when the activity is recreated.</br>
 
 * <b>Callbacks invoked during addition of a fragment to back stack and while popping back from back stack:</b></br>
+
  `addOnBackStackChangedListener` is called when fragment is added or removed from the backstack. Use this [link](https://why-android.com/2016/03/29/learn-how-to-use-the-onbackstackchangedlistener/) for reference.</br>
 
 
@@ -353,10 +354,10 @@
 
 * <b>What is `Intent`?</b> [StackOverflow](https://stackoverflow.com/questions/6578051/what-is-an-intent-in-android), [Developer android](https://developer.android.com/guide/components/intents-filters), [Vogella](https://www.vogella.com/tutorials/AndroidIntent/article.html)
 
- * Intents are messages that can be used to pass information to the various components of android. For instance, launch an activity, open a webview etc.</br>
+  Intents are messages that can be used to pass information to the various components of android. For instance, launch an activity, open a webview etc.</br>
    Two types of intents-
- * <b>Implicit:</b> Implicit intent is when you call system default intent like send email, send SMS, dial number.</br>
- * <b>Explicit:</b> Explicit intent is when you call an application activity from another activity of the same application. Read more from [StackOverflow](https://stackoverflow.com/questions/10272699/what-is-the-different-between-explicit-and-implicit-activity-call-in-android/20728603).</br>
+  * <b>Implicit:</b> Implicit intent is when you call system default intent like send email, send SMS, dial number.</br>
+  * <b>Explicit:</b> Explicit intent is when you call an application activity from another activity of the same application. Read more from [StackOverflow](https://stackoverflow.com/questions/10272699/what-is-the-different-between-explicit-and-implicit-activity-call-in-android/20728603).</br>
 
 
 * <b>What is a `BroadcastReceiver`?</b> [StackOverflow](https://stackoverflow.com/questions/5296987/what-is-broadcastreceiver-and-when-we-use-it), [Developer android](https://developer.android.com/guide/components/broadcasts), [Vogella](https://www.vogella.com/tutorials/AndroidBroadcastReceiver/article.html), [Broadcast  Exceptions](https://developer.android.com/guide/components/broadcast-exceptions)
@@ -368,9 +369,10 @@
 
 
 * <b>What is a Sticky `Intent`?</b> [AndroidInterview](http://www.androidinterview.com/what-is-a-sticky-intent/)
- * Sticky Intents allows communication between a function and a service.
- * ```sendStickyBroadcast()``` performs a sendBroadcast(Intent) known as sticky, i.e. the Intent you are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of ```registerReceiver(BroadcastReceiver, IntentFilter)```.
- * For example, if you take an intent for ACTION_BATTERY_CHANGED to get battery change events: When you call registerReceiver() for that action — even with a null BroadcastReceiver — you <b>get the Intent that was last Broadcast for that action</b>. Hence, you can use this to find the state of the battery without necessarily registering for all future state changes in the battery.</br>
+
+  * Sticky Intents allows communication between a function and a service.
+  * ```sendStickyBroadcast()``` performs a sendBroadcast(Intent) known as sticky, i.e. the Intent you are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of ```registerReceiver(BroadcastReceiver, IntentFilter)```.
+  * For example, if you take an intent for ACTION_BATTERY_CHANGED to get battery change events: When you call registerReceiver() for that action — even with a null BroadcastReceiver — you <b>get the Intent that was last Broadcast for that action</b>. Hence, you can use this to find the state of the battery without necessarily registering for all future state changes in the battery.</br>
 
 
 * <b>Describe how broadcasts and intents work to be able to pass messages around your app?</b> [Techotopia](https://www.techotopia.com/index.php/Android_Broadcast_Intents_and_Broadcast_Receivers)
@@ -378,6 +380,7 @@
 * <b>What is a `PendingIntent`?</b>
 
    If you want someone to perform any Intent operation at future point of time on behalf of you, then we will use Pending Intent. </br>
+
    Read more: [Stackoverflow](https://stackoverflow.com/questions/2808796/what-is-an-android-pendingintent), [Developer android](https://developer.android.com/reference/android/app/PendingIntent), [Video - Developer android](https://www.youtube.com/watch?v=-iog_fmm6mE), [Blog](https://android.jlelse.eu/intent-vs-pendingintent-8ef2ad5824ed), [Medium](https://medium.com/@architgupta690/creating-pending-intent-in-android-a-step-by-step-guide-74784ec60c9e), [JournalDev](https://www.journaldev.com/10463/android-notification-pendingintent)
 
 
@@ -404,9 +407,7 @@
 * <b>Explain Service Lifecycle</b>
 
  <br/>
-    ![Fragment Lifecycle Image](/image%20assets/service_lifecycle.png)
-
-* <b>`Service` vs `IntentService`.</b> [StackOverflow](https://stackoverflow.com/a/15772151/5153275), [MindOrks](https://blog.mindorks.com/service-vs-intentservice-in-android)
+    ![Service Lifecycle Image](/image%20assets/service_lifecycle.png)
 
 * <b>What is a `JobScheduler`?</b> [Vogella](http://www.vogella.com/tutorials/AndroidTaskScheduling/article.html), [Developer android](https://developer.android.com/reference/android/app/job/JobScheduler), [Medium](https://medium.com/google-developers/scheduling-jobs-like-a-pro-with-jobscheduler-286ef8510129)
 
@@ -432,7 +433,7 @@
         If the system kills the service after onStartCommand() returns, recreate the service and call onStartCommand() with the last intent that was delivered to the service. Any pending intents are delivered in turn. This is *suitable for services that are actively performing a job that should be immediately resumed, such as downloading a file.*
 
 
- * <b>Difference between Service & Intent Service</b></br>
+ * <b>Difference between Service & Intent Service</b> [StackOverflow](https://stackoverflow.com/a/15772151/5153275), [MindOrks](https://blog.mindorks.com/service-vs-intentservice-in-android)</br>
       * <b>Service</b> is the base class for Android services that can be extended to create any service. A class that directly extends Service runs on the main thread so it will block the UI (if there is one) and should therefore either be used only for short tasks or should make use of other threads for longer tasks.</br>  
       * <b>IntentService</b> is a subclass of Service that handles asynchronous requests (expressed as “Intents”) on demand. Clients send requests through startService(Intent) calls. The service is started as needed, handles each Intent in turn using a worker thread, and stops itself when it runs out of work.</br>
 
@@ -456,6 +457,7 @@
 
 
   * <b>What is a Job Scheduling?</b></br>
+
    * Job Scheduling api, as the name suggests, allows to schedule jobs while letting the system optimize based on memory, power, and connectivity conditions.
    * The JobScheduler supports batch scheduling of jobs. The Android system can combine jobs so that battery consumption is reduced. JobManager makes handling uploads easier as it handles automatically the unreliability of the network. It also survives application restarts.
    * Scenarios:
