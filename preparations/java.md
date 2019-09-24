@@ -569,8 +569,7 @@
 
    Read more: [GeeksforGeeks](https://www.geeksforgeeks.org/serialization-in-java/), [Baeldung](https://www.baeldung.com/java-serialization), [JavaTPoint](https://www.javatpoint.com/serialization-in-java), [DZone](https://dzone.com/articles/serialization-amp-de-serialization-in-java)
 
-    * Parcelable requires a bit more work:
-
+   * Parcelable requires a bit more work:
         ```java
             public class User implements Parcelable {
 
