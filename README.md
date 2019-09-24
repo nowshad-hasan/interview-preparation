@@ -10,6 +10,8 @@ A repository for taking interview preparations.
 * [Database](/preparations/database.md)
 * [Design Pattern](/preparations/design%20pattern.md)
 * [System Design](/preparations/system%20design.md)
+* [Networking](/preparations/networking.md)
+* [Operating System](/preparations/operating%20system.md))
 * [Others](/others/android.md)
 
 ### Contributing Projects
