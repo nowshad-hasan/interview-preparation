@@ -1737,6 +1737,7 @@ Different Kinds of User-Defined Functions created are:
   * [GeeksforGeeks SQL Interview Questions](https://www.geeksforgeeks.org/sql-interview-questions/)
   * [50 SQL Query Questions and Answers for Practice](https://www.techbeamers.com/sql-query-questions-answers-for-practice/) (Must Read)
   * [SQL Queries for Interview](https://artoftesting.com/interviewSection/sql-queries-for-interview.html) (Must Read)
+  * Jitbit's SQL interview questions [GitHub Gist](https://gist.github.com/mjhea0/5667162)
 
 ##### SQL Lite
 

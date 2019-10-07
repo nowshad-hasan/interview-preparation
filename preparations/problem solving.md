@@ -15,6 +15,8 @@
 
 ## Array
 
+* [Top 30 Array Interview Questions and Answers for Programmers](https://javarevisited.blogspot.com/2015/06/top-20-array-interview-questions-and-answers.html)
+
 ### Collections
 
 * 52 Programming Problems by Subeen.
