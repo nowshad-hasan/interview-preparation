@@ -13,6 +13,7 @@
 ### Resume
 * How to write a killer Software Engineering résumé [FreeCodeCamp](https://medium.com/free-code-camp/writing-a-killer-software-engineering-resume-b11c91ef699d)
 * [GitHub Project](https://github.com/sb2nov/resume)
+* How to write a resume[Dev Skill](https://www.facebook.com/groups/eee.cse/permalink/2313513298677684/)
 
 ### Negotiation
 * [https://medium.com/s/story/how-to-negotiate-for-a-better-salary-when-youre-switching-careers-8a36bae307c9](https://medium.com/s/story/how-to-negotiate-for-a-better-salary-when-youre-switching-careers-8a36bae307c9)
