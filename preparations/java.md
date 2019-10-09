@@ -425,7 +425,7 @@
         ```
 
         Read more: [GeeksforGeeks](https://www.geeksforgeeks.org/g-fact-31-java-is-strictly-pass-by-value/), [Journaldev](https://www.journaldev.com/3884/java-is-pass-by-value-and-not-pass-by-reference),
-         [Stackoverflow](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value), [Mkyong](https://www.mkyong.com/java/is-java-pass-by-value-or-pass-by-reference/)
+         [Stackoverflow](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value), [Mkyong](https://www.mkyong.com/java/is-java-pass-by-value-or-pass-by-reference/), [Javascript - Pass By Value And Pass By Reference In JavaScript](https://medium.com/nodesimplified/javascript-pass-by-value-and-pass-by-reference-in-javascript-fcf10305aa9c)
 * **What is the difference between instantiation and initialization of an object?**
     - Initialization is the process of the memory allocation, when a new variable is created. Variables should be explicitly given a value, otherwise they may contain a random value that remained from the previous variable that was using the same memory space. To avoid this problem, Java language assigns default (right after initialization) values to some data types:
         * `boolean` defaults to `false`;
