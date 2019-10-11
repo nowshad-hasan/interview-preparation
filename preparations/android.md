@@ -545,6 +545,8 @@
     We need to register a LocalBroadcastReceiver in the activity. And send a broadcast with the data using intents from the background service. As long as the activity is in the foreground, the UI will be updated from the background. Ensure to unregister the broadcast receiver in the onStop() method of the activity to avoid memory leaks.
   We can also register a Handler and pass data using Handlers. I have detailed a sample implementation on this. You can check it out [here](https://medium.com/@anitaa_1990/how-to-update-an-activity-from-background-service-or-a-broadcastreceiver-6dabdb5cef74)</br>
 
+  * new Thread(task).start() VS ThreadPoolExecutor.submit(task) in Android [Stackoverflow](https://stackoverflow.com/questions/26763835/new-threadtask-start-vs-threadpoolexecutor-submittask-in-android)
+
 
   * <b>Read more about background processing:</b></br>
     * [Raywenderlich](https://www.raywenderlich.com/5306-android-background-processing)

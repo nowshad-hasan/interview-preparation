@@ -25,3 +25,4 @@ A repository for taking interview preparations.
 * [Yangshun - Tech Interview Handbook](https://github.com/yangshun/tech-interview-handbook)
 * [Francistao - Learning Notes](https://github.com/francistao/LearningNotes)
 * [Coder Book](https://coderbook.com/career/)
+* [Andreis Interview](https://github.com/andreis/interview)
