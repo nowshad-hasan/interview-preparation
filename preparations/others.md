@@ -14,6 +14,9 @@
 * How to write a killer Software Engineering résumé [FreeCodeCamp](https://medium.com/free-code-camp/writing-a-killer-software-engineering-resume-b11c91ef699d)
 * [GitHub Project](https://github.com/sb2nov/resume)
 * How to write a resume[Dev Skill](https://www.facebook.com/groups/eee.cse/permalink/2313513298677684/)
+* Resume Writing (কিভাবে ভালো রেজুমি লিখতে হয়?) [Tamim Shahriar Subeen](https://www.youtube.com/watch?v=iL4ygcXSRBw)
+* Create Your Resume for Google: Tips and Advice [Life at Google
+](https://www.youtube.com/watch?v=BYUy1yvjHxE)
 
 ### Negotiation
 * [https://medium.com/s/story/how-to-negotiate-for-a-better-salary-when-youre-switching-careers-8a36bae307c9](https://medium.com/s/story/how-to-negotiate-for-a-better-salary-when-youre-switching-careers-8a36bae307c9)
