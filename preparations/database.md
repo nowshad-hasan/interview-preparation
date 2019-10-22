@@ -85,13 +85,13 @@
 
 * <b>What is the difference between MySQL and SQL?</b></br>
 
-  SQL is known as the standard query language. It is used to interact with the database like MySQL. MySQL is a database that stores various types of data and keeps it safe.
+  * SQL is known as the standard query language. It is used to interact with the database like MySQL. MySQL is a database that stores various types of data and keeps it safe.
 
-  A PHP script is required to store and retrieve the values inside the database.
+  * A PHP script is required to store and retrieve the values inside the database.
 
-  SQL is a computer language, whereas MySQL is a software or an application
+  * SQL is a computer language, whereas MySQL is a software or an application
 
-  SQL is used for the creation of database management systems whereas MySQL is used to enable data handling, storing, deleting and modifying data
+  * SQL is used for the creation of database management systems whereas MySQL is used to enable data handling, storing, deleting and modifying data
 
 * <b>Why do we use the MySQL database server?</b></br>
 
@@ -109,7 +109,7 @@
 
   Data Mining is a subcategory of Computer Science which aims at extraction of information from set of data and transform it into Human Readable structure, to be used later.
 
-*  <b>What is an ERD?</b></br>
+* <b>What is an ERD?</b></br>
 
  ERD stands for Entity Relationship Diagram. Entity Relationship Diagram is the graphical representation of tables, with the relationship between them.
 
@@ -135,7 +135,7 @@
 
 * <b> How to store picture file in the database. What Object type is used?</b></br>
 
- Storing Pictures in a database is a bad idea. To store picture in a database Object Type ‘Blob’ is recommended.
+  Storing Pictures in a database is a bad idea. To store picture in a database Object Type ‘Blob’ is recommended.
 
 * <b>What is Data Warehousing?</b></br>
 
@@ -145,12 +145,12 @@
 Indexes are the quick references for fast data retrieval of data from a database. There are two different kinds of indexes.
 
  <b>Clustered Index:</b>
- * Only one per table.
- * Faster to read than non clustered as data is physically stored in index order.</br>
+  * Only one per table.
+  * Faster to read than non clustered as data is physically stored in index order.</br>
 
  <b>Non­clustered Index:</b>
- * Can be used many times per table.
- * Quicker for insert and update operations than a clustered index.
+  * Can be used many times per table.
+  * Quicker for insert and update operations than a clustered index.
 
 
 * <b>What is a Trigger? How many TRIGGERS are possible in MySQL?</b></br>
@@ -158,12 +158,12 @@ Indexes are the quick references for fast data retrieval of data from a database
   A trigger is a set of codes that executes in response to some events.
   There are only six triggers are allowed to use in MySQL database and they are.
 
- * Before Insert
- * After Insert
- * Before Update
- * After Update
- * Before Delete
- * After Delete
+  * Before Insert
+  * After Insert
+  * Before Update
+  * After Update
+  * Before Delete
+  * After Delete
 
 
 * <b>What is Heap table?</b></br>
