@@ -2,6 +2,9 @@
 
 * [Basic Questions](#basic-questions)
 * [MySQL](#mysql)
+* [Oracle](#oracle)
+* [SQL](#sql)
+* [SQLite](#sqlite)
 * [Collection](#collection)
 * [Read More](#read-more)
 
@@ -771,11 +774,11 @@ Indexes are the quick references for fast data retrieval of data from a database
 * [40 Basic MySQL Interview Questions with Answers](http://www.testingbrain.com/interview/mysql-interview-questions.html)
 * [Top 50 MySQL Interview Questions & Answers from Career Guru](http://career.guru99.com/top-50-mysql-interview-questions-answers/)
 
-##### Oracle
+### Oracle
 
 * [General Oracle Interview Questions & Answers](http://www.coolinterview.com/type.asp?iType=57)
 
-##### SQL
+### SQL
 
 * <b>SQL Query to find second highest salary of Employee.</b></br>
 
@@ -1029,10 +1032,6 @@ Indexes are the quick references for fast data retrieval of data from a database
 * <b>How to find a duplicate record?
 
   1. Duplicate records with one field
-  2. Duplicate records with more than one field
-  </b></br>
-
-  1. Duplicate records with one field
 
   ```SQL
   SELECT name, COUNT(email)
@@ -1040,7 +1039,7 @@ Indexes are the quick references for fast data retrieval of data from a database
   GROUP BY email
   HAVING COUNT(email) > 1
   ```
-2. Duplicate records with more than one field
+  2. Duplicate records with more than one field
 
   ```SQL
   SELECT name, email, COUNT(*)
@@ -1738,7 +1737,7 @@ Different Kinds of User-Defined Functions created are:
   * [SQL Queries for Interview](https://artoftesting.com/interviewSection/sql-queries-for-interview.html) (Must Read)
   * Jitbit's SQL interview questions [GitHub Gist](https://gist.github.com/mjhea0/5667162)
 
-##### SQL Lite
+### SQLite
 
 * <b>Explain what is SQLite?</b></br>
 
