@@ -111,11 +111,11 @@
 
 * <b>What is an ERD?</b></br>
 
- ERD stands for Entity Relationship Diagram. Entity Relationship Diagram is the graphical representation of tables, with the relationship between them.
+  ERD stands for Entity Relationship Diagram. Entity Relationship Diagram is the graphical representation of tables, with the relationship between them.
 
 * <b>What is the difference between Primary Key and Unique Key?</b></br>
 
- Both Primary and Unique Key is implemented for Uniqueness of the column. Primary Key creates a clustered index of column where as an Unique creates unclustered index of column. Moreover, Primary Key doesn’t allow NULL value, however Unique Key does allows one NULL value.
+  Both Primary and Unique Key is implemented for Uniqueness of the column. Primary Key creates a clustered index of column where as an  Unique creates unclustered index of column. Moreover, Primary Key doesn’t allow NULL value, however Unique Key does allows one NULL value.
 
 * <b>What are different types of keys in SQL?</b></br>
 
@@ -144,13 +144,13 @@
 * <b>What are indexes in a Database. What are the types of indexes?</b></br>
 Indexes are the quick references for fast data retrieval of data from a database. There are two different kinds of indexes.
 
- <b>Clustered Index:</b>
-  * Only one per table.
-  * Faster to read than non clustered as data is physically stored in index order.</br>
+  <b>Clustered Index:</b>
+   * Only one per table.
+   * Faster to read than non clustered as data is physically stored in index order.</br>
 
- <b>Non­clustered Index:</b>
-  * Can be used many times per table.
-  * Quicker for insert and update operations than a clustered index.
+  <b>Non­clustered Index:</b>
+   * Can be used many times per table.
+   * Quicker for insert and update operations than a clustered index.
 
 
 * <b>What is a Trigger? How many TRIGGERS are possible in MySQL?</b></br>
@@ -171,11 +171,11 @@ Indexes are the quick references for fast data retrieval of data from a database
   * HEAP tables are found in memory.
   * They are used for high speed storage on temporary basis.
 
- Some of their characteristics are:
-  * They do not allow BLOB or TEXT fields.
-  * Only comparison operators like =, <, >, = >, =< can be used with them.
-  * AUTO_INCREMENT is not supported by HEAP tables
-  * Indexes should be NOT NULL
+  Some of their characteristics are:
+   * They do not allow BLOB or TEXT fields.
+   * Only comparison operators like =, <, >, = >, =< can be used with them.
+   * AUTO_INCREMENT is not supported by HEAP tables
+   * Indexes should be NOT NULL
 
 
 * <b>How do you control the max size of a HEAP table?</b></br>
@@ -357,28 +357,28 @@ Indexes are the quick references for fast data retrieval of data from a database
 
 * <b>What you can use Regular Expression for in MySQL? Support your answer with an example.</b></br>
 
- Regular expressions in MySql are used in queries for searching a pattern in a string.
+  Regular expressions in MySql are used in queries for searching a pattern in a string.
 
-  * \* Matches 0 more instances of the string preceding it.
-  * \+ matches 1 more instances of the string preceding it.
-  * \? Matches 0 or 1instances of the string preceding it.
-  * \. Matches a single character.
-  * [abc] matches a or b or z
-  * | separates strings
-  * ^ anchors the match from the start.
+   * \* Matches 0 more instances of the string preceding it.
+   * \+ matches 1 more instances of the string preceding it.
+   * \? Matches 0 or 1instances of the string preceding it.
+   * \. Matches a single character.
+   * [abc] matches a or b or z
+   * | separates strings
+   * ^ anchors the match from the start.
 
- REGEXP can be used to match the input characters with the database.
+   REGEXP can be used to match the input characters with the database.
 
- Example:</br>
- The following statement retrieves all rows where column employee_name contains the text 1000 (example salary):
- ```sql
- Select employee_name
- From employee
- Where employee_name REGEXP ‘1000’
- Order by employee_name
- ```
+  Example:</br>
+  The following statement retrieves all rows where column employee_name contains the text 1000 (example salary):
+  ```sql
+  Select employee_name
+  From employee
+  Where employee_name REGEXP ‘1000’
+  Order by employee_name
+  ```
 
- “.” Can be used to match any single character. “|” can be used to match either of the two strings
+  “.” Can be used to match any single character. “|” can be used to match either of the two strings
 
 * <b>What are the applications required to support MYSQL?</b></br>
   The applications that are required to support MySQL are as follows:
@@ -715,21 +715,21 @@ Indexes are the quick references for fast data retrieval of data from a database
 
 * <b> Is Mysql query is case sensitive?</b></br>
 
- No.
- ```SQL
- SELECT VERSION(), CURRENT_DATE;
- SeLect version(), current_date;
- seleCt vErSiOn(), current_DATE;
- ```
- All these examples are same. It is not case sensitive.
+  No.
+  ```SQL
+  SELECT VERSION(), CURRENT_DATE;
+  SeLect version(), current_date;
+  seleCt vErSiOn(), current_DATE;
+  ```
+  All these examples are same. It is not case sensitive.
 
 * <b>What is the difference between the LIKE and REGEXP operators?  </b></br>
 
- LIKE and REGEXP operators are used to express with ^ and %.
- ```SQL
- SELECT * FROM employee WHERE emp_name REGEXP "^b";
- SELECT * FROM employee WHERE emp_name LIKE "%b";
- ```
+  LIKE and REGEXP operators are used to express with ^ and %.
+  ```SQL
+  SELECT * FROM employee WHERE emp_name REGEXP "^b";
+  SELECT * FROM employee WHERE emp_name LIKE "%b";
+  ```
 
 * <b>How can we run batch mode in mysql?</b></br>
 
@@ -1090,7 +1090,7 @@ Indexes are the quick references for fast data retrieval of data from a database
   * TRUNCATE is DDL Command.
   * TRUNCATE Resets identity of the table
 
- **DELETE:**
+  **DELETE:**
   * DELETE removes rows one at a time and records an entry in the transaction log for each deleted row.
   * If you want to retain the identity counter, use DELETE instead. If you want to remove table definition and its data, use the DROP TABLE statement.
   * DELETE Can be used with or without a WHERE clause
@@ -1442,7 +1442,7 @@ Different Kinds of User-Defined Functions created are:
 
 * <b>What is the difference between cross joins and natural joins?</b></br>
 
- The cross join produces the cross product or Cartesian product of two tables. The natural join is based on all the columns having same name and data types in both the tables.
+  The cross join produces the cross product or Cartesian product of two tables. The natural join is based on all the columns having same name and data types in both the tables.
 
 * <b>What is the purpose of the group functions in SQL? Give some examples of group functions.</b></br>
 
