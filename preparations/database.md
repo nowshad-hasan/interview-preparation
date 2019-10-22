@@ -1029,7 +1029,7 @@ Indexes are the quick references for fast data retrieval of data from a database
   WHERE condition;
   ```
 
-* <b>How to find a duplicate record?
+* <b>How to find a duplicate record?</b>
 
   1. Duplicate records with one field
 
