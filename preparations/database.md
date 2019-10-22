@@ -1,12 +1,11 @@
 ## Contents
 
 * [Basic Questions](#basic-questions)
-* [Question Collection](#question-collection)
 * [MySQL](#mysql)
+* [Collection](#collection)
+* [Read More](#read-more)
 
 ### Basic Questions
-
-### Question Collection
 
 ### MySQL
 
@@ -74,7 +73,7 @@
   * Administrative tools.
 
 
-*  <b>What is RDBMS? Explain its features?</b></br>
+* <b>What is RDBMS? Explain its features?</b></br>
 
   A Relational Database Management System (RDBMS) is the most widely used database Management System based on the Relational Database model.</br>
   Features of RDBMS:
