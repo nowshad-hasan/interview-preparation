@@ -46,6 +46,10 @@
 
   MySQL is written in C and C++, and its SQL parser is written in yacc.
 
+* What is Differential Backup?
+
+  A differential backup is a type of data backup method that copies all of the files that have changed since the last full backup was performed. This includes any data that has been created, updated or altered in any way and does not copy all of the data every time. The term differential backup stems from the concept that only data that is “different” is copied. [Read More](https://searchdatabackup.techtarget.com/definition/differential-backup)
+
 * <b>What are the technical specifications of MySQL?</b></br>
 
   MySQL has the following technical specifications -
