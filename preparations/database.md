@@ -46,9 +46,10 @@
 
   MySQL is written in C and C++, and its SQL parser is written in yacc.
 
-* What is Differential Backup?
+* <b>What is Differential Backup?</b>
 
   A differential backup is a type of data backup method that copies all of the files that have changed since the last full backup was performed. This includes any data that has been created, updated or altered in any way and does not copy all of the data every time. The term differential backup stems from the concept that only data that is “different” is copied. [Read More](https://searchdatabackup.techtarget.com/definition/differential-backup)
+  [Backup Types & Strategies For SQL Databases](https://www.acuitytraining.co.uk/news-tips/backup-strategies-for-sql-databases/)
 
 * <b>What are the technical specifications of MySQL?</b></br>
 
@@ -68,17 +69,10 @@
   * Manageability and Ease of Use
   * OLTP and Transactions
   * Geo-Spatial Support
-
-
-* <b>What are the technical features of MySQL? </b></br>
-
-  MySQL database software is a client or server system which includes
-
   * Multithreaded SQL server supporting various client programs and libraries
   * Different backend
   * Wide range of application programming interfaces and
   * Administrative tools.
-
 
 * <b>What is RDBMS? Explain its features?</b></br>
 
@@ -139,6 +133,7 @@
   **Unique Key** – Keys that offer restriction to prevent duplicate data within rows except for null entries.
 
   The other keys available are Foreign Keys, Super Keys, and Composite Keys.
+  Read more: [Guru99](https://www.guru99.com/dbms-keys.html)
 
 * <b> How to store picture file in the database. What Object type is used?</b></br>
 
@@ -159,6 +154,7 @@ Indexes are the quick references for fast data retrieval of data from a database
    * Can be used many times per table.
    * Quicker for insert and update operations than a clustered index.
 
+   Read more: [SQLShack](https://www.sqlshack.com/what-is-the-difference-between-clustered-and-non-clustered-indexes-in-sql-server/)
 
 * <b>What is a Trigger? How many TRIGGERS are possible in MySQL?</b></br>
 
@@ -241,6 +237,17 @@ Indexes are the quick references for fast data retrieval of data from a database
 * <b>How would you select all the users, whose phone number is null</b></br>
 
   `Select user_name FROM users WHERE ISNULL(user_phonenumber)`.
+
+* <b>What is InnoDB and MyISAM in MySQL?</b></br>
+  `InnoDB` and `MYISAM`, are storage engines for MySQL.
+
+  MyISAM is the default storage engine for the MySQL relational database management system versions prior to 5.5.
+
+  These two differ on their locking implementation: InnoDB locks the particular row in the table, and MyISAM locks the entire MySQL table.
+
+  You can specify the type by giving MYISAM OR InnoDB while creating a table in DB.
+
+  Read more: [Stackoverflow](https://stackoverflow.com/questions/3818759/what-is-innodb-and-myisam-in-mysql)
 
 * <b>What does myisamchk do?</b></br>
 
@@ -453,7 +460,8 @@ Indexes are the quick references for fast data retrieval of data from a database
   `DELETE FROM table_name`
 
   Whereas, truncate is very dangerous command and should be used carefully as it deletes every row from a table. The syntax of it as follows:</br>
-  `TRUNCATE TABLE "table_name"`
+  `TRUNCATE TABLE "table_name"` </br>
+  Read more: [Quora](https://www.quora.com/What-is-the-main-difference-between-Truncate-Delete-and-Drop-in-a-database), [Stackoverflow](https://stackoverflow.com/questions/20559893/comparison-of-truncate-vs-delete-in-mysql-sqlserver), [Tutorialspoint](https://www.tutorialspoint.com/What-is-the-difference-between-MySQL-TRUNCATE-and-DELETE-command)
 
 * <b>How do you display the structure of the table</b></br>
 
@@ -537,7 +545,7 @@ Indexes are the quick references for fast data retrieval of data from a database
 
 * <b>If the service is running/stop how would you stop/start the service?</b></br>
 
-  To start MySql service use command as service mysqld start and to stop use service mysqld stop.
+  To start MySql service use command as `service mysqld start` and to stop use `service mysqld stop`.
 
 * <b>How will you switch to a database, and start working on that?</b></br>
 
@@ -634,6 +642,8 @@ Indexes are the quick references for fast data retrieval of data from a database
 * <b>Write a query to retrieve a hundred books starting from 20th.</b></br>
 
   SELECT book_title FROM books LIMIT 20, 100;
+
+* How LIMIT is used in query? [Guru99](https://www.guru99.com/limit.html)
 
 * <b>Write a query to select all teams that won either 1, 3, 5 or 7 games.</b></br>
 
@@ -736,14 +746,6 @@ Indexes are the quick references for fast data retrieval of data from a database
   ```SQL
   SELECT * FROM employee WHERE emp_name REGEXP "^b";
   SELECT * FROM employee WHERE emp_name LIKE "%b";
-  ```
-
-* <b>How can we run batch mode in mysql?</b></br>
-
-  Following commands are used to run in batch mode: </br>
-  ```SQL
-  mysql ;
-  mysql mysql.out
   ```
 
 * <b>How do you concatenate strings in MySQL</b></br>
