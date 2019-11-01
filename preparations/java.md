@@ -770,6 +770,11 @@ Read more: [Baeldung](https://www.baeldung.com/java-static), [JavaTPoint](https:
 
 * **What is Java NIO?** [DZone](https://dzone.com/articles/java-nio-vs-io), [Baeldung](https://www.baeldung.com/java-nio-selector), [Howtodoinjava](https://howtodoinjava.com/java-nio-tutorials/)
 
+* <b>Comparator Interface in Java</b></br>
+  Comparator interface is used to order the objects of user-defined classes. A comparator object is capable of comparing two objects of two different classes.</br>
+  Read more: [GeeksforGeeks](https://www.geeksforgeeks.org/comparator-interface-java/), [JavaTPoint](https://www.javatpoint.com/Comparator-interface-in-collection-framework)
+
+* <b>Comparator and Comparable in Java</b> [Baeldung](https://www.baeldung.com/java-comparator-comparable), [Journaldev](https://www.journaldev.com/780/comparable-and-comparator-in-java-example)
 * <b>Optionals in Java?</b></br>
 
     Optional is a container object which is used to contain not-null objects. Optional object is used to represent null with absent value. This class has various utility methods to facilitate code to handle values as ‘available’ or ‘not available’ instead of checking null values.</br>
