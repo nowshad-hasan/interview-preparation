@@ -782,14 +782,18 @@ Indexes are the quick references for fast data retrieval of data from a database
 
 ### Oracle
 
-* [General Oracle Interview Questions & Answers](http://www.coolinterview.com/type.asp?iType=57)
+* [Top 50 Oracle Interview Questions and Answers by CareerGuru99](https://career.guru99.com/top-50-oracle-interview-questions-and-answers/)
+
+* <b>How to display employee records who gets more salary than the average salary in the department?</b></br>
+
+  `Select * from employee where salary>(select avg(salary) from dept, employee where dept.deptno = employee.deptno;`
 
 ### SQL
 
 * <b>SQL Query to find second highest salary of Employee.</b></br>
 
   There are many ways to find second highest salary of Employee in SQL, you can either use SQL Join or Subquery to solve this problem. Here is SQL query using Subquery:
-  `select MAX(Salary) from Employee WHERE Salary NOT IN (select MAX(Salary) from Employee ); `
+  `select MAX(Salary) from Employee WHERE Salary NOT IN (select MAX(Salary) from Employee );`
   Read more: [Java Revisited](https://javarevisited.blogspot.com/2012/12/how-to-find-second-highest-or-maximum-salary-sql.html)
 
 * <b>SQL Query to find Max Salary from each department.</b></br>
@@ -837,11 +841,6 @@ Indexes are the quick references for fast data retrieval of data from a database
   Here is how you can find Year from a Date in SQL Server 2008 .
   `SELECT YEAR(GETDATE()) as "Year";`
 
-* <b> Write SQL Query to find duplicate rows in a database? and then write SQL query to delete them?</b></br>
-
-  You can use the following query to select distinct records:</br>
-  `SELECT * FROM emp a WHERE rowid = (SELECT MAX(rowid) FROM EMP b WHERE a.empno=b.empno)`
-
 * <b>Write SQL Query to find duplicate rows in a database? and then write SQL query to delete them?</b></br>
 
   You can use the following query to select distinct records:</br>
@@ -870,7 +869,9 @@ Indexes are the quick references for fast data retrieval of data from a database
 
   One follow-up is to modify this query to include employees which don't have a manager. To solve that, instead of using the inner join, just use left outer join, this will also include employees without managers.
 
-* <b>You have a composite index of three columns, and you only provide the value of two columns in WHERE clause of a select query? Will Index be used for this operation?</b>For example if Index is on EmpId, EmpFirstName, and EmpSecondName and you write query like</br>
+* <b>You have a composite index of three columns, and you only provide the value of two columns in WHERE clause of a select query? Will Index be used for this operation?</b></br>
+
+  For example if Index is on EmpId, EmpFirstName, and EmpSecondName and you write query like</br>
 
   `SELECT * FROM Employee WHERE EmpId=2 and EmpFirstName='Radhe'`
 
@@ -896,7 +897,7 @@ Indexes are the quick references for fast data retrieval of data from a database
 
   * CROSS JOIN: Returns all records where each row from the first table is combined with each row from the second table (i.e., returns the Cartesian product of the sets of rows from the joined tables). Note that a CROSS JOIN can either be specified using the CROSS JOIN syntax (“explicit join notation”) or (b) listing the tables in the FROM clause separated by commas without using a WHERE clause to supply join criteria (“implicit join notation”).
 
-  * Self Join This is a particular case when one table joins to itself, with one or two aliases to avoid confusion. A self join can be of any type, as long as the joined tables are the same. A self join is rather unique in that it involves a relationship with only one table. The common example is when company has a hierarchal reporting structure whereby one member of staff reports to another. Self Join can be Outer Join or Inner Join.
+  * SELF JOIN: This is a particular case when one table joins to itself, with one or two aliases to avoid confusion. A self join can be of any type, as long as the joined tables are the same. A self join is rather unique in that it involves a relationship with only one table. The common example is when company has a hierarchal reporting structure whereby one member of staff reports to another. Self Join can be Outer Join or Inner Join.
 
 * <b>Write a SQL query using UNION ALL (not UNION) that uses the WHERE clause to eliminate duplicates. Why might you want to do this?</b></br>
 
@@ -945,13 +946,17 @@ Indexes are the quick references for fast data retrieval of data from a database
 
   The only difference between the RANK() and DENSE_RANK() functions is in cases where there is a “tie”; i.e., in cases where multiple values in a set have the same ranking. In such cases, RANK() will assign non-consecutive “ranks” to the values in the set (resulting in gaps between the integer ranking values when there is a tie), whereas DENSE_RANK() will assign consecutive ranks to the values in the set (so there will be no gaps between the integer ranking values in the case of a tie).
 
-  For example, consider the set {25, 25, 50, 75, 75, 100}. For such a set, RANK() will return {1, 1, 3, 4, 4, 6} (note that the values 2 and 5 are skipped), whereas DENSE_RANK() will return {1,1,2,3,3,4}.
+  For RANK(), the same column values receive the same ranks. When multiple rows share the same rank, the rank of the next row is not consecutive. This is similar to Olympic medaling in that if two athletes share the gold medal, there is no silver medal.
+
+  For example, consider the set {25, 25, 50, 75, 75, 100}. For such a set, RANK() will return {1, 1, 3, 4, 4, 6} (note that the values 2 and 5 are skipped), whereas DENSE_RANK() will return {1,1,2,3,3,4}.</br>
+
+  Read More: [SQL Server DENSE_RANK](http://www.sqlservertutorial.net/sql-server-window-functions/sql-server-dense_rank-function/), [SQL RANK](http://www.sqltutorial.org/sql-window-functions/sql-rank/)
 
 * <b>What is the difference between the WHERE and HAVING clauses?</b></br>
 
   When GROUP BY is not used, the WHERE and HAVING clauses are essentially equivalent.
 
-  However, when GROUP BYis used:
+  However, when GROUP BY is used:
 
   * The WHERE clause is used to filter records from a result. The filtering occurs before any groupings are made.
   * The HAVING clause is used to filter values from a group (i.e., to check conditions after aggregation into groups has been performed).
@@ -997,7 +1002,12 @@ Indexes are the quick references for fast data retrieval of data from a database
   * Exits comparison when match is found
   * Performance is comparatively FAST for larger resultset of subquery
 
-* <b>How can you use a CTE to return the fifth highest (or Nth highest) salary from a table?</b></br>
+* <b>Explain CTE (Common Table Expression)</b></br>
+
+  Common Table Expressions or CTE’s for short are used within SQL Server to simplify complex joins and subqueries, and to provide a means to query hierarchical data such as an organizational chart. </br>
+  Read more: [https://www.essentialsql.com/introduction-common-table-expressions-ctes/](Common Table Expressions), [CTE in SQL](https://www.geeksforgeeks.org/cte-in-sql/)
+
+* <b>How can you use a CTE (Common Table Expression) to return the fifth highest (or Nth highest) salary from a table?</b></br>
 
   ```SQL
   Declare @N int
@@ -1312,7 +1322,7 @@ Remember, these normalization guidelines are cumulative. For a database to be in
 
 * <b>What is Difference between Function and Stored Procedure?</b></br>
 
-  UDF can be used in the SQL statements anywhere in the WHERE/HAVING/SELECT section where as Stored procedures cannot be. UDFs that return tables can be treated as another rowset. This can be used in JOINs with other tables. Inline UDF's can be thought of as views that take parameters and can be used in JOINs and other Rowset operations.
+  UDF (User Defined Function) can be used in the SQL statements anywhere in the WHERE/HAVING/SELECT section where as Stored procedures cannot be. UDFs that return tables can be treated as another rowset. This can be used in JOINs with other tables. Inline UDF's can be thought of as views that take parameters and can be used in JOINs and other Rowset operations.
 
 * <b>What is sub-query? Explain properties of sub-query?</b></br>
 
@@ -1368,8 +1378,8 @@ Different Kinds of User-Defined Functions created are:
 
   Following are various DCL or Data Control Language commands in SQL −
 
- * GRANT − it gives a privilege to user.
- * REVOKE − it takes back privileges granted from user.
+  * GRANT − it gives a privilege to user.
+  * REVOKE − it takes back privileges granted from user.
 
 * <b>Can you sort a column using a column alias?</b></br>
 
@@ -1390,7 +1400,7 @@ Different Kinds of User-Defined Functions created are:
 
 * <b>If a table contains duplicate rows, does a query result display the duplicate values by default? How can you eliminate duplicate rows from a query result?</b></br>
 
- A query result displays all rows including the duplicate rows. To eliminate duplicate rows in the result, the DISTINCT keyword is used in the SELECT clause.
+  A query result displays all rows including the duplicate rows. To eliminate duplicate rows in the result, the DISTINCT keyword is used in the SELECT clause.
 
 * <b>How do you search for a value in a database table when you don’t have the exact value to search for?</b></br>
 
@@ -1557,7 +1567,7 @@ Different Kinds of User-Defined Functions created are:
   * MAX() - Calculates the maximum of a collection of values.
   * SUM() - Calculates the sum of a collection of values.
   * FIRST() - Fetches the first element in a collection of values.
-  * LAST() - Fetches the last element in a collection of values.
+  * LAST() - Fetches the last element in a collection of values.</br>
   Note: All aggregate functions described above ignore NULL values except for the COUNT function.
 
   A scalar function returns a single value based on the input value. Following are the widely used SQL scalar functions:
