@@ -103,7 +103,7 @@
 
   Read more: [JavatPoint](https://www.javatpoint.com/interface-in-java), [GeeksforGeeks](https://www.geeksforgeeks.org/interfaces-in-java/), [Guru99](https://www.guru99.com/java-interface.html), [Beginnersbook](https://beginnersbook.com/2013/05/java-interface/)
 
-* **What is the difference between iterator and enumeration in java?** [Javaconceptoftheday](https://javaconceptoftheday.com/differences-between-enumeration-vs-iterator-in-java/), [Stackoverflow](https://stackoverflow.com/questions/948194/difference-between-java-enumeration-and-iterator)
+* **What is the difference between iterator and enumeration in java?** [JavaConceptOfTheDay](https://javaconceptoftheday.com/differences-between-enumeration-vs-iterator-in-java/), [Stackoverflow](https://stackoverflow.com/questions/948194/difference-between-java-enumeration-and-iterator)
     - **Fail-Fast Vs Fail-Safe** - Iterator is a fail-fast in nature. i.e it throws ConcurrentModificationException if a collection is modified while iterating other than it’s own remove() method. Where as Enumeration is fail-safe in nature. It doesn’t throw any exceptions if a collection is modified while iterating. [See more](https://javaconceptoftheday.com/fail-fast-and-fail-safe-iterators-in-java-with-examples/)
 
     - **Safe And Secure** - As Iterator is fail-fast in nature and doesn’t allow modification of a collection by other threads while iterating, it is considered as safe and secure than Enumeration.
@@ -203,8 +203,8 @@
 
         The most basic difference is that overloading is being done in the same class while for overriding base and child classes are required. Overriding is all about giving a specific implementation to the inherited method of parent class.
 
-        Static binding is being used for overloaded methods and dynamic binding is being used for overridden/overriding methods.
-        Performance: Overloading gives better performance compared to overriding. The reason is that the binding of overridden methods is being done at runtime.
+        Static binding is being used for overloaded methods and dynamic binding is being used for overridden/overriding methods.</br>
+        <b>Performance:</b> Overloading gives better performance compared to overriding. The reason is that the binding of overridden methods is being done at runtime.
 
         Private and final methods can be overloaded but they cannot be overridden. It means a class can have more than one private/final methods of same name but a child class cannot override the private/final methods of their base class.
 
@@ -296,7 +296,9 @@
        ```
       * A class that can refer to any type is known as generic class. Here, we are using T type
    parameter to create the generic class of specific type. The T type indicates that it can refer to any type (like String, Integer, Employee etc.).The type you specify for the class, will be used to store and retrieve the data.
-      * The ? (question mark) symbol represents wildcard element. It means any type. If we write <? extends Number>, it means any child class of Number e.g. Integer, Float, double etc
+      * The ? (question mark) symbol represents wildcard element. It means any type. If we write <? extends Number>, it means any child class of Number e.g. Integer, Float, double etc.
+
+* **Difference between <? super T> and <? extends T> in Java?** [Stackoverflow](https://stackoverflow.com/questions/4343202/difference-between-super-t-and-extends-t-in-java)
 
 * **What is Java `PriorityQueue`?** [GeeksforGeeks](https://www.geeksforgeeks.org/priority-queue-class-in-java-2/), [Blog](https://www.callicoder.com/java-priority-queue/), [Javapoint](https://www.javatpoint.com/java-priorityqueue)
 
@@ -319,7 +321,8 @@
     String capital = "Hello, World!".toUpperCase();
     ```
     is a valid statement, that, firstly, will create an object with literal value "Hello, World!" and then will create and return another object with value "HELLO, WORLD!"
-  - `String` was made immutable to prevent malicious manipulation of data, when, for example, user login or other sensitive data is being send to a server.
+
+    `String` was made immutable to prevent malicious manipulation of data, when, for example, user login or other sensitive data is being send to a server.
 
 * **What does it means to say that a `String` is immutable?**
 
@@ -328,11 +331,6 @@
 
 * **What is `String.intern()`? When and why should it be used?** [Stackoverflow](https://stackoverflow.com/questions/10578984/what-is-java-string-interning), [GeeksforGeeks](https://www.geeksforgeeks.org/interning-of-string/)
 
-* <b>String manipulation</b>
-  [Baeldung](https://www.baeldung.com/java-string-interview-questions),
-   [dev.to](https://dev.to/javinpaul/top-20-string-coding-problems-from-programming-job-interviews-493m),
-   [Javatpoint](https://www.javatpoint.com/java-string-faqs),
-   [Journaldev](https://www.journaldev.com/1321/java-string-interview-questions-and-answers)
 
 * <b>String pool in Java:</b></br>
    * String Pool in java is a pool of Strings stored in Java Heap Memory.
@@ -370,6 +368,7 @@
 * **Do objects get passed by reference or value in Java? Elaborate on that.**
 
     In Java all primitives and objects are passed by value, meaning that their copy will be manipulated in the receiving method. But there is a caveat - when you pass an object reference into a method, a *copy of this reference* is made, so it still points to the same object. This means, that any changes that you make to the insides of this object are retained, when the method exits.
+    
         ```java
         public class Pointer {
 
@@ -917,6 +916,11 @@ Read more: [Baeldung](https://www.baeldung.com/java-static), [JavaTPoint](https:
 * [Interview Cake Java Interview Questions](https://www.interviewcake.com/java-interview-questions)
 * [Journaldev Core Java Interview Questions and Answers](https://www.journaldev.com/2366/core-java-interview-questions-and-answers)
 * [Journaldev Java Exception Interview Questions and Answers](https://www.journaldev.com/2167/java-exception-interview-questions-and-answers)
+* <b>String manipulation</b>
+  [Baeldung](https://www.baeldung.com/java-string-interview-questions),
+   [dev.to](https://dev.to/javinpaul/top-20-string-coding-problems-from-programming-job-interviews-493m),
+   [Javatpoint](https://www.javatpoint.com/java-string-faqs),
+   [Journaldev](https://www.journaldev.com/1321/java-string-interview-questions-and-answers)
 
 
 ### Read More
