@@ -6,6 +6,8 @@
  - [Collections and Generics](#collections-and-generics)
  - [Objects and Primitives](#objects-and-primitives)
  - [Java Memory Model and Garbage Collector](#java-memory-model-and-garbage-collector)
+ - [Concurrency](#concurrency)
+ - [Exceptions](#exceptions)
  - [Others](#others)
  - [Collection](#collection)
  - [Read more](#read-more)
@@ -368,7 +370,7 @@
 * **Do objects get passed by reference or value in Java? Elaborate on that.**
 
     In Java all primitives and objects are passed by value, meaning that their copy will be manipulated in the receiving method. But there is a caveat - when you pass an object reference into a method, a *copy of this reference* is made, so it still points to the same object. This means, that any changes that you make to the insides of this object are retained, when the method exits.
-    
+
         ```java
         public class Pointer {
 
@@ -523,8 +525,10 @@
 
 * <b>Difference between ‘throw’ and ‘throws’ in Java Exception Handling?</b></br>
 
-    `throw` keyword is used to throw Exception from any method or static block whereas `throws` is used to indicate that which Exception can possibly be thrown by this method.</br>
+    The `throw` keyword is used to throw Exception from any method or static block whereas `throws` is used to indicate that which Exception can possibly be thrown by this method.</br>
    Read more: [Beginnersbook](https://beginnersbook.com/2013/04/difference-between-throw-and-throws-in-java/), [GeeksforGeeks 1](https://www.geeksforgeeks.org/throw-throws-java/), [GeeksforGeeks 2](https://www.geeksforgeeks.org/difference-between-throw-and-throws-in-java/)
+
+* <b>Error Vs Exception</b> [GeeksforGeeks](https://www.geeksforgeeks.org/errors-v-s-exceptions-in-java/), [JavaConceptOfTheDay](https://javaconceptoftheday.com/difference-between-error-vs-exception-in-java/)
 
 ### Others
 
@@ -734,7 +738,7 @@ Read more: [GeeksforGeeks](https://www.geeksforgeeks.org/g-fact-24-finalfinally-
 * **What does the `static` word mean in Java?**</br>
 
      In case of `static` variable it means that this variable (its' value or the object it references) spans across all instances of enclosing class (changing it in one instance affects all others), while in case of `static` methods it means that these methods can be invoked without an instance of their enclosing class. It is useful, for example, when you create util classes that need not be instantiated every time you want to use them. </br>
-Read more: [Baeldung](https://www.baeldung.com/java-static), [JavaTPoint](https://www.javatpoint.com/static-keyword-in-java), [GeeksforGeeks](https://www.geeksforgeeks.org/static-keyword-java/), [Final Static](https://www.geeksforgeeks.org/final-static-variable-java/), [Javarevisited](https://javarevisited.blogspot.com/2011/11/static-keyword-method-variable-java.html)
+Read more: [Baeldung](https://www.baeldung.com/java-static), [JavaTPoint](https://www.javatpoint.com/static-keyword-in-java), [GeeksforGeeks 1](https://www.geeksforgeeks.org/static-keyword-java/), [GeeksforGeeks 2](https://www.geeksforgeeks.org/final-static-variable-java/), [Javarevisited](https://javarevisited.blogspot.com/2011/11/static-keyword-method-variable-java.html)
 
 
 * **Can a `static` method be overridden in Java?** [GeeksforGeeks](https://www.geeksforgeeks.org/can-we-overload-or-override-static-methods-in-java/)</br>
@@ -773,7 +777,7 @@ Read more: [Baeldung](https://www.baeldung.com/java-static), [JavaTPoint](https:
   Comparator interface is used to order the objects of user-defined classes. A comparator object is capable of comparing two objects of two different classes.</br>
   Read more: [GeeksforGeeks](https://www.geeksforgeeks.org/comparator-interface-java/), [JavaTPoint](https://www.javatpoint.com/Comparator-interface-in-collection-framework)
 
-* <b>Comparator and Comparable in Java</b> [Baeldung](https://www.baeldung.com/java-comparator-comparable), [Journaldev](https://www.journaldev.com/780/comparable-and-comparator-in-java-example)
+* <b>Comparator and Comparable in Java</b> [Baeldung](https://www.baeldung.com/java-comparator-comparable), [GeeksforGeeks](https://www.geeksforgeeks.org/comparable-vs-comparator-in-java/) , [Journaldev](https://www.journaldev.com/780/comparable-and-comparator-in-java-example)
 * <b>Optionals in Java?</b></br>
 
     Optional is a container object which is used to contain not-null objects. Optional object is used to represent null with absent value. This class has various utility methods to facilitate code to handle values as ‘available’ or ‘not available’ instead of checking null values.</br>
