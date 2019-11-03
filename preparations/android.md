@@ -234,7 +234,7 @@
 
 * <b>Callbacks invoked during addition of a fragment to back stack and while popping back from back stack:</b></br>
 
- `addOnBackStackChangedListener` is called when fragment is added or removed from the backstack. Use this [link](https://why-android.com/2016/03/29/learn-how-to-use-the-onbackstackchangedlistener/) for reference.</br>
+  `addOnBackStackChangedListener` is called when fragment is added or removed from the backstack. Use this [link](https://why-android.com/2016/03/29/learn-how-to-use-the-onbackstackchangedlistener/) for reference.</br>
 
 
 * <b>Difference between FragmentPagerAdapter vs FragmentStatePagerAdapter?</b></br>
@@ -339,7 +339,7 @@
 
 * <b>What is the ViewHolder pattern? Why should we use it?</b> [Javacodegeeks](https://www.javacodegeeks.com/2013/09/android-viewholder-pattern-example.html), [Stackoverflow](https://stackoverflow.com/questions/21501316/what-is-the-benefit-of-viewholder-pattern-in-android)
 
-* <b>What is `SnapHelper`?</b> [MindOrks](https://blog.mindorks.com/using-snaphelper-in-recyclerview-fc616b6833e8)
+* <b>What is `SnapHelper`?</b> [MindOrks](https://blog.mindorks.com/using-snaphelper-in-recyclerview-fc616b6833e8), [Medium](https://medium.com/over-engineering/detecting-snap-changes-with-androids-recyclerview-snaphelper-9e9f5e95c424)
 
 
 * <b>How does RecyclerView work?</b></br>
@@ -420,7 +420,7 @@
     Read more: [Developer Android](https://developer.android.com/guide/components/services), [Javatpoint](https://www.javatpoint.com/android-service-tutorial), [Tutorialspoint](https://www.tutorialspoint.com/android/android_services.htm), [Vogella](https://www.vogella.com/tutorials/AndroidServices/article.html), [Proandroiddev](https://proandroiddev.com/deep-dive-into-android-services-4830b8c9a09), [Tutlane](https://www.tutlane.com/tutorial/android/android-services-with-examples), [MindOrks](https://medium.com/mindorks/mastering-android-service-of-2018-a4a1df5ed5a6), [Blog 1](https://androidclarified.com/android-service-lifecycle-and-working/), [Blog 2](https://www.survivingwithandroid.com/android-service-tutorial-2/)
 
 
-*    **What is the difference between START_NOT_STICKY, START_STICKY AND START_REDELIVER_INTENT?**<br/>
+*    **What is the difference between START_NOT_STICKY, START_STICKY AND START_REDELIVER_INTENT?** [Developer Android](https://developer.android.com/reference/android/app/Service.html#START_NOT_STICKY) <br/>
 
         * **START_NOT_STICKY:**<br/>
         If the system kills the service after onStartCommand() returns, do not recreate the service unless there are pending intents to deliver. This is the safest option to avoid running your service when not necessary and when your application can simply restart any unfinished jobs.<br/>
@@ -563,6 +563,7 @@
   Thrown when the Java Virtual Machine cannot allocate an object because it is out of memory, and no more memory could be made available by the garbage collector
 
 * <b>How do you find memory leaks in Android applications?</b> [MindOrks](https://mindorks.com/blog/detecting-and-fixing-memory-leaks-in-android)
+* <b>The price of ENUMs</b> [Android Developers - Video](https://www.youtube.com/watch?v=Hzs6OBcvNQE)
 
 ##### Battery Life Optimization
 
@@ -614,6 +615,7 @@
 * <b>Arraymap/SparseArray vs HashMap in Android?</b></br>
    * [Article 1 on the subject](https://android.jlelse.eu/app-optimization-with-arraymap-sparsearray-in-android-c0b7de22541a)
    * [Article 2 on the subject](https://medium.com/@mohom.r/optimising-android-app-performance-with-arraymap-9296f4a1f9eb) </br>
+   * [Android Developers - Video](https://www.youtube.com/watch?v=ORgucLTtTDI)
 
 
 * <b>What are Annotations?</b> [MindOrks](https://blog.mindorks.com/creating-custom-annotations-in-android-a855c5b43ed9), [Link](https://blog.mindorks.com/improve-your-android-coding-through-annotations-26b3273c137a), [Video](https://www.youtube.com/watch?v=LEb9if2HHSw)
