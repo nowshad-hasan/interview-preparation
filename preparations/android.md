@@ -104,13 +104,16 @@
   * <b>Dangerous</b> - A higher-risk permission. Any dangerous permissions requested by an application may be displayed to the user and require confirmation before proceeding, or some other approach may be taken to avoid the user automatically allowing the use of such facilities.
   * <b>Signature</b> - A permission that the system grants only if the requesting application is signed with the same certificate as the application that declared the permission. If the certificates match, the system automatically grants the permission without notifying the user or asking for the user's explicit approval.
   * <b>SignatureOrSystem</b> - A permission that the system grants only to applications that are in the Android system image or that are signed with the same certificate as the application that declared the permission.</br>
+
 ### Activity
 
 * <b>What is `Activity`?</b> [MindOrks](https://blog.mindorks.com/android-activity-lifecycle)
 
 * <b>Describe `Activity Lifecycle.`</b></br>
   Reference - [Developer Android](https://developer.android.com/guide/components/activities/activity-lifecycle), [MindOrks](https://blog.mindorks.com/android-activity-lifecycle), [GitHub](https://github.com/xxv/android-lifecycle)</br>
-  Video - [Coding in Flow](https://www.youtube.com/watch?v=UJN3AL4tiqw), [Udacity](https://www.youtube.com/watch?v=85MppyLJHz0)
+  Video - [Coding in Flow](https://www.youtube.com/watch?v=UJN3AL4tiqw), [Udacity](https://www.youtube.com/watch?v=85MppyLJHz0),
+  [Kristin Marsicano: Activities in the Wild: Exploring the Activity Lifecycle](https://www.youtube.com/watch?v=Lhk8WSUSw8g),
+  [The Life and Death of an Android Activity by Kristin Marsicano](https://youtu.be/sNL2z0hxwGM)
   </br>
       ![Activity Lifecycle Image](/image%20assets/activity_lifecycle.png)
 
@@ -409,6 +412,8 @@
      ![Service Lifecycle Image](/image%20assets/service_lifecycle.png)
 
 * <b>What is a `JobScheduler`?</b> [Vogella](http://www.vogella.com/tutorials/AndroidTaskScheduling/article.html), [Developer android](https://developer.android.com/reference/android/app/job/JobScheduler), [Medium](https://medium.com/google-developers/scheduling-jobs-like-a-pro-with-jobscheduler-286ef8510129)
+
+* Service YouTube Playlist [Codetutor](https://www.youtube.com/playlist?list=PLfuE3hOAeWhbm-_mNEbVdQuaac7Rd4TgZ)
 
 * <b>Describe services</b></br>
 

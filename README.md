@@ -12,7 +12,7 @@ A repository for taking interview preparations.
 * [System Design](/preparations/system%20design.md)
 * [Networking](/preparations/networking.md)
 * [Operating System](/preparations/operating%20system.md)
-* [Others](/others/android.md)
+* [Others](/preparations/others.md)
 
 ### Contributing Projects
 
