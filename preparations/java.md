@@ -53,16 +53,16 @@
 ### JVM
 
 * **Some nice blogs for understanding JVM architecture.**
-  - [JVM Blog](http://www.artima.com/insidejvm/ed2/jvm.html)
+  - [Blog](http://www.artima.com/insidejvm/ed2/jvm.html)
   - [Roseindia](http://www.roseindia.net/java/java-virtual-machine.shtml)
-  - [interviewjava](http://www.interviewjava.com/2007/04/inside-java-virtual-machine.html)
+  - [InterviewJava](http://www.interviewjava.com/2007/04/inside-java-virtual-machine.html)
   - [Javabeat](http://www.javabeat.net/2010/08/jvmjrejava-compiler-interview-questions/2/)
   - [JVM at Google](https://www.youtube.com/watch?v=DjOcfkhTZkM&t)
 
 
 * **What is Java Virtual Machine?** [Guru99](https://www.guru99.com/java-virtual-machine-jvm.html), [GeeksforGeeks](https://www.geeksforgeeks.org/jvm-works-jvm-architecture/), [Javatpoint](https://www.javatpoint.com/internal-details-of-jvm), [Javaworld](https://www.javaworld.com/article/3272244/what-is-the-jvm-introducing-the-java-virtual-machine.html)
 
-* **Explain the Difference amongst JVM Specification, JVM Implementation, JVM Runtime.** [GeeksforGeeks](https://www.geeksforgeeks.org/differences-jdk-jre-jvm/), [Stackoverflow](https://stackoverflow.com/questions/2097189/what-is-the-difference-amongst-jvm-spec-jvm-implementation-jvm-runtime)
+* **Explain the difference amongst JVM Specification, JVM Implementation, JVM Runtime.** [GeeksforGeeks](https://www.geeksforgeeks.org/differences-jdk-jre-jvm/), [Stackoverflow](https://stackoverflow.com/questions/2097189/what-is-the-difference-amongst-jvm-spec-jvm-implementation-jvm-runtime)
 
 * **Why is the source file named after the class?** [GeeksforGeeks](https://www.geeksforgeeks.org/myth-file-name-class-name-java/), [Blog](https://netjs.blogspot.com/2015/04/why-file-name-and-class-name-same-in-java.html), [Quora](https://www.quora.com/Why-does-java-file-name-must-be-same-as-public-class-name)
 
@@ -104,6 +104,24 @@
   * <b>Marker Interfaces</b>: Marker interfaces are those which do not declare any required Methods. The java.io.Serializable interface is a typical marker interfaces. These do not contain any methods, but classes must implement this interface in order to be serialized and de-serialized.</br></br>
 
   Read more: [JavatPoint](https://www.javatpoint.com/interface-in-java), [GeeksforGeeks](https://www.geeksforgeeks.org/interfaces-in-java/), [Guru99](https://www.guru99.com/java-interface.html), [Beginnersbook](https://beginnersbook.com/2013/05/java-interface/)
+
+
+* **Why we have private data and public getters setters to access them?**
+
+  Below are few valid points which justifies to have private instance variables and public getters setters
+
+  * We can make sure that right value is being set by putting some validations in the setters and right        value is being returned by putting some validations in getters.
+
+  * We can provide only setter or only getter to make write only or read only.
+
+  * Different access level can be given to setter and getter as per requirements.
+
+  * Instance variables does not participate in polymorphism, however instance methods do participate. [Blog](https://javasolutionsguide.blogspot.com/2016/04/encapsulation.html) </br>
+  Read More: [DZone 1](https://dzone.com/articles/why-should-i-write-getters-and-setters), [DZone 2](https://dzone.com/articles/java-getter-and-setter-basics-common-mistakes-and), [FreeCodeCamp](https://guide.freecodecamp.org/java/getters-and-setters/)
+
+* **Why don’t we call run() method directly, why call start() method?** [BeginnersBook](https://beginnersbook.com/2015/03/why-dont-we-call-run-method-directly-why-call-start-method/), [GeeksforGeeks](https://www.geeksforgeeks.org/difference-between-thread-start-and-thread-run-in-java/)
+
+* **Difference between x++ and x=x+1 in Java** [GeeksforGeeks](https://www.geeksforgeeks.org/difference-x-xx1-java/)
 
 * **What is the difference between iterator and enumeration in java?** [JavaConceptOfTheDay](https://javaconceptoftheday.com/differences-between-enumeration-vs-iterator-in-java/), [Stackoverflow](https://stackoverflow.com/questions/948194/difference-between-java-enumeration-and-iterator)
     - **Fail-Fast Vs Fail-Safe** - Iterator is a fail-fast in nature. i.e it throws ConcurrentModificationException if a collection is modified while iterating other than it’s own remove() method. Where as Enumeration is fail-safe in nature. It doesn’t throw any exceptions if a collection is modified while iterating. [See more](https://javaconceptoftheday.com/fail-fast-and-fail-safe-iterators-in-java-with-examples/)
