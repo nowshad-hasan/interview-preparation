@@ -123,6 +123,10 @@
 
 * **Difference between x++ and x=x+1 in Java** [GeeksforGeeks](https://www.geeksforgeeks.org/difference-x-xx1-java/)
 
+* **Why constructors cannot be final?** [Stackoverflow](https://stackoverflow.com/questions/9477476/why-constructors-cannot-be-final), [Quora](https://www.quora.com/Why-can-a-constructor-in-Java-not-be-final-static-native-synchronized-or-abstract)
+
+* **Why do constructors not return values?** [Stackoverflow](https://stackoverflow.com/questions/1788312/why-do-constructors-not-return-values)
+
 * **What is the difference between iterator and enumeration in java?** [JavaConceptOfTheDay](https://javaconceptoftheday.com/differences-between-enumeration-vs-iterator-in-java/), [Stackoverflow](https://stackoverflow.com/questions/948194/difference-between-java-enumeration-and-iterator)
     - **Fail-Fast Vs Fail-Safe** - Iterator is a fail-fast in nature. i.e it throws ConcurrentModificationException if a collection is modified while iterating other than it’s own remove() method. Where as Enumeration is fail-safe in nature. It doesn’t throw any exceptions if a collection is modified while iterating. [See more](https://javaconceptoftheday.com/fail-fast-and-fail-safe-iterators-in-java-with-examples/)
 
