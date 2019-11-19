@@ -11,6 +11,7 @@
 * [Here are the Top Tech Companies’ Secrets to Hiring the Best People](https://medium.com/conquering-corporate-america/here-are-the-top-tech-companies-secrets-to-hiring-the-best-people-33f432c39db2)
 * [How to Win the Coding Interview](https://medium.com/on-writing-code/how-to-win-the-coding-interview-71ae7102d685)
 * [7 Reasons You Aren’t Getting Hired](https://beginwithin.life/7-reasons-you-arent-getting-hired/)
+* [Ace your next interview - Mozammel Haque [Developers Conference 2017]](https://youtu.be/-QvJFql5m7A)
 
 ### Resume
 * How to write a killer Software Engineering résumé [FreeCodeCamp](https://medium.com/free-code-camp/writing-a-killer-software-engineering-resume-b11c91ef699d)
