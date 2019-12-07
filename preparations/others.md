@@ -4,6 +4,7 @@
 * [Resume](#resume)
 * [Negotiation](#negotiation)
 * [Puzzle](#puzzle)
+* [Inspiration](#inspiration)
 
 ### Simple Tips and Tricks
 
@@ -12,6 +13,8 @@
 * [How to Win the Coding Interview](https://medium.com/on-writing-code/how-to-win-the-coding-interview-71ae7102d685)
 * [7 Reasons You Aren’t Getting Hired](https://beginwithin.life/7-reasons-you-arent-getting-hired/)
 * [Ace your next interview - Mozammel Haque [Developers Conference 2017]](https://youtu.be/-QvJFql5m7A)
+* Interview practice Online
+  * [Pramp](https://www.pramp.com/)
 
 ### Resume
 * How to write a killer Software Engineering résumé [FreeCodeCamp](https://medium.com/free-code-camp/writing-a-killer-software-engineering-resume-b11c91ef699d)
@@ -20,6 +23,7 @@
 * Resume Writing (কিভাবে ভালো রেজুমি লিখতে হয়?) [Tamim Shahriar Subeen](https://www.youtube.com/watch?v=iL4ygcXSRBw)
 * Create Your Resume for Google: Tips and Advice [Life at Google
 ](https://www.youtube.com/watch?v=BYUy1yvjHxE)
+* What A GOOD Resume Should Look Like [Career cup](https://www.careercup.com/resume)
 
 ### Negotiation
 * How to Negotiate for a Better Salary When You’re Switching Careers [Medium](https://medium.com/s/story/how-to-negotiate-for-a-better-salary-when-youre-switching-careers-8a36bae307c9)
@@ -31,3 +35,10 @@
 * 20 Challenging Job Interview Puzzles which every analyst should solve atleast once [Analytics Vidhya](https://www.analyticsvidhya.com/blog/2016/07/20-challenging-job-interview-puzzles-which-every-analyst-solve-atleast/)
 * 10 Google Interview Puzzles [MY TECH INTERVIEWS](http://www.mytechinterviews.com/10-google-interview-questions)
 * CS Puzzles [Everything Computer Science](https://everythingcomputerscience.com/CSPuzzles.html)
+
+### Inspiration
+* Job in Germany
+  * [FB post](https://www.facebook.com/groups/HigherStudyAbroad/permalink/2693556964039301/)
+  * [German Probashe](https://www.germanprobashe.com/archives/18128)
+  * [Al-amin Nowshad's FB post](https://www.facebook.com/groups/483500628365392/permalink/2457292264319542/)
+  * [GAAB](https://gaabbd.com/)
