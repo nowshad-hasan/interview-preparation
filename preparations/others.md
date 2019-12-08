@@ -15,6 +15,7 @@
 * [Ace your next interview - Mozammel Haque [Developers Conference 2017]](https://youtu.be/-QvJFql5m7A)
 * Interview practice Online
   * [Pramp](https://www.pramp.com/)
+* The best software Interview material - Prepare in less than 3 months [Gaurav Sen](https://youtu.be/bBPHpH8aKjw)
 
 ### Resume
 * How to write a killer Software Engineering résumé [FreeCodeCamp](https://medium.com/free-code-camp/writing-a-killer-software-engineering-resume-b11c91ef699d)
