@@ -176,6 +176,8 @@
      * <b>Abstraction</b> focuses on the outside view of an object (i.e. the interface)
      * <b>Encapsulation</b> (information hiding) prevents clients from seeing it’s inside view.
      * Abstraction solves the problem in the design side while Encapsulation is the Implementation.</br>  
+
+* **Java 8 Internal Iterators vs External Iterators** [Blog 1](https://www.javabrahman.com/java-8/java-8-internal-iterators-vs-external-iterators/), [Blog 2](http://zetcode.com/java/externalinternaliterator/)
 * **Difference between method overloading and overriding.**
           <p align="center">
           <img alt="Overloading and Overriding" src="https://github.com/codeshef/android-interview-questions/blob/master/assets/overloading-vs-overriding.png">
@@ -325,6 +327,8 @@
 * **Difference between <? super T> and <? extends T> in Java?** [Stackoverflow](https://stackoverflow.com/questions/4343202/difference-between-super-t-and-extends-t-in-java)
 
 * **What is Java `PriorityQueue`?** [GeeksforGeeks](https://www.geeksforgeeks.org/priority-queue-class-in-java-2/), [Blog](https://www.callicoder.com/java-priority-queue/), [Javapoint](https://www.javatpoint.com/java-priorityqueue)
+
+* **HashMap in Java** [Journaldev](https://www.journaldev.com/11560/java-hashmap), [GeeksforGeeks](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/)
 
 ### Objects and Primitives
 
@@ -696,12 +700,15 @@
     ```    
 </br>
 
-* **What is the difference between using `==` and `.equals` on an object?**  [GeeksForGeeks](http://www.geeksforgeeks.org/difference-equals-method-java/), [Stackoverflow](https://stackoverflow.com/questions/7520432/what-is-the-difference-between-and-equals-in-java)
+* **What is the difference between using `==` and `.equals` on an object?**  [Java Revisited](https://javarevisited.blogspot.com/2012/12/difference-between-equals-method-and-equality-operator-java.html), [GeeksForGeeks](http://www.geeksforgeeks.org/difference-equals-method-java/), [Stackoverflow](https://stackoverflow.com/questions/7520432/what-is-the-difference-between-and-equals-in-java)
 
    We can use == operators for reference comparison (address comparison) and .equals() method for content comparison. * In simple words, == checks if both objects point to the same memory location whereas .equals() evaluates to the comparison of values in the objects.
 
+* **How are Java objects stored in memory?** [GeeksforGeeks](https://www.geeksforgeeks.org/g-fact-46/)
 
-* **What is the `hashCode()` and `equals()` used for?** [Journaldev](https://www.journaldev.com/21095/java-equals-hashcode), [DZone](https://dzone.com/articles/working-with-hashcode-and-equals-in-java), [GeeksforGeeks](https://www.geeksforgeeks.org/equals-hashcode-methods-java/), [Baeldung](https://www.baeldung.com/java-equals-hashcode-contracts)
+* How equals() and
+
+* **What is the `hashCode()` and `equals()` used for?** [Journaldev](https://www.journaldev.com/21095/java-equals-hashcode), [DZone](https://dzone.com/articles/working-with-hashcode-and-equals-in-java), [GeeksforGeeks](https://www.geeksforgeeks.org/equals-hashcode-methods-java/), [Baeldung](https://www.baeldung.com/java-equals-hashcode-contracts), [Blog](http://www.technofundo.com/tech/java/equalhash.html), [Program Creek](https://www.programcreek.com/2011/07/java-equals-and-hashcode-contract/)
 
 * **Why would you not call abstract method in constructor?** [Stackoverflow](https://stackoverflow.com/questions/15327417/is-it-ok-to-call-abstract-method-from-constructor-in-java)
 
