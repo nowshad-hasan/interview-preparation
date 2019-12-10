@@ -708,7 +708,7 @@
 
 * How equals() and
 
-* **What is the `hashCode()` and `equals()` used for?** [Journaldev](https://www.journaldev.com/21095/java-equals-hashcode), [DZone](https://dzone.com/articles/working-with-hashcode-and-equals-in-java), [GeeksforGeeks](https://www.geeksforgeeks.org/equals-hashcode-methods-java/), [Baeldung](https://www.baeldung.com/java-equals-hashcode-contracts), [Blog](http://www.technofundo.com/tech/java/equalhash.html), [Program Creek](https://www.programcreek.com/2011/07/java-equals-and-hashcode-contract/)
+* **What is the `hashCode()` and `equals()` used for?** [Journaldev](https://www.journaldev.com/21095/java-equals-hashcode), [DZone](https://dzone.com/articles/working-with-hashcode-and-equals-in-java), [GeeksforGeeks](https://www.geeksforgeeks.org/equals-hashcode-methods-java/), [Baeldung](https://www.baeldung.com/java-equals-hashcode-contracts), [Blog](http://www.technofundo.com/tech/java/equalhash.html), [Program Creek](https://www.programcreek.com/2011/07/java-equals-and-hashcode-contract/), [YouTube](https://www.youtube.com/watch?v=Nr56SlbMed4)
 
 * **Why would you not call abstract method in constructor?** [Stackoverflow](https://stackoverflow.com/questions/15327417/is-it-ok-to-call-abstract-method-from-constructor-in-java)
 
