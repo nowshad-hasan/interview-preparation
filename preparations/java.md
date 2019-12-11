@@ -708,7 +708,11 @@
 
 * How equals() and
 
-* **What is the `hashCode()` and `equals()` used for?** [Journaldev](https://www.journaldev.com/21095/java-equals-hashcode), [DZone](https://dzone.com/articles/working-with-hashcode-and-equals-in-java), [GeeksforGeeks](https://www.geeksforgeeks.org/equals-hashcode-methods-java/), [Baeldung](https://www.baeldung.com/java-equals-hashcode-contracts), [Blog](http://www.technofundo.com/tech/java/equalhash.html), [Program Creek](https://www.programcreek.com/2011/07/java-equals-and-hashcode-contract/), [YouTube](https://www.youtube.com/watch?v=Nr56SlbMed4)
+* **What is the `hashCode()` and `equals()` used for?** [Journaldev](https://www.journaldev.com/21095/java-equals-hashcode), [DZone](https://dzone.com/articles/working-with-hashcode-and-equals-in-java), [GeeksforGeeks](https://www.geeksforgeeks.org/equals-hashcode-methods-java/), [Baeldung](https://www.baeldung.com/java-equals-hashcode-contracts), [Technofundo](http://www.technofundo.com/tech/java/equalhash.html), [Program Creek](https://www.programcreek.com/2011/07/java-equals-and-hashcode-contract/), [YouTube](https://www.youtube.com/watch?v=Nr56SlbMed4)
+
+* **How to access the fields of an interface in Java?** [Tutorialspoint](https://www.tutorialspoint.com/how-to-access-the-fields-of-an-interface-in-java), [StackOverflow](https://stackoverflow.com/questions/9446893/fields-in-interfaces/9446909)
+
+* **Two independent classes that communicate using an Interface.** [StackOverflow](https://stackoverflow.com/questions/16443165/two-independent-classes-that-communicate-using-an-interface)
 
 * **Why would you not call abstract method in constructor?** [Stackoverflow](https://stackoverflow.com/questions/15327417/is-it-ok-to-call-abstract-method-from-constructor-in-java)
 
@@ -933,7 +937,7 @@ Read more: [Baeldung](https://www.baeldung.com/java-static), [JavaTPoint](https:
 * <b>How Hashmap works in Java?</b></br>
    * HashMap in Java works on hashing principle. It is a data structure which allows us to store object and retrieve it in constant time O(1) provided we know the key. When we call put method, ```hashcode()``` method of the key object is called so that hash function of the map can find a bucket location to store Entry object.
    * If two different objects have the same hashcode: in this case, a linked list is formed at that bucket location and a new entry is stored as next node. After finding bucket location, we will call ```keys.equals()``` method to identify a correct node in LinkedList and return associated value object for that key in Java HashMap</br>
-
+   Read more: [Baeldung](https://www.baeldung.com/java-hashcode)
 
 
 ### Collection
