@@ -17,6 +17,7 @@
   * [Pramp](https://www.pramp.com/)
 * The best software Interview material - Prepare in less than 3 months [Gaurav Sen](https://youtu.be/bBPHpH8aKjw)
 * I Hire Software Developers. Your Resume Is The Reason You’re Not Getting Interviews [Medium](https://medium.com/@dominicwhite/i-hire-software-developers-your-resume-is-the-reason-youre-not-getting-interviews-dc7b2520a2f1)
+* Android Interviews in 2019 [Medium](https://proandroiddev.com/android-interviews-in-2019-aa518f321ff)
 
 ### Resume
 * How to write a killer Software Engineering résumé [FreeCodeCamp](https://medium.com/free-code-camp/writing-a-killer-software-engineering-resume-b11c91ef699d)
