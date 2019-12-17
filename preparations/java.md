@@ -817,6 +817,8 @@ Read more: [Baeldung](https://www.baeldung.com/java-static), [JavaTPoint](https:
 
   Read more: [Baeldung](https://www.baeldung.com/java-optional), [Mkyong](https://www.mkyong.com/java8/java-8-optional-in-depth/), [GeeksforGeeks](https://www.geeksforgeeks.org/java-8-optional-class/), [Callicoder](https://www.callicoder.com/java-8-optional-tutorial/)
 
+* Java | ==, equals(), compareTo(), equalsIgnoreCase() and compare() [GeeksforGeeks](https://www.geeksforgeeks.org/java-equals-compareto-equalsignorecase-and-compare/)
+
 * <b>What is externalization?</b></br>
    * In serialization, the JVM is responsible for the process of writing and reading objects. This is useful in most cases, as the programmers do not have to care about the underlying details of the serialization process.
    * However, the default serialization does not protect sensitive information such as passwords and credentials.
