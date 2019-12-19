@@ -136,6 +136,8 @@
 
       NOTE: *The functionality of this interface is duplicated by the Iterator interface. In addition, Iterator adds an optional remove operation, and has shorter method names. New implementations should consider using Iterator in preference to Enumeration.*
 
+* **Iterable vs Iterator** [GeeksforGeeks](https://www.geeksforgeeks.org/java-implementing-iterator-and-iterable-interface/), [Stackoverflow](https://stackoverflow.com/questions/6863182/what-is-the-difference-between-iterator-and-iterable-and-how-to-use-them), [Blog 1](https://www.techiedelight.com/differences-between-iterator-and-iterable-in-java/)
+
 * **Do you agree we use composition over inheritance?**  
 
     The `java.util.Properties` class is a good example of a bad use of inheritance. Rather than using a Hashtable to store its properties, it extends Hashtable, in order to reuse its methods and to avoid reimplementing some of them using delegation. </br>
