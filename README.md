@@ -7,6 +7,7 @@ A repository for taking interview preparations.
 * [Data Structure and Algorithm](/preparations/data%20structure%20and%20algorithm.md)
 * [Java](/preparations/java.md)
 * [Android](/preparations/android.md)
+* [Kotlin](/preparations/kotlin.md)
 * [Database](/preparations/database.md)
 * [Design Pattern](/preparations/design%20pattern.md)
 * [System Design](/preparations/system%20design.md)

@@ -138,6 +138,8 @@
 
 * **Iterable vs Iterator** [GeeksforGeeks](https://www.geeksforgeeks.org/java-implementing-iterator-and-iterable-interface/), [Stackoverflow](https://stackoverflow.com/questions/6863182/what-is-the-difference-between-iterator-and-iterable-and-how-to-use-them), [Blog 1](https://www.techiedelight.com/differences-between-iterator-and-iterable-in-java/)
 
+* Default Methods In Java 8 [Java Doc](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html), [GeeksforGeeks](https://www.geeksforgeeks.org/default-methods-java/), [DZone](https://dzone.com/articles/interface-default-methods-java), [Baeldung](https://www.baeldung.com/java-static-default-methods)
+
 * **Do you agree we use composition over inheritance?**  
 
     The `java.util.Properties` class is a good example of a bad use of inheritance. Rather than using a Hashtable to store its properties, it extends Hashtable, in order to reuse its methods and to avoid reimplementing some of them using delegation. </br>
