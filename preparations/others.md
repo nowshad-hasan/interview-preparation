@@ -45,3 +45,4 @@
   * [German Probashe](https://www.germanprobashe.com/archives/18128)
   * [Al-amin Nowshad's FB post](https://www.facebook.com/groups/483500628365392/permalink/2457292264319542/)
   * [GAAB](https://gaabbd.com/)
+  * [Sabir sir's FB Post about Google](https://www.facebook.com/notes/sabir-ismail/amazon-%E0%A6%93-google-%E0%A6%9A%E0%A6%BE%E0%A6%95%E0%A6%B0%E0%A6%BF%E0%A6%B0-%E0%A6%B8%E0%A7%81%E0%A6%AF%E0%A7%8B%E0%A6%97-%E0%A6%AA%E0%A6%BE%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%81%E0%A6%A4%E0%A6%BF-%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%AC-%E0%A7%A7/10157715186369674/)
