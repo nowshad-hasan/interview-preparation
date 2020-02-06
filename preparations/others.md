@@ -27,6 +27,7 @@
 * Create Your Resume for Google: Tips and Advice [Life at Google
 ](https://www.youtube.com/watch?v=BYUy1yvjHxE)
 * What A GOOD Resume Should Look Like [Career cup](https://www.careercup.com/resume)
+* CV Writing Guidelines [Therap JAVA Fest](https://therapjavafest.blogspot.com/2012/09/cv-writing-guidelines.html?m=1)
 
 ### Negotiation
 * How to Negotiate for a Better Salary When You’re Switching Careers [Medium](https://medium.com/s/story/how-to-negotiate-for-a-better-salary-when-youre-switching-careers-8a36bae307c9)

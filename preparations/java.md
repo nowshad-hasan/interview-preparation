@@ -16,7 +16,7 @@
 
  * <b>Why is Java said to be platform independent?</b></br>
     - The execution of the code does not depend upon the OS.</br>
-
+* A guide to Java versions and features [Marcobehler](https://www.marcobehler.com/guides/a-guide-to-java-versions-and-features)
 * <b>Why is the main method static in java?</b></br>
 
     * The method is static because otherwise there would be ambiguity on which method to be called. If static is removed from the main method, Program compiles successfully . But at runtime throws an error “NoSuchMethodError”.
