@@ -3,7 +3,6 @@ A repository for taking interview preparations.
 
 ### Topics
 
-* [Problem Solving](/preparations/problem%20solving.md)
 * [Data Structure and Algorithm](/preparations/data%20structure%20and%20algorithm.md)
 * [Java](/preparations/java.md)
 * [Android](/preparations/android.md)
@@ -15,6 +14,8 @@ A repository for taking interview preparations.
 * [Networking](/preparations/networking.md)
 * [Operating System](/preparations/operating%20system.md)
 * [Testing](/preparations/operating%testing.md)
+* [DevOps](/preparations/devops.md)
+* [Company Interview](/preparations/company%interview.md)
 * [Others](/preparations/others.md)
 
 ### Contributing Projects
@@ -23,11 +24,9 @@ A repository for taking interview preparations.
 * [Anitaa1990 - Android Cheat sheet](https://github.com/anitaa1990/Android-Cheat-sheet)
 * [MaximAbramchuck - Awesome Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
 
-### Read more
+### Interview Sites
 * [Jwasham - Coding Interview University](https://github.com/jwasham/coding-interview-university)
 * [Yangshun - Tech Interview Handbook](https://github.com/yangshun/tech-interview-handbook)
-* [Francistao - Learning Notes](https://github.com/francistao/LearningNotes)
-* [Coder Book](https://coderbook.com/career/)
 * [Andreis Interview](https://github.com/andreis/interview)
 * [InterviewBit](https://www.interviewbit.com/)
-* [Algo Expert](https://www.algoexpert.io/product)-*Please use Gaurav code*
+* [Algo Expert](https://www.algoexpert.io/product) - Please use *Gaurav* code here.

@@ -1,8 +1,25 @@
 ## Contents
 
+* [Problem Solving](#problem-solving)
 * [Data structure](#data-structure)
 * [Algorithm](#algorithm)
 * [Collection](#collection)
+
+### Problem Solving
+
+> Basic problem solving of string, array, data manipulating etc.
+
+## String
+
+ - [GeeksForGeeks](https://www.geeksforgeeks.org/c-programs-gq/string-programs-gq/) - Around 30-40 Problems
+ - [GeeksForGeeks Quiz](https://www.geeksforgeeks.org/c-string-question-9/) - Around 10-15 problems
+ - [Aticleworld](https://aticleworld.com/string-interview-questions-in-c/) - around 20 problems
+ - [w3resource](https://www.w3resource.com/c-programming-exercises/string/index.php) - 30 problems
+
+## Array
+
+* [Top 30 Array Interview Questions and Answers for Programmers](https://javarevisited.blogspot.com/2015/06/top-20-array-interview-questions-and-answers.html)
+
 
 ### Data Structure
 * <b>What are Data Structures?</b></br>
@@ -61,4 +78,6 @@
 ### Algorithm
 
 ### Collection
+* 52 Programming Problems by Subeen.
+ Solve the easiest problems from [here](https://dimikoj.com/problems).
 * [Sherxon - AlgoDS](https://github.com/sherxon/AlgoDS)
