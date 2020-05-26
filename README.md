@@ -13,16 +13,16 @@ A repository for taking interview preparations.
 * [System Design](/preparations/system%20design.md)
 * [Networking](/preparations/networking.md)
 * [Operating System](/preparations/operating%20system.md)
-* [Testing](/preparations/operating%testing.md)
+* [Testing](/preparations/testing.md)
 * [DevOps](/preparations/devops.md)
-* [Company Interview](/preparations/company%interview.md)
+* [Company Interview](/preparations/company%20interview.md)
 * [Others](/preparations/others.md)
 
 ### Contributing Projects
 
+* [MaximAbramchuck - Awesome Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
 * [Mindorks - Android Interview Questions](https://github.com/MindorksOpenSource/android-interview-questions)
 * [Anitaa1990 - Android Cheat sheet](https://github.com/anitaa1990/Android-Cheat-sheet)
-* [MaximAbramchuck - Awesome Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
 
 ### Interview Sites
 * [Jwasham - Coding Interview University](https://github.com/jwasham/coding-interview-university)
