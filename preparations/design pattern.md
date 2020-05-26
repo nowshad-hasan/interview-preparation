@@ -1,4 +1,10 @@
-* **What are the design patterns?** [GitHub](https://github.com/iluwatar/java-design-patterns)
+## Contents
+
+* [Basics](#basics)
+
+
+### Basics
+* **What are the design patterns?**
     - Creational patterns
         - Builder [Wikipedia](https://en.wikipedia.org/wiki/Builder_pattern?oldformat=true)
 

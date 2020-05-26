@@ -738,8 +738,6 @@
 
 * <b>Have you tried Kotlin?</b> [MindOrks](https://blog.mindorks.com/why-you-must-try-kotlin-for-android-development-e14d00c8084b)
 
-* <b>What are Coroutines in Kotlin?</b> [MindOrks](https://blog.mindorks.com/mastering-kotlin-coroutines-in-android-step-by-step-guide)
-
 * <b>What are the metrics that you should measure continuously while android application development?</b> [MindOrks](https://blog.mindorks.com/android-app-performance-metrics-a1176334186e)
 
 * <b>What is Chrome Custom Tabs? How to display web content in your app?</b> [MindOrks](https://blog.mindorks.com/android-browser-lets-launch-chrome-custom-tabs-with-kotlin)

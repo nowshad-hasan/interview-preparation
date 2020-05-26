@@ -1297,13 +1297,10 @@ For local users FAT (File Allocation Table) and FAT32 provides security, while N
 
 * <b>Mention what windows server 2008 service is used to install client operating system over the network?</b></br>
 
-WDE ( Windows Deployment Services ) allows you to install client and server operating systems over the network to any computer with a PXE enabled network interface
-
-* <b>Read more:</b></br>
-
-  * [Top 10 Interview Questions for Windows Administrators](http://www.brentozar.com/archive/2009/07/top-10-interview-questions-for-windows-sysadmins/)
-  * [Top 22 Windows Server Interview Questions from Career Guru](http://career.guru99.com/top-22-windows-server-interview-questions/)
-  * [Windows Admin Interview Questions & Answers](http://www.01world.in/p/windows.html)
-
+WDE (Windows Deployment Services) allows you to install client and server operating systems over the network to any computer with a PXE enabled network interface
 
 ### Read More
+
+* [Top 10 Interview Questions for Windows Administrators](http://www.brentozar.com/archive/2009/07/top-10-interview-questions-for-windows-sysadmins/)
+* [Top 22 Windows Server Interview Questions from Career Guru](http://career.guru99.com/top-22-windows-server-interview-questions/)
+* [Windows Admin Interview Questions & Answers](http://www.01world.in/p/windows.html)
