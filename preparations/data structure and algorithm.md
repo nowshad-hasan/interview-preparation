@@ -81,3 +81,4 @@
 * 52 Programming Problems by Subeen.
  Solve the easiest problems from [here](https://dimikoj.com/problems).
 * [Sherxon - AlgoDS](https://github.com/sherxon/AlgoDS)
+* বিচ্ছিন্ন গণিত [Dimik Computing](https://dimikcomputing.com/course/discrete-mathematics-online-course/)

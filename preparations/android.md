@@ -841,7 +841,7 @@
 * [Collection of Android and Java related questions and topics, including general developer questions, Java core, Data structures, Build Tools, Programming Paradigms, Core Android, Databases and etc](https://github.com/derekargueta/Android-Interview-Questions)
 * [Collection of Android and Java questions divided by experience](https://medium.com/@neteinstein/not-another-android-interviews-article-the-questions-3dedafa30bec)
 * [Android Interview Questions & How to Interview Candidates](https://pangara.com/blog/android-interview-questions)
-
+* Android Interviews in 2019 [Medium](https://proandroiddev.com/android-interviews-in-2019-aa518f321ff)
 ### Read more
 * [Derekargueta - Android-Interview-Questions](https://github.com/derekargueta/Android-Interview-Questions)
 

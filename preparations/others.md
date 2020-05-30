@@ -13,11 +13,13 @@
 * [How to Win the Coding Interview](https://medium.com/on-writing-code/how-to-win-the-coding-interview-71ae7102d685)
 * [7 Reasons You Aren’t Getting Hired](https://beginwithin.life/7-reasons-you-arent-getting-hired/)
 * [Ace your next interview - Mozammel Haque [Developers Conference 2017]](https://youtu.be/-QvJFql5m7A)
-* Interview practice Online
-  * [Pramp](https://www.pramp.com/)
 * The best software Interview material - Prepare in less than 3 months [Gaurav Sen](https://youtu.be/bBPHpH8aKjw)
 * I Hire Software Developers. Your Resume Is The Reason You’re Not Getting Interviews [Medium](https://medium.com/@dominicwhite/i-hire-software-developers-your-resume-is-the-reason-youre-not-getting-interviews-dc7b2520a2f1)
-* Android Interviews in 2019 [Medium](https://proandroiddev.com/android-interviews-in-2019-aa518f321ff)
+* The Guerrilla Guide to Interviewing (version 3.0) [Blog](https://www.joelonsoftware.com/2006/10/25/the-guerrilla-guide-to-interviewing-version-30/)
+* Coding and Collaboration Skills for Junior Software Developers [JUGBD GitHub](https://github.com/jugbd/resources/blob/master/junior-developer-skill.md)
+* The STAR method [PDF](https://www.vawizard.org/wiz-pdf/STAR_Method_Interviews.pdf)
+* How to Use the STAR Interview Response Method [Blog](https://www.thebalancecareers.com/what-is-the-star-interview-response-technique-2061629)
+* Using the Star technique to shine at job interviews: a how-to guide [The Guardian](https://www.theguardian.com/careers/careers-blog/star-technique-competency-based-interview)
 
 ### Resume
 * How to write a killer Software Engineering résumé [FreeCodeCamp](https://medium.com/free-code-camp/writing-a-killer-software-engineering-resume-b11c91ef699d)

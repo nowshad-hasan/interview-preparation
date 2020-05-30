@@ -30,3 +30,5 @@ A repository for taking interview preparations.
 * [Andreis Interview](https://github.com/andreis/interview)
 * [InterviewBit](https://www.interviewbit.com/)
 * [Algo Expert](https://www.algoexpert.io/product) - Please use *Gaurav* code here.
+* [FullStack Cafe](https://www.fullstack.cafe/)
+* [Pramp](https://www.pramp.com/)
