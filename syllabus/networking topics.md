@@ -1,0 +1,26 @@
+### Basic
+
+- OSI Model
+- NAT - Network Address Translation
+- Proxy Vs Reverse Proxy
+- Load balancer
+- HA Proxy
+- Nginx
+- How cookies, session work
+- HTTP 1/ HTTP2
+- gRPC
+- TCP vs UDP
+- Layer 4 Vs Layer 7 Load balancer
+- TLS, SSL
+- LAN vs WAN
+- Router vs Switch
+- Subnet mask
+- What is NIC
+- What is layers under TCP/IP
+- What is default gateway?
+- What is netstat?
+- What is DNS?
+- Hub vs Switch
+- What is SMTP?
+- IPv4 vs IPv6
+- What is RSA algorithm?

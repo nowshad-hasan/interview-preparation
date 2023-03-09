@@ -10,7 +10,7 @@
 - BeanFactory vs ApplicationContext
 - Constructor Injection over Field Injection:
 - Qualifier
-- Why we don't need to use @ComponentScan in Spring  Boot
+- What is @ComponentScan? Why we don't need to use @ComponentScan in Spring  Boot? 
 - OpenSession Vs BeginSession
 - Flush
 - @Proxy, @Async
@@ -20,6 +20,8 @@
 - Transaction and its Isolation modes
 - Servlet, Dispatcher servlet and ViewResolver
 - RequestParam Vs PathVariable
+- Different types of injection - method injection, property injection, constructor injection
+- @Value
 
 ### Spring AOP
 
@@ -59,7 +61,7 @@
 - Cache - first level cache, second level cache, Query Cache
 - Save vs Persist
 - Hibernate N+1 Problem
-
+- Optimistic vs Pessimistic locking
 
 ### Spring Security
 
