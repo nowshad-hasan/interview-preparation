@@ -4,6 +4,7 @@
 - YAGNI
 - KISS
 - DRY
+- TDD vs BDD
 
 ### Regex
 
