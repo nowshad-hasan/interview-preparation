@@ -19,7 +19,7 @@
 - Why multiple inheritance not possible in java? 
 - How multiple inheritance handled in interface for java 8?
 - Type of Interface variable
-- Rules of method overloading
+- Rules of method overloading. What's gonna happen when inheritance is applied to a method?
 - When auto-constructor added and when not
 - Use of `super`
 - Power of `enum`
@@ -43,6 +43,7 @@
 - String formatting
 - Java reflection API
 - Method Handles
+- Java 17 features
 
 ### Java 8 special
 
@@ -121,10 +122,10 @@
 - Exception handling from thread
 - ThreadLocal
 - Memory share across multiple threads
-- Immutable object
+- Immutable class
 - The Dining Philosophers Problem
 - Wait(), notify() and notifyAll()
-- Synchronised and concurrent collection
+- Synchronized and concurrent collection
 - BlockingQueue
 - Executor framework
 - ThreadPool
