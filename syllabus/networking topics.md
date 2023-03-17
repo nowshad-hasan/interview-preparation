@@ -24,3 +24,6 @@
 - What is SMTP?
 - IPv4 vs IPv6
 - What is RSA algorithm?
+- HTTP vs HTTPS
+- TTL - Time to live
+- Symmetric vs Asymmetric key
