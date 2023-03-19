@@ -35,4 +35,4 @@
 - What is TCP three way handshake?
 - Stateful vs Stateless
 - What is WebSocket?
-- What is E-Tag
+- What is E-Tag? HTTP caching.
