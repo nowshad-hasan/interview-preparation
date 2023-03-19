@@ -27,3 +27,12 @@
 - HTTP vs HTTPS
 - TTL - Time to live
 - Symmetric vs Asymmetric key
+- TLS 1.2, 1.3, Diffie Hellman
+- What is ARP?
+- What is IP tables?
+- What is port forwarding?
+- GET Vs POST. What is OPTIONS?
+- What is TCP three way handshake?
+- Stateful vs Stateless
+- What is WebSocket?
+- What is E-Tag

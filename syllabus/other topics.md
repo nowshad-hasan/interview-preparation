@@ -29,3 +29,7 @@
 - git clean
 - git grep
 - git fork
+
+### Behavior 
+
+- STAR technique 
