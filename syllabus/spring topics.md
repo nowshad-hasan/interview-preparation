@@ -22,6 +22,7 @@
 - RequestParam Vs PathVariable
 - Different types of injection - method injection, property injection, constructor injection
 - @Value
+- SessionAttributes vs HttpSession
 
 ### Spring AOP
 
