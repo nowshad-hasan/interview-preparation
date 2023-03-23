@@ -7,7 +7,7 @@
 - HA Proxy
 - Nginx
 - How cookies, session work
-- HTTP 1/ HTTP2
+- HTTP 1 vs HTTP 1.1 vs HTTP 2 vs HTTP 3
 - gRPC
 - TCP vs UDP
 - Layer 4 Vs Layer 7 Load balancer
