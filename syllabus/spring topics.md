@@ -1,8 +1,11 @@
 ### Spring core
 
 - Two ways to configure ApplicationContext
+- What is ApplicationContext?
 - Component vs Bean
 - All the common annotations - Controller, Component, Service, Repository
+- PostConstruct, PreDestroy
+- What is Primary annotation?
 - Inversion Of Control (IOC)
 - PreDestroy, PostConstruct
 - Autowired
@@ -12,10 +15,11 @@
 - Qualifier
 - What is @ComponentScan? Why we don't need to use @ComponentScan in Spring  Boot? 
 - OpenSession Vs BeginSession
-- Flush
+- Different types of Flush modes
 - @Proxy, @Async
-- HikariCP, Tomcat
-- Bean Scopes
+- HikariCP vs Tomcat JDBC
+-  Tomcat
+- Bean Scopes. Singleton vs Application scope
 - How to inject Prototype Bean in Singleton Bean
 - Transaction and its Isolation modes
 - Servlet, Dispatcher servlet and ViewResolver
@@ -23,6 +27,8 @@
 - Different types of injection - method injection, property injection, constructor injection
 - @Value
 - SessionAttributes vs HttpSession
+- Spring vs Spring Boot?
+- How does Spring Boot's auto-configuration works?
 
 ### Spring AOP
 
@@ -45,16 +51,17 @@
 - @Entity Vs @Table
 - Transient
 - @Basic, @LOB, @CLOB, @BLOB
-- PrimaryKey vs SurrogateKey
+- PrimaryKey. Different types of keys.
 - @GeneratedValue
 - Embedded Object: @Embeddable
-- Embeded Collection
+- Embeded Collection, @ElemenetCollection
+- @JoinColumn vs MappedBy
 - @JoinTable, @JoinColumn
 - @CollectionId
 - Hibernate Proxy Object for Session.get()
 - OneToOne, OneToMany, ManyToOne, ManyToMany. And their fetch default operation.
 - Hibernate Collections
-- Cascade
+- Cascade types
 - Inheritance
 - Transient vs Persistent Vs Detached Objects. And their state changing behaviour.
 - HQL, JPQL
@@ -63,7 +70,7 @@
 - Save vs Persist
 - Hibernate N+1 Problem
 - Optimistic vs Pessimistic locking
-
+- Named query
 ### Spring Security
 
 - Encode vs Encrypt
