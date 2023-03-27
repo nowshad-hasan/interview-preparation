@@ -1,10 +1,10 @@
 ### Basics
 
 - Overloading Vs Overriding
-- 4 concepts of OOP - Polymorphism, Inheritance, Encapsulation, Abstraction
+- 4 concepts of OOP (PIE) - Polymorphism, Inheritance, Encapsulation, Abstraction
 - Abstract class vs interface
 - Autoboxing Vs Unboxing
-- Typecasting in Java
+- Typecasting in Java, Upcasting, Downcasting
 - Is Java Pass By reference or Pass by value
 - Difference between local, instance and class variables
 - 8 primitive types, their default value and memory allocation
@@ -17,7 +17,6 @@
 - Why constructors can not be final and can not return values?
 - Default, static method in interface.
 - Why multiple inheritance not possible in java? 
-- How multiple inheritance handled in interface for java 8?
 - Type of Interface variable
 - Rules of method overloading. What's gonna happen when inheritance is applied to a method?
 - When auto-constructor added and when not
@@ -44,17 +43,20 @@
 - Java reflection API
 - Method Handles
 - Java 17 features
+- How object reference changed
+- Interface's default methods, static method, private methods
+- Deep cloning vs Shallow cloning
 
 ### Java 8 special
 
-- Annonymous inner class and lambda expression. Difference between these two.
+- Anonymous inner class and lambda expression. Difference between these two.
 - Different kinds of Programming Paradigm - Imperative, Declarative, Structured, Procedural, Functional, Object Oriented
 - Method vs Function. Side Effect
 - Imperative vs Declarative programming language
 - Functional Interface
 - Scope of lambda Expression
 - Static method reference, Instance method reference, Constructor reference
-- Default method
+- Default method and the solutions of multiple inheritance for interfaces
 - Stream
 - Collectors, Summarizing, String Joining, Grouping, Sub-grouping
 - Exception handling for lambda expression
@@ -134,3 +136,4 @@
 - Concurrency vs Parallelism
 - Atomic variable
 - Daemon Thread
+- Data race (data issue -> volatile) vs race condition (condition in section -> synchronised)
