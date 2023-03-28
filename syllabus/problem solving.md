@@ -2,6 +2,19 @@
 
 - [Pattern programming - Interview Bit](https://www.interviewbit.com/design-patterns-interview-questions/#pattern-programming)
 
+### Array
+
+- Create an Array class behaved like ArrayList, add below operations
+  - insert(int item)
+  - insertAt(int index, int item)
+  - removeAt(int index)
+  - indexOf(int item)
+  - toString()
+  - max()
+  - intersect(Array newArr) - find common items between other array
+  - reverse() 
+
+
 ### String
 
 ### Theory
