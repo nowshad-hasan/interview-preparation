@@ -2,6 +2,8 @@
 
 - [Pattern programming - Interview Bit](https://www.interviewbit.com/design-patterns-interview-questions/#pattern-programming)
 
+## EASY
+
 ### Array
 
 - Create an Array class behaved like ArrayList, add below operations
@@ -14,15 +16,23 @@
   - intersect(Array newArr) - find common items between other array
   - reverse() 
 
+### Linked list 
 
-### String
+** Just firstNode is given
 
-### Theory
-
-- Adjacency matrix
-- BFS vs DFS
-- Binary tree
-- Graph vs Tree
+- Detect duplicates - HR
+- Detect cycle - HR
+- Doubly linked list
+- Find merge point of two lists - HR
+- Insert node into sorted doubly linked list
+- Create a linked list with basic operations
+- Merge two sorted linked list
+- N item reverse linked list
+- Palindrome linked list
+- Remove duplicate linked list
+- Reverse doubly linked list
+- Reverse linked list
+- Sum list - CTCI
 
 ### Stack
 
@@ -38,6 +48,16 @@
 - Build a stack with array
 - StackOfPlates - CTCI
 - Three stacks using one array
+
+### String
+
+### Theory
+
+- Adjacency matrix
+- BFS vs DFS
+- Binary tree
+- Graph vs Tree
+
 
 ### Queue
 
@@ -66,6 +86,21 @@
 - Reverse doubly linked list
 - Reverse linked list
 - Sum list - CTCI
+
+### Stack
+
+- Balanced bracket
+- Create a stack using linked list
+- Min stack
+- Max stack
+- Redundant braces
+- Two stacks
+- Reverse string
+- Sorted stack with recursion - CTCI
+- Sorted stack with stack - CTCI
+- Build a stack with array
+- StackOfPlates - CTCI
+- Three stacks using one array
 
 ### Graph
 
