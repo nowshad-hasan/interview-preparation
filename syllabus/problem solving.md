@@ -37,17 +37,21 @@
 ### Stack
 
 - Balanced bracket
-- Create a stack using linked list
 - Min stack
-- Max stack
-- Redundant braces
 - Two stacks
 - Reverse string
-- Sorted stack with recursion - CTCI
-- Sorted stack with stack - CTCI
 - Build a stack with array
-- StackOfPlates - CTCI
-- Three stacks using one array
+- Stack using two queue
+- Stack using one queue
+
+### Queue
+
+- ArrayQueue - mosh
+- Circular array queue - mosh
+- Create a queue with linked list
+- Create a priority queue with array
+- Reverse a queue
+- Queue using stack
 
 ### String
 
