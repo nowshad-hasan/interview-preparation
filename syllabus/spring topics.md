@@ -71,6 +71,7 @@
 - Hibernate N+1 Problem
 - Optimistic vs Pessimistic locking
 - Named query
+- Spring Boot 2 vs Spring 3
 ### Spring Security
 
 - Encode vs Encrypt
