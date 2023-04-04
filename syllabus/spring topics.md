@@ -88,3 +88,5 @@
 - What is LDAP
 - Session Vs Cookie vs Token (And JWT)
 - How JWT works?
+- What is OAuth 2.0?
+- Different flows of OAuth 2.0, how those work, like - code, client_credentials
