@@ -6,6 +6,7 @@
 - Load balancer
 - HA Proxy
 - Nginx
+- Nginx vs tomcat vs apache
 - How cookies, session work
 - HTTP 1 vs HTTP 1.1 vs HTTP 2 vs HTTP 3
 - gRPC
