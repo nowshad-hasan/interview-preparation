@@ -29,7 +29,8 @@
 - SessionAttributes vs HttpSession
 - Spring vs Spring Boot?
 - How does Spring Boot's auto-configuration works?
-
+- RestTemplate vs WebClient
+- Why we should avoid returning lists in APIs? - https://youtu.be/Dmvhe2cw-_k
 ### Spring AOP
 
 - Where we can apply AOP
