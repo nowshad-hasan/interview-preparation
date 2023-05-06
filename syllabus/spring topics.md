@@ -32,6 +32,7 @@
 - RestTemplate vs WebClient
 - Why we should avoid returning lists in APIs? - https://youtu.be/Dmvhe2cw-_k
 - Why use @Inject?
+- Design pattern used in Spring
 ### Spring AOP
 
 - Where we can apply AOP
