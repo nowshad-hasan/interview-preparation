@@ -32,6 +32,8 @@
 - RestTemplate vs WebClient
 - Why we should avoid returning lists in APIs? - https://youtu.be/Dmvhe2cw-_k
 - Why use @Inject?
+- Singleton, Factory vs Abstract factory, Proxy vs Dynamic proxy design pattern used in spring
+
 ### Spring AOP
 
 - Where we can apply AOP

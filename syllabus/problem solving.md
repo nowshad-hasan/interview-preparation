@@ -15,6 +15,9 @@
   - max()
   - intersect(Array newArr) - find common items between other array
   - reverse() 
+- Two sum
+- Prime number generate within a ranges
+- Array of integers and find two items matching a target
 
 ### Linked list 
 
