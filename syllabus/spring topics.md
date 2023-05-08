@@ -33,7 +33,7 @@
 - Why we should avoid returning lists in APIs? - https://youtu.be/Dmvhe2cw-_k
 - Why use @Inject?
 - Design pattern used in Spring - Singleton, Factory vs Abstract factory, Proxy vs Dynamic proxy design pattern, Template design pattern
-- Spring cache
+- Spring Cache Abstraction - [A Guide To Caching in Spring](https://www.baeldung.com/spring-cache-tutorial)
 
 ### Spring AOP
 

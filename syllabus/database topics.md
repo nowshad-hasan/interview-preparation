@@ -34,6 +34,8 @@
 - What is Cursor?
 - What is Normalization? What are different normalization forms?
 - Different types of constraints
+- OVER PARTITION BY - example - aggreaget columns with non-aggregate columns.
+- ROW_NUMBER OVER () - with example 
 
 ### Transaction
 
