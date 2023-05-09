@@ -16,7 +16,7 @@
 - Why main method static in java
 - Why constructors can not be final and can not return values?
 - Default, static method in interface.
-- Why multiple inheritance not possible in java? 
+- Why multiple inheritance not possible in java? What is diamond problem?
 - Type of Interface variable
 - Rules of method overloading. What's gonna happen when inheritance is applied to a method?
 - When auto-constructor added and when not
@@ -45,7 +45,11 @@
 - Java 17 features
 - How object reference changed
 - Interface's default methods, static method, private methods
-- Deep cloning vs Shallow cloning
+- Deep cloning vs Shallow cloning . Understand with example.
+- Copy constructor. How it is used in cloning?
+- Can we pollute final methods or variables using Java Reflection API? 
+- Upcasting and downcasting. (upcasting is natural, downcast is explicit and used with instanceof)
+- What are limitation of abstract class? like - how method should be used? if final is possible in method name?
 
 ### Java 8 special
 
@@ -111,6 +115,7 @@
 - What is memory leak? How does it happen? What is its solution?
 - Class loading, class object
 - Bytecode, bytecode instruction
+- What is JIT compiler? How does it work better in JVM?
 
 ### Threading
 

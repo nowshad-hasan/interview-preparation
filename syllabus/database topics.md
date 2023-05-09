@@ -36,7 +36,7 @@
 - Different types of constraints
 - OVER PARTITION BY - example - aggreaget columns with non-aggregate columns.
 - ROW_NUMBER OVER () - with example 
-
+- Order of execution in a SQL
 ### Transaction
 
 - SAVEPOINT, COMMIT, ROLLBACK, SET TRANSACTION
