@@ -37,6 +37,22 @@
 - OVER PARTITION BY - example - aggreaget columns with non-aggregate columns.
 - ROW_NUMBER OVER () - with example 
 - Order of execution in a SQL
+- What is a DBMS, and what are its advantages over a traditional file-based system?
+- What are the ACID properties of a transaction, and why are they important?
+- What is normalization, and why is it important?
+- What are the different levels of normalization?
+- What is a primary key, and why is it important?
+- What is a foreign key, and how does it relate to a primary key?
+- What are the different types of joins, and how do they work?
+- What is a subquery, and how is it used?
+- What is a trigger, and when would you use one?
+- What is a view, and how is it different from a table?
+- What is indexing, and why is it important?
+- What is a clustered index, and how does it differ from a non-clustered index?
+- What is a stored procedure, and how is it used?
+- What is a cursor, and how is it used?
+- What is sharding, and how is it different from partitioning?
+- What is NoSQL, and how does it differ from a traditional relational database?
 ### Transaction
 
 - SAVEPOINT, COMMIT, ROLLBACK, SET TRANSACTION
