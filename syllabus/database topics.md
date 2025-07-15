@@ -53,6 +53,7 @@
 - What is a cursor, and how is it used?
 - What is sharding, and how is it different from partitioning?
 - What is NoSQL, and how does it differ from a traditional relational database?
+- In vs Exists
 ### Transaction
 
 - SAVEPOINT, COMMIT, ROLLBACK, SET TRANSACTION
