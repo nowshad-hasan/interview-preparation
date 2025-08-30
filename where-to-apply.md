@@ -28,3 +28,7 @@ Company Career Page:
 Remote job:
 - [Toptal](https://www.toptal.com/)
 - [Turing](https://www.turing.com/)
+
+Best countries for Software Engineers: 
+
+- 
