@@ -26,6 +26,7 @@
 ### Tips and Tricks
 
 - How to Get an Interview as a Software Developer [Freecodecamp](https://www.freecodecamp.org/news/how-to-get-an-interview-as-a-software-developer/)
+- BIGGEST Mistakes to Avoid
 
 ### Preperation Website
 
