@@ -13,6 +13,9 @@
 - 14 Most Popular Amazon Coding Interview Questions You Should Practice [Design Gurus](https://www.designgurus.io/blog/amazon-14-question)
 - Leadership Principles [Amazon Jobs](https://www.amazon.jobs/content/en/our-workplace/leadership-principles)
 - Software developer interview questions [Link](https://www.zippia.com/software-developer-jobs/interview-questions/)
+- You Don’t Need to Meet Every Qualification to Apply for a Job [Link](https://hbr.org/2019/05/you-dont-need-to-meet-every-qualification-to-apply-for-a-job)
+- 7 Red Flags To Look Out For During a Software Developer Interview [Geeksforgeeks](https://www.geeksforgeeks.org/blogs/7-red-flags-to-look-out-for-during-a-software-developer-interview/)
+- Top 10 Career Fields and Soft Skills for Freelance Jobs [Link](https://benta-jobs-monster.blogspot.com/2021/05/top-10-career-fields-and-soft-skills.html)
 
 ### Job abroad
 
@@ -41,6 +44,7 @@
 - [awesome-interview-questions](https://github.com/DopplerHQ/awesome-interview-questions)
 - [Grokking the Object Oriented Design Interview](https://github.com/tssovi/grokking-the-object-oriented-design-interview)
 - [Interview](https://github.com/Olshansk/interview)
+- The Complete FAANG Preparation [Github](https://github.com/AkashSingh3031/The-Complete-FAANG-Preparation)
 
 ### Job Abroad Website
 
@@ -130,6 +134,12 @@
 - [AsthaIT](https://www.asthait.com/career/)
 - [Tekarsh](https://tekarsh.com/career/)
 - [Protonics Ltd](https://careers.smartrecruiters.com/PortonicsLimited/)
+
+### Videos
+
+- Job Hunt Tips in 2021 [Freecodecamp Talks](https://youtu.be/K3B5AltcCTY?si=kJGfD3bWzkT2SS9c)
+- How to Master Your Job Search [Freecodecamp Talks](https://youtu.be/KPzFCZ_u_sY?si=Ty_Q-0zZZqyON1Ln)
+- HOW TO USE LINKEDIN AS A DEVELOPER to get a job in tech! How to network! [Youtube](https://youtu.be/SG5Sb5WTV_g?si=iGr0EH5SEdk84xY0)
 
 ### Process
 
