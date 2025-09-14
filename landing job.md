@@ -16,6 +16,11 @@
 - You Don’t Need to Meet Every Qualification to Apply for a Job [Link](https://hbr.org/2019/05/you-dont-need-to-meet-every-qualification-to-apply-for-a-job)
 - 7 Red Flags To Look Out For During a Software Developer Interview [Geeksforgeeks](https://www.geeksforgeeks.org/blogs/7-red-flags-to-look-out-for-during-a-software-developer-interview/)
 - Top 10 Career Fields and Soft Skills for Freelance Jobs [Link](https://benta-jobs-monster.blogspot.com/2021/05/top-10-career-fields-and-soft-skills.html)
+- 5 Useful Tips from My Amazon SDE II Interview Experience [Hackernoon](https://hackernoon.com/5-useful-tips-from-my-amazon-sde-ii-interview-experience)
+- Top 26 coding questions to crack the Microsoft interview [Educative.io](https://www.educative.io/blog/microsoft-interview-coding-questions)
+- Find Linkedin URLs with Google Sheets [Link](https://www.lemlist.com/ghseet-hack)
+- Software Engineer Qualification Levels: Junior, Middle, and Senior [Link](https://www.altexsoft.com/blog/software-engineer-qualification-levels-junior-middle-and-senior/)
+- Navigating Job Searches During Layoff Periods: Advice for Engineers [Link](https://read.highgrowthengineer.com/p/advice-for-job-seekers-in-a-layoff)
 
 ### Job abroad
 
@@ -35,6 +40,10 @@
 
 - [The Daily Byte](https://thedailybyte.dev/)
 - [Advent of Code](https://adventofcode.com/)
+
+### Tools
+
+- Cover Letter Writing [Link](https://www.careered.ai/tool/cover-letter)
 
 ### Github Projects
 
@@ -60,6 +69,7 @@
 
 ### Remote Job Website
 
+- [Remote in Tech](https://remoteintech.company/)
 - [Jobspresso](https://jobspresso.co/)
 - [We Work Remotely](https://weworkremotely.com/)
 - [Toptal](https://www.toptal.com/)
@@ -97,6 +107,7 @@
 - [](http://skipthechive.com/)
 - [Just Remote](https://justremote.co/remote-jobs)
 - [Power to Fly](https://powertofly.com/)
+- [Make Money Writing](https://www.compose.ly/become-a-writer-intl)
 
 ### Preparation Website
 
