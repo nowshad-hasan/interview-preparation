@@ -44,6 +44,8 @@
 ### Tools
 
 - Cover Letter Writing [Link](https://www.careered.ai/tool/cover-letter)
+- [Teal](https://www.tealhq.com/)
+- [Cultivated Culture](https://cultivatedculture.com/resume-scanner/)
 
 ### Github Projects
 
