@@ -46,6 +46,7 @@
 - Cover Letter Writing [Link](https://www.careered.ai/tool/cover-letter)
 - [Teal](https://www.tealhq.com/)
 - [Cultivated Culture](https://cultivatedculture.com/resume-scanner/)
+- Practice interview with AI coach [Speeko](https://www.speeko.co/)
 
 ### Github Projects
 
@@ -56,6 +57,9 @@
 - [Grokking the Object Oriented Design Interview](https://github.com/tssovi/grokking-the-object-oriented-design-interview)
 - [Interview](https://github.com/Olshansk/interview)
 - The Complete FAANG Preparation [Github](https://github.com/AkashSingh3031/The-Complete-FAANG-Preparation)
+- [Established remote companies](https://github.com/yanirs/established-remote)
+- [International Tech Job Search Handbook](https://github.com/AndrewStetsenko/tech-jobs-with-relocation)
+- [Resume Job Matcher](https://github.com/sliday/resume-job-matcher)
 
 ### Job Abroad Website
 
