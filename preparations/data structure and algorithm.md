@@ -82,3 +82,4 @@
  Solve the easiest problems from [here](https://dimikoj.com/problems).
 * [Sherxon - AlgoDS](https://github.com/sherxon/AlgoDS)
 * বিচ্ছিন্ন গণিত [Dimik Computing](https://dimikcomputing.com/course/discrete-mathematics-online-course/)
+* 14 Patterns to Ace Any Coding Interview Question [Hackernoon](https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed)

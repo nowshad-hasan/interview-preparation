@@ -842,6 +842,7 @@
 * [Collection of Android and Java questions divided by experience](https://medium.com/@neteinstein/not-another-android-interviews-article-the-questions-3dedafa30bec)
 * [Android Interview Questions & How to Interview Candidates](https://pangara.com/blog/android-interview-questions)
 * Android Interviews in 2019 [Medium](https://proandroiddev.com/android-interviews-in-2019-aa518f321ff)
+* Android Interview Series 2024 — Part 1 (Android basics) [Pro Android Dev](https://proandroiddev.com/android-interview-series-2024-part-1-android-basics-23a713f4a648)
 ### Read more
 * [Derekargueta - Android-Interview-Questions](https://github.com/derekargueta/Android-Interview-Questions)
 
@@ -852,3 +853,4 @@
 * [Moosphan - Android-Daily-Interview](https://github.com/Moosphan/Android-Daily-Interview)
 
 * [Farhad - Android-Interview](https://github.com/farhad/android-interview)
+* [Android-Interview-Questions](https://github.com/Kirchhoff-/Android-Interview-Questions)

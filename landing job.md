@@ -21,6 +21,9 @@
 - Find Linkedin URLs with Google Sheets [Link](https://www.lemlist.com/ghseet-hack)
 - Software Engineer Qualification Levels: Junior, Middle, and Senior [Link](https://www.altexsoft.com/blog/software-engineer-qualification-levels-junior-middle-and-senior/)
 - Navigating Job Searches During Layoff Periods: Advice for Engineers [Link](https://read.highgrowthengineer.com/p/advice-for-job-seekers-in-a-layoff)
+- 20 Best Job Search Websites To Land Your Next Role in 2025 [Upwork](https://www.upwork.com/resources/best-job-search-website)
+- 20 Best Job Search Sites in 2025 [Flexjobs](https://www.flexjobs.com/blog/post/best-job-search-sites)
+- How to interview at Amazon - Leadership - Now including the 2 new Principles [Linkedin](https://www.linkedin.com/pulse/how-interview-amazon-leadership-david-anderson/)
 
 ### Job abroad
 
@@ -60,6 +63,11 @@
 - [Established remote companies](https://github.com/yanirs/established-remote)
 - [International Tech Job Search Handbook](https://github.com/AndrewStetsenko/tech-jobs-with-relocation)
 - [Resume Job Matcher](https://github.com/sliday/resume-job-matcher)
+- [Hiring Without Whiteboards](https://github.com/poteto/hiring-without-whiteboards)
+- [Interview DS Algo](https://github.com/MAZHARMIK/Interview_DS_Algo)
+- [Computer science foundation/ Interview preparation/ Junior to Senior Developer](https://github.com/bansalankit92/java-spring-fullstack-interview-question-answers)
+- [Interview](https://github.com/mission-peace/interview/wiki)
+- [Leetcode-Company-Wise-Problems](https://github.com/amanjainn/Leetcode-Company-Wise-Problems)
 
 ### Job Abroad Website
 
@@ -72,6 +80,8 @@
 - [Job atical](https://www.jobbatical.com/)
 - [Jobs in network](https://jobsinnetwork.com/)
 - [Welcome to the Jungle](http://welcometothejungle.com/en)
+- [UAE Job Seekers](https://uaejobseekers.com/Home/Jobs.aspx)
+- [Wolt Careers](https://careers.wolt.com/en/jobs/6793431)
 
 ### Remote Job Website
 
@@ -114,6 +124,10 @@
 - [Just Remote](https://justremote.co/remote-jobs)
 - [Power to Fly](https://powertofly.com/)
 - [Make Money Writing](https://www.compose.ly/become-a-writer-intl)
+
+### Youtube Channel
+
+- [Jeff H Sipe - Practice Interviews](https://www.youtube.com/@jeffhsipepi/playlists)
 
 ### Preparation Website
 

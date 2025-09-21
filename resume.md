@@ -7,6 +7,12 @@
 - [Novoresume](https://novoresume.com/)
 - [Enhancv](https://enhancv.com/)
 - [zety](https://zety.com/)
+- [ResumeGPT](https://chatgpt.com/g/g-6739f792ba5c81918510adfd5f224669-resumegpt)
+- [Flowcv](https://flowcv.com/)
+
+### Articles
+
+- A killer tech CV that no company can refuse [KAZ Software](https://kaz.com.bd/blog/2020/8/14/cool-resume-which-is-an-example-of-your-skills-cv-recursion)
 
 ### Discussion
 

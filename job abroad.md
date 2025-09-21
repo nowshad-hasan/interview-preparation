@@ -12,3 +12,7 @@
 
 ### Blog Posts
 - The Best Tech Companies in Berlin 2021 [Link](https://www.kevinpeters.net/top-tech-companies-berlin-2021)
+
+### Salary Calculator
+
+- [Salarium](https://www.salarium.bfs.admin.ch/disclaimer)
