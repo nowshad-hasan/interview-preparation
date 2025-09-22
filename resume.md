@@ -13,6 +13,8 @@
 ### Articles
 
 - A killer tech CV that no company can refuse [KAZ Software](https://kaz.com.bd/blog/2020/8/14/cool-resume-which-is-an-example-of-your-skills-cv-recursion)
+- How to Write a Developer Resume that Recruiters Will Read [Freecodecamp](https://www.freecodecamp.org/news/how-to-write-a-developer-resume-recruiters-will-read/)
+- How to write an awesome junior developer résumé in a few simple steps [Freecodecamp](https://www.freecodecamp.org/news/how-to-write-an-awesome-junior-developer-resume-in-a-few-simple-steps-316010db80ec/)
 
 ### Discussion
 

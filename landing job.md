@@ -24,6 +24,14 @@
 - 20 Best Job Search Websites To Land Your Next Role in 2025 [Upwork](https://www.upwork.com/resources/best-job-search-website)
 - 20 Best Job Search Sites in 2025 [Flexjobs](https://www.flexjobs.com/blog/post/best-job-search-sites)
 - How to interview at Amazon - Leadership - Now including the 2 new Principles [Linkedin](https://www.linkedin.com/pulse/how-interview-amazon-leadership-david-anderson/)
+- How to Get Your First Developer Job through Intelligent, Genuine Networking [Freecodecamp](https://www.freecodecamp.org/news/networking-for-aspiring-developers/)
+- How to Get Your First Dev Job – Insights from Reviewing Career Switchers' Résumés [Freecodecamp](https://www.freecodecamp.org/news/how-to-get-your-first-dev-job/)
+- How to prepare for a technical interview - tips and tricks to help you perform your best [Freecodecamp](https://www.freecodecamp.org/news/interviewing-prep-tips-and-tricks/)
+- How to Answer Any Technical Interview Question – Example Included [Freecodecamp](https://www.freecodecamp.org/news/how-to-answer-any-technical-interview-question-with-example/)
+- What I Learned from Doing 60+ Technical Interviews in 30 Days [Freecodecamp](https://www.freecodecamp.org/news/what-i-learned-from-doing-60-technical-interviews-in-30-days/)
+- The Complete Freelance Web Developer Guide: How to Make Money Through Freelance Programming Jobs [Freecodecamp](https://www.freecodecamp.org/news/freelance-web-developer-guide/)
+- How to Write Freelance Proposals That Will Win Over Clients + a Free Template [Freecodecamp](https://www.freecodecamp.org/news/free-web-design-proposal-template/)
+- What is Freelancing? How to Find Freelance Jobs Online And Clients in Your City [Freecodecamp](https://www.freecodecamp.org/news/what-is-freelancing/#quest1)
 
 ### Job abroad
 
