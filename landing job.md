@@ -90,6 +90,9 @@
 - [Welcome to the Jungle](http://welcometothejungle.com/en)
 - [UAE Job Seekers](https://uaejobseekers.com/Home/Jobs.aspx)
 - [Wolt Careers](https://careers.wolt.com/en/jobs/6793431)
+- [Flexpie](https://app.flexiple.com/talent/sign-up)
+- [Vanhack](https://www.vanhack.com/)
+- [Qatar Jobs](https://qatarjobseekers.com/)
 
 ### Remote Job Website
 
