@@ -93,6 +93,7 @@
 - [Flexpie](https://app.flexiple.com/talent/sign-up)
 - [Vanhack](https://www.vanhack.com/)
 - [Qatar Jobs](https://qatarjobseekers.com/)
+- [Europass](https://europass.europa.eu/en)
 
 ### Remote Job Website
 
