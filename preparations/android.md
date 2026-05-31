@@ -854,3 +854,22 @@
 
 * [Farhad - Android-Interview](https://github.com/farhad/android-interview)
 * [Android-Interview-Questions](https://github.com/Kirchhoff-/Android-Interview-Questions)
+
+### System Design
+
+* Long Polling vs Server-Sent Events vs WebSockets: A Comprehensive Guide [Medium](https://medium.com/@asharsaleem4/long-polling-vs-server-sent-events-vs-websockets-a-comprehensive-guide-fb27c8e610d0)
+* HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events [Outcome School](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
+* How does the Android Image Loading library solve the slow loading issue? [Outcome School](https://outcomeschool.com/blog/android-image-loading-library-solve-the-slow-loading-issue)
+* Hash vs Encrypt vs Encode [Codecademy](https://www.codecademy.com/article/hashing-encryption-encoding-obfuscation)
+* Bitmap Pool in Android [Outcome School](https://outcomeschool.com/blog/bitmap-pool)
+* How does the Android Image Loading library optimize memory usage? [Outcome School](https://outcomeschool.com/blog/android-image-loading-library-optimize-memory-usage)
+* Accurate time in Android
+* Options for real-time updates in an Android Ap
+* Options for Network Optimization in a Mobile App
+* Firebase Remote Config in Android
+* Accurate time in Android
+* Database Normalization vs Denormalization
+* Query Optimization in SQLite for Better Performance
+* Options for Persisting Data in an Android App
+* How does the Android Push Notification system work?
+* Android Push Notification Flow using FCM

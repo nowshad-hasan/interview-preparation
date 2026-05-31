@@ -136,6 +136,13 @@
 - [Just Remote](https://justremote.co/remote-jobs)
 - [Power to Fly](https://powertofly.com/)
 - [Make Money Writing](https://www.compose.ly/become-a-writer-intl)
+- [Gumroad](https://gumroad.com/)
+- [Wirestock](https://wirestock.io/)
+- [SolidGigs](https://solidgigs.com)
+- [Dynamite Jobs](https://dynamitejobs.com/)
+- [Workew](https://workew.com/)
+- [Himalayas](https://himalayas.app/)
+- [Jooble](https://jooble.org)
 
 ### Youtube Channel
 
@@ -190,6 +197,36 @@
   - Verbose - repeating the same statements twice or more times. (It is little bit irritating, isn't it?)
   - Superficial - Omit examples, increase abstractions (We should give more constructive real life examples, don't we?)
   - Unstructured - "thinking out loud" is not a benefit (unless it's been directly requested). ---> I think we can do this but we should not represent our banal thoughts there. Because they need very constructive answers with explanation. 
+
+### Use ChatGPT
+Chatgpt Can Get You Hired Faster Than Any Recruiter
+
+Copy these 7 prompts to land your dream job:
+
+1/ Resume Transformer
+
+Transform my resume [paste resume] for [target position] into an ATS-optimized document that highlights achievements and incorporates industry keywords.
+
+2/ Cover Letter Creator
+
+Write a personalized cover letter for [position] at [company] that connects my experience to their needs and demonstrates why I'm an ideal fit.
+
+3/ Interview Answer Builder
+
+Create a STAR response for "[interview question]" using my experience with [example], making it concise and impressive.
+
+4/ Job Description Decoder
+
+Analyze this job listing [paste listing] to identify key requirements, hidden expectations, and phrases to include in my application.
+
+5/ LinkedIn Optimizer
+Improve my LinkedIn profile [paste sections] to attract recruiters for [desired role], with compelling achievements and keywords.
+
+6/ Salary Negotiator
+Create a negotiation script for my offer from [company/role] [paste details] to maximize compensation while maintaining relationship.
+
+7/ Interview Question Generator
+Prepare me for my [company/position] interview with likely questions based on this job description [paste description].
 
 ### How to use ChatGPT for interview preparation
 

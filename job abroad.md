@@ -5,6 +5,7 @@
 - [Works Hub](https://www.works-hub.com/)
 - [Remote anywhere](https://remoteanywhere.xyz/jobs/)
 - [Google Career](https://www.google.com/about/careers/applications/)
+- [Contra](https://contra.com/?view=projects)
 
 ### Videos
 - Live Session on IT Job Opportunity in Germany [YouTube](https://www.youtube.com/watch?v=o_EYVTBdgAw&ab_channel=Klassroom)

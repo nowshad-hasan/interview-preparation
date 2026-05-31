@@ -32,3 +32,6 @@ A repository for taking interview preparations.
 * [Algo Expert](https://www.algoexpert.io/product) - Please use *Gaurav* code here.
 * [FullStack Cafe](https://www.fullstack.cafe/)
 * [Pramp](https://www.pramp.com/)
+* [Grind 75](https://www.techinterviewhandbook.org/grind75/)
+* [Awesome Leetcode Resources](https://github.com/ashishps1/awesome-leetcode-resources)
+* [Neetcode](https://neetcode.io/)

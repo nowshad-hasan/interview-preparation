@@ -6,6 +6,34 @@ Collections:
 - [Simplelearn](https://www.simplilearn.com/tutorials/javascript-tutorial/javascript-interview-questions)
 - [roadmap.sh](https://roadmap.sh/questions/javascript)
 
+### Design New
+
+The questions that expose this gap:
+
+1. Implement debounce function 
+ - 90% get confused about closures and timers. 
+ - This tests your understanding of scope, timing, and function composition.
+
+2. Build your own Promise.all 
+ - Most copy-paste from Stack Overflow without understanding async behavior. - Shows if you really know promises.
+
+3. Create an Event Emitter class 
+ - Tests object-oriented thinking, observer pattern, and memory management. - Many leak memory here.
+
+4. Implement deep clone for objects 
+ - Simple on surface, but handling circular references, different data types, and edge cases reveals true skill level.
+
+5. Build getElementsByStyle function
+ - Tests DOM traversal algorithms, CSS property matching, and performance considerations
+ - Most struggle with recursive tree traversal and proper style computation
+ - Reveals understanding of how browsers actually work under the hood
+
+Why these matter: They're building blocks of every framework you use.
+
+React hooks? Built on closures. 
+State management? Event patterns. 
+API optimization? Debounce and throttle.
+
 Questions:
 
 - **What are the different data types present in javascript?**

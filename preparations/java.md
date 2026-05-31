@@ -12,6 +12,50 @@
  - [Collection](#collection)
  - [Read more](#read-more)
 
+### Questions
+Round 1 – Project & Technical Questions
+01) Introduce yourself.
+02) Tell me about your project.
+03) Write a REST API (on paper) to get all employees.
+04) What is JPA and Hibernate?
+05) Write OneToMany and ManyToOne relation using Employee and Department (on paper).
+06) What is Fetch in JPA?
+07) What is Cascade in JPA?
+08) What is a JWT Token?
+09) How do you implement JWT Token?
+10) What is @Transactional?
+11) What is Propagation in transactions and its types?
+
+✅ Round 1 – Scenario-Based Questions
+12) Write a custom JPA query with arguments age and salary to fetch employees.
+13) In the same transaction, if I update a value and save it in DB, is it possible to get the updated value in the very next line?
+
+✅ Round 1 – Java Concepts & Programs
+14) What are Streams in Java?
+15) What is a Functional Interface?
+16) Program: Find the 2nd max value without using streams.
+17) Program: Find students whose marks are greater than 80 using streams.
+18) Program: Find the max marks of a student using sorted() in streams.
+19) Program: Find the max marks of a student using max() in streams.
+
+✅ Round 2 – Microservices & Advanced Concepts
+20) How do microservices communicate with each other?
+21) Apart from RestTemplate, what are other ways for microservice communication?
+22) Explain synchronous vs asynchronous communication.
+23) How does RabbitMQ work?
+24) What will you do if you find an issue in production? How will you troubleshoot?
+25) What is the SLF4J framework and how do you use it?
+26) What is a JWT Token?
+27) Difference between authentication and authorization.
+28) HTTP status codes for Forbidden and Unauthorized.
+29) Which occurs first: Forbidden or Unauthorized?
+
+💭 Key Takeaways:
+✅ Strong knowledge of JPA, Hibernate, and transactional behavior is critical.
+✅ Hands-on practice with JWT, security, and Spring Boot microservices really helps.
+✅ Production-level troubleshooting, logging, and message brokers (like RabbitMQ) are often discussed.
+✅ Java Streams and Functional Programming are must-practice areas.
+
 ### Basic
 
  * <b>Why is Java said to be platform independent?</b></br>
