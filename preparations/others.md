@@ -43,6 +43,9 @@
 * 10 Google Interview Puzzles [MY TECH INTERVIEWS](http://www.mytechinterviews.com/10-google-interview-questions)
 * CS Puzzles [Everything Computer Science](https://everythingcomputerscience.com/CSPuzzles.html)
 
+### Videos
+* How Craftsmen Hired Software Engineers in 2026 | A Reliable Software Team for European Businesses [Craftsmen](https://youtu.be/ZnaEUada9LY?si=QqndN_otZgyXUXNC)
+
 ### Inspiration
 * Job in Germany
   * [FB post](https://www.facebook.com/groups/HigherStudyAbroad/permalink/2693556964039301/)

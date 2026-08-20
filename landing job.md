@@ -97,6 +97,8 @@
 
 ### Remote Job Website
 
+- [Skip The Drive](https://www.skipthedrive.com/)
+- [EU Remote Jobs](https://euremotejobs.com/) -- for europe specially
 - [Remote in Tech](https://remoteintech.company/)
 - [Jobspresso](https://jobspresso.co/)
 - [We Work Remotely](https://weworkremotely.com/)
@@ -147,6 +149,9 @@
 ### Youtube Channel
 
 - [Jeff H Sipe - Practice Interviews](https://www.youtube.com/@jeffhsipepi/playlists)
+
+### Good Companies
+- [Wolt Careers](https://careers.wolt.com/en/jobs?team=Engineering)
 
 ### Preparation Website
 

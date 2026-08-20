@@ -46,6 +46,10 @@
 - কিভাবে একটা সুস্বাদু সিভি লেখা যায়? [Link](https://writing.joynal.dev/how-to-write-a-delicious-cv)
 - A killer tech CV that no company can refuse [KAZ Software](https://kaz.com.bd/blog/2020/8/14/cool-resume-which-is-an-example-of-your-skills-cv-recursion)
 
+### Videos
+
+- Medium Google Coding Interview With Ben Awad [Youtube](https://youtu.be/4tYoVx0QoN0?si=DQl7sZChf43fTw14)
+
 
 ### Cover Letter
 
